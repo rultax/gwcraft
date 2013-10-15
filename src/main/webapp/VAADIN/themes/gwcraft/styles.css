@@ -1,0 +1,7009 @@
+.v-assistive-device-only {
+	position: absolute;
+	top: -2000px;
+	left: -2000px;
+	width: 10px;
+	overflow: hidden;
+}
+
+.v-vaadin-version:after {
+	content: "7.1.6";
+}
+
+.v-generated-body {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.v-debug-console {
+	background: #fff;
+	opacity: 0.9;
+	border: 1px solid #000;
+	font-family: sans-serif;
+}
+
+.v-debug-console-caption {
+	background: #000;
+	border-bottom: 1px solid grey;
+	color: white;
+	font-weight: bold;
+}
+
+.v-debug-console-content {
+	font-size: x-small;
+	overflow: auto;
+	white-space: pre;
+}
+
+.v-debug-console-content input {
+	font-size: xx-small;
+}
+
+.v-app .invalidlayout, .v-app .invalidlayout * {
+	background: #f99 !important;
+}
+
+@font-face {
+	font-family: "vdebugfont";
+	src: url(../base/debug/fonts/font.eot);
+	src: url(../base/debug/fonts/font.eot?#iefix) format("embedded-opentype"), url(../base/debug/fonts/font.woff) format("woff"), url(../base/debug/fonts/font.ttf) format("truetype"), url(../base/debug/fonts/font.svg#fontawesome) format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.v-debugwindow [data-icon]:before, .v-debugwindow-menu [data-icon]:before {
+	font-family: "vdebugfont";
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;
+	vertical-align: text-bottom;
+}
+
+.v-debugwindow {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-moz-opacity: 0.8;
+	-webkit-opacity: 0.8;
+	opacity: 0.8;
+	color: #666;
+	font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif;
+	font-size: 13px;
+}
+
+.v-debugwindow .v-debugwindow-handle {
+	position: absolute;
+	bottom: 0;
+	background-color: #fff;
+	-moz-opacity: 0;
+	-webkit-opacity: 0;
+	opacity: 0;
+	z-index: 1000;
+}
+
+.v-debugwindow .v-debugwindow-handle-sw {
+	width: 7px;
+	height: 7px;
+}
+
+.v-debugwindow .v-debugwindow-handle-se {
+	right: 0;
+	width: 14px;
+	height: 14px;
+}
+
+.v-debugwindow:hover {
+	-moz-opacity: 1;
+	-webkit-opacity: 1;
+	opacity: 1;
+}
+
+.v-debugwindow * {
+	font-size: inherit !important;
+}
+
+.v-debugwindow-size0, .v-debugwindow-menu .v-debugwindow-button-size0 {
+	font-size: 10px;
+}
+
+.v-debugwindow-size1, .v-debugwindow-menu .v-debugwindow-button-size1 {
+	font-size: 13px;
+}
+
+.v-debugwindow-size2, .v-debugwindow-menu .v-debugwindow-button-size2 {
+	font-size: 16px;
+}
+
+.v-debugwindow-head {
+	text-align: right;
+	background-color: transparent;
+}
+
+.v-debugwindow-tabs {
+	display: inline-block;
+	background-color: #fff;
+}
+
+.v-debugwindow-tab, .v-debugwindow-controls > * {
+	width: 2em;
+	border: none;
+	margin: 0;
+	line-height: 1.5em;
+	background-color: #fff;
+	color: #666;
+}
+
+.v-debugwindow-tab {
+	position: relative;
+	top: 1px;
+	border-width: 1px 0 1px 1px;
+	border-style: solid;
+	border-color: #666;
+	border-radius: 2px 2px 0 0;
+}
+
+.v-debugwindow-tab-selected {
+	color: #666;
+	background-color: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.v-debugwindow-controls {
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	background-color: #fff;
+	border: 1px solid #666;
+	border-radius: 2px 2px 0 0;
+}
+
+.v-debugwindow-section-head {
+	text-align: left;
+	background-color: #fff;
+	border: 1px solid #666;
+	border-bottom: 1px solid #999;
+	box-shadow: 0px 0px 7px 0 rgba(55, 55, 55, 0.6);
+	min-height: 1.5em;
+	line-height: 1.5em;
+	padding-left: 5px;
+}
+
+.v-debugwindow-button {
+	border: none;
+	background-color: transparent;
+	color: #666;
+}
+
+.v-debugwindow-button:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.v-debugwindow-button-active {
+	color: #666;
+	box-shadow: 1px 1px 3px 0 inset;
+}
+
+.v-debugwindow-content {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 7px 0 rgba(55, 55, 55, 0.6);
+	background-color: #fff;
+	border: 1px solid #666;
+	border-top: none;
+}
+
+.v-debugwindow-menu {
+	background-color: #fff;
+	padding: 4px;
+	border: 1px solid #999;
+	border-top: none;
+	border-radius: 0 0 5px 5px;
+	box-shadow: 0px 0px 7px 0 rgba(55, 55, 55, 0.6);
+}
+
+.v-debugwindow-menu-content {
+	min-width: 100px;
+}
+
+.v-debugwindow-menu-content .v-debugwindow-button {
+	line-height: 22px;
+}
+
+.v-debugwindow-menu-content > div > .v-debugwindow-button {
+	width: 33%;
+}
+
+.v-debugwindow-row {
+	display: table-row;
+}
+
+.v-debugwindow-row:nth-child(odd) {
+	background-color: rgba(0, 61, 255, 0.11);
+}
+
+.v-debugwindow-row > span {
+	display: table-cell;
+	padding: 4px;
+}
+
+.v-debugwindow-row.SEVERE {
+	color: #550000;
+	background-color: #FFC5C5;
+}
+
+.v-debugwindow-row.WARNING {
+	background-color: #FFFF99;
+}
+
+.v-debugwindow-row.FINE {
+	color: #777;
+}
+
+.v-debugwindow-row.FINER {
+	color: #888;
+}
+
+.v-debugwindow-row.FINEST {
+	color: #888;
+}
+
+.v-debugwindow-row > span.caption {
+	color: #999;
+	text-align: right;
+	white-space: nowrap;
+}
+
+.v-debugwindow-row > span.value {
+	width: 100%;
+}
+
+.v-debugwindow-log {
+	font-family: monospace;
+}
+
+.v-debugwindow-log .v-debugwindow-reset {
+	color: #fff;
+	background-color: #4C92ED;
+	padding: 4px;
+}
+
+.v-debugwindow-log .v-debugwindow-time {
+	text-align: right;
+	color: #999;
+}
+
+.v-debugwindow-log .v-debugwindow-message {
+	white-space: nowrap;
+	width: 100%;
+}
+
+.v-debugwindow-log .v-debugwindow-message:hover {
+	white-space: normal;
+	word-wrap: break-word;
+}
+
+.v-debugwindow-log .v-debugwindow-message em {
+	background-color: #C4E6F8;
+}
+
+.v-debugwindow-hierarchy .v-debugwindow-info {
+	padding: 1em;
+}
+
+.v-debugwindow-network .v-debugwindow-row {
+	display: block !important;
+}
+
+.v-debugwindow-network .v-debugwindow-row > span {
+	display: inline;
+}
+
+/** sprite: verticals; sprite-image: url(common/img/vertical-sprites.png); sprite-layout: vertical */
+
+/** sprite: horizontals; sprite-image: url(common/img/horizontal-sprites.png); sprite-layout: horizontal */
+
+/** sprite: black-verticals; sprite-image: url(common/img/black-vertical-sprites.png); sprite-layout: vertical; sprite-matte-color: #1e2022 */
+
+/** sprite: black-horizontals; sprite-image: url(common/img/black-horizontal-sprites.png); sprite-layout: horizontal; sprite-matte-color: #1e2022 */
+
+/** sprite: buttons; sprite-image: url(button/img/button-sprites.png); sprite-layout: vertical */
+
+/** sprite: black-buttons; sprite-image: url(button/img/black-button-sprites.png); sprite-layout: vertical */
+
+.v-generated-body {
+	background: #f5f5f5;
+}
+
+.gwcraft .v-widget {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: left;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: bottom;
+	font-size: 12px;
+	line-height: normal;
+}
+
+.gwcraft .v-absolutelayout-wrapper {
+	position: absolute;
+	overflow: hidden;
+}
+
+.gwcraft .v-absolutelayout-margin, .gwcraft .v-absolutelayout-canvas {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.gwcraft .v-absolutelayout.v-has-height > div, .gwcraft .v-absolutelayout.v-has-height > div > div {
+	height: 100%;
+}
+
+.gwcraft .v-absolutelayout.v-has-width > div, .gwcraft .v-absolutelayout.v-has-width > div > div {
+	width: 100%;
+}
+
+.gwcraft .v-accordion {
+	position: relative;
+	outline: none;
+	overflow: visible;
+	text-align: left;
+	font-size: 0;
+}
+
+.gwcraft .v-accordion-item {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.gwcraft .v-accordion-item-caption {
+	overflow: visible;
+	white-space: nowrap;
+	background: #eee;
+	border-bottom: 1px solid #ddd;
+}
+
+.gwcraft .v-accordion-item-caption .v-caption {
+	cursor: pointer;
+	font-size: 12px;
+}
+
+.gwcraft .v-accordion-item-open .v-accordion-item-caption .v-caption {
+	cursor: default;
+}
+
+.gwcraft .v-accordion-item-content {
+	position: absolute;
+	width: 100%;
+}
+
+.gwcraft .v-button {
+	display: inline-block;
+	zoom: 1;
+	text-align: center !important;
+	text-decoration: none;
+	border: 2px outset #ddd;
+	background: #eee;
+	cursor: pointer;
+	white-space: nowrap;
+	margin: 0;
+	padding: 0.2em 1em;
+	color: inherit;
+	font: inherit;
+	font-size: 12px;
+	line-height: normal;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.gwcraft .v-button.v-disabled {
+	cursor: default;
+}
+
+.gwcraft .v-button-wrap, .gwcraft .v-button-caption {
+	vertical-align: baseline;
+	white-space: nowrap;
+	font: inherit;
+	color: inherit;
+	line-height: normal;
+}
+
+.gwcraft .v-button .v-icon {
+	vertical-align: middle;
+	margin-right: 3px;
+	border: none;
+}
+
+.gwcraft .v-button .v-errorindicator {
+	display: inline-block;
+	zoom: 1;
+	vertical-align: middle;
+	float: none;
+}
+
+.gwcraft .v-button-link {
+	border: none;
+	text-align: left !important;
+	background: transparent;
+	padding: 0;
+	color: inherit;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ie-user-select: text;
+	user-select: text;
+}
+
+.v-sa .gwcraft .v-button-link:focus {
+	outline-offset: -3px;
+}
+
+.gwcraft .v-button-link .v-button-caption {
+	text-decoration: underline;
+	color: inherit;
+	text-align: left;
+}
+
+.gwcraft .v-nativebutton .v-icon {
+	vertical-align: middle;
+	margin-right: 3px;
+	border: none;
+}
+
+.gwcraft .v-nativebutton .v-errorindicator {
+	display: inline-block;
+	zoom: 1;
+	vertical-align: middle;
+	float: none;
+}
+
+.gwcraft .v-nativebutton-link {
+	border: none;
+	text-align: left !important;
+	background: transparent;
+	padding: 0;
+	color: inherit;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ie-user-select: text;
+	user-select: text;
+}
+
+.gwcraft .v-nativebutton-link .v-nativebutton-caption {
+	text-decoration: underline;
+	color: inherit;
+	text-align: left;
+}
+
+.gwcraft .v-nativebutton {
+	text-align: center !important;
+	cursor: pointer;
+	white-space: nowrap;
+	margin: 0;
+	color: inherit;
+	font: inherit;
+	line-height: normal;
+}
+
+.gwcraft .v-nativebutton .v-nativebutton-caption {
+	vertical-align: middle;
+	white-space: nowrap;
+	font: inherit;
+	color: inherit;
+}
+
+.gwcraft .v-nativebutton .v-icon {
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+.gwcraft .v-nativebutton .v-errorindicator {
+	display: inline-block;
+	zoom: 1;
+	float: none;
+}
+
+.v-ie .gwcraft .v-nativebutton {
+	overflow: visible;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.v-ie .gwcraft .v-nativebutton-link {
+	padding: 0;
+}
+
+.gwcraft .v-checkbox {
+	display: block;
+}
+
+.gwcraft .v-checkbox, .gwcraft .v-checkbox label, .gwcraft .v-checkbox input, .gwcraft .v-checkbox .v-icon {
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.gwcraft .v-checkbox .v-icon {
+	margin: 0 2px;
+}
+
+.gwcraft .v-checkbox .v-errorindicator {
+	float: none;
+	display: inline;
+	display: inline-block;
+	zoom: 1;
+}
+
+.gwcraft .v-captionwrapper {
+	text-align: left;
+}
+
+.gwcraft .v-caption {
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 12px;
+}
+
+.gwcraft .v-errorindicator {
+	display: inline-block;
+}
+
+.gwcraft .v-caption .v-icon {
+	display: inline-block;
+	padding-right: 2px;
+	vertical-align: middle;
+}
+
+.gwcraft .v-caption .v-captiontext {
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+.gwcraft .v-caption .v-required-field-indicator {
+	display: inline-block;
+}
+
+.gwcraft .v-colorpicker {
+	text-align: center;
+}
+
+.gwcraft .v-colorpicker-button-color {
+	border: 1px solid silver;
+	float: left;
+	width: 10px;
+	height: 10px;
+	margin-top: 2px;
+	margin-right: 5px;
+}
+
+.gwcraft .v-colorpicker-area {
+	border: 1px solid silver;
+	margin: 1px auto;
+}
+
+.gwcraft .v-colorpicker-history {
+	margin: 5px;
+}
+
+.gwcraft .v-colorpicker-history td {
+	border: 1px solid silver !important;
+}
+
+.gwcraft .v-colorpicker-history td {
+	line-height: 15px;
+}
+
+.gwcraft .v-colorpicker-popup {
+	width: 244px;
+}
+
+.gwcraft .v-colorpicker-popup .v-scrollable {
+	background-color: #dddddd;
+}
+
+.gwcraft .v-colorpicker-popup .v-tabsheet-content .v-scrollable {
+	background-color: #eaeaea;
+}
+
+.gwcraft .v-colorpicker-popup .v-tabsheet-content .v-tabsheet-tabsheetpanel {
+	background: transparent;
+}
+
+.gwcraft .v-colorpicker-popup .resize-button {
+	border: 0px solid silver;
+	background: url(../base/colorpicker/images/resizebg.png);
+	margin-top: 5px;
+}
+
+.gwcraft .v-colorpicker-popup .resize-button-caption {
+	display: none;
+}
+
+.gwcraft .v-colorpicker-popup .resize-button:hover {
+	background: url(../base/colorpicker/images/resizebg-selected.png);
+}
+
+.gwcraft .v-colorpicker-popup .resize-button:focus {
+	outline: none;
+}
+
+.gwcraft .v-colorpicker-gradient {
+	width: 220px;
+	height: 220px;
+	padding-left: 10px;
+	margin-top: 0px;
+}
+
+.gwcraft .v-colorpicker-gradient .v-colorpicker-gradient-clicklayer {
+	background-color: white;
+	filter: alpha(opacity = 0);
+	opacity: 0;
+}
+
+.gwcraft .v-colorpicker-popup .rgb-gradient .v-colorpicker-gradient-background {
+	width: 220px;
+	height: 220px;
+	background: url(../base/colorpicker/images/gradient2.png);
+}
+
+.gwcraft .v-colorpicker-popup .hsv-gradient .v-colorpicker-gradient-foreground {
+	background: url(../base/colorpicker/images/gradient.png);
+}
+
+.gwcraft .v-colorpicker-popup .v-colorpicker-gradient-lowerbox {
+	border-right: 1px solid white;
+	border-top: 1px solid white;
+}
+
+.gwcraft .v-colorpicker-popup .v-colorpicker-gradient-higherbox {
+	border-left: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+.gwcraft .v-colorpicker-popup .rgb-sliders {
+	width: 227px;
+	padding-left: 10px;
+	color: #444444;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.gwcraft .v-colorpicker-popup .rgb-sliders .red .v-slider-base {
+	background-color: red;
+}
+
+.gwcraft .v-colorpicker-popup .rgb-sliders .green .v-slider-base {
+	background-color: green;
+}
+
+.gwcraft .v-colorpicker-popup .rgb-sliders .blue .v-slider-base {
+	background-color: blue;
+}
+
+.gwcraft .v-colorpicker-popup .hsv-sliders {
+	padding-left: 10px;
+	color: #444444;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.gwcraft .v-colorpicker-popup .hue-slider {
+	height: 10px;
+	border: 0px solid silver;
+	background-image: url(../base/colorpicker/images/slider_hue_bg.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 3px;
+	margin-top: 0px;
+}
+
+.gwcraft .v-colorpicker-popup .hue-slider .v-slider-handle {
+	margin-top: -2px;
+}
+
+.gwcraft .v-colorpicker-popup .hue-slider .v-slider-base {
+	border: 0px none;
+	height: 0px;
+	background-color: transparent;
+}
+
+.gwcraft .v-colorpicker-popup .v-colorpicker-preview {
+	margin-top: 5px;
+	padding-left: 11px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+}
+
+.gwcraft .v-colorpicker-popup .v-absolutelayout-wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.gwcraft .v-colorpicker-popup .v-colorpicker-preview-textfield {
+	background: none;
+	overflow: hidden;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.gwcraft .v-colorpicker-popup .v-textfield-dark {
+	color: #FFFFFF;
+}
+
+.gwcraft .v-colorpicker-popup .v-textfield-light {
+	color: #000000;
+}
+
+.gwcraft .v-colorpicker-popup .colorselect {
+	margin-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.gwcraft .v-colorpicker-popup .v-tabsheet .v-colorpicker-grid {
+	height: 319px;
+}
+
+.gwcraft .v-colorpicker-popup .colorselect td {
+	line-height: 15px;
+}
+
+.gwcraft .v-colorpicker-popup .v-filterselect {
+	padding-right: 16px;
+}
+
+.gwcraft .v-calendar-nresize DIV DIV {
+	cursor: n-resize !important;
+}
+
+.gwcraft .v-calendar-sresize DIV DIV {
+	cursor: s-resize !important;
+}
+
+.gwcraft .v-calendar {
+	background-color: #fff;
+}
+
+.gwcraft .v-calendar-header-month, .gwcraft .v-calendar-header-week {
+	border-bottom: 1px solid #c1c1c1;
+}
+
+.gwcraft .v-calendar-header-day {
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+	line-height: normal;
+}
+
+.gwcraft .v-calendar-header-week .v-calendar-header-day:hover {
+	cursor: pointer;
+	color: #222;
+}
+
+.gwcraft .v-calendar-header-day-today {
+	font-weight: bold;
+	color: #444;
+}
+
+.gwcraft .v-calendar-header-month td:first-child {
+	padding-left: 19px;
+}
+
+.gwcraft .v-calendar-header-week .v-calendar-back, .gwcraft .v-calendar-header-week .v-calendar-next {
+	border: none;
+	padding: 0;
+	margin: 0;
+	height: 12px;
+	width: 12px;
+	overflow: hidden;
+	background: transparent url(../base/calendar/img/arrows.png) no-repeat 50% 0;
+	opacity: 0.3;
+	filter: alpha(opacity = 30);
+	cursor: default;
+}
+
+.gwcraft .v-calendar-header-week .v-calendar-back:hover, .gwcraft .v-calendar-header-week .v-calendar-next:hover {
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+}
+
+.gwcraft .v-calendar-header-week .v-calendar-back:active, .gwcraft .v-calendar-header-week .v-calendar-next:active {
+	opacity: 1;
+	filter: alpha(opacity = 100);
+}
+
+.gwcraft .v-calendar-header-week .v-calendar-next {
+	background-position: 50% -12px;
+}
+
+.gwcraft .v-calendar-month {
+	outline: none;
+}
+
+.gwcraft .v-calendar-week-numbers {
+	width: 20px;
+	border-right: 1px solid #ccc;
+}
+
+.gwcraft .v-calendar-week-number {
+	border: none;
+	background: transparent;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	opacity: 0.5;
+	width: 20px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+
+.gwcraft .v-calendar-week-number:hover {
+	opacity: 1;
+}
+
+.gwcraft .v-calendar-month-day {
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	outline: none;
+}
+
+.gwcraft .v-calendar-month-day-today {
+	background-color: #e7f0f5;
+}
+
+.gwcraft .v-calendar-month-day-selected {
+	background-color: #fffee7;
+}
+
+.gwcraft .v-calendar-month-day-dragemphasis {
+	background-color: #a8a8a8;
+}
+
+.gwcraft .v-calendar-month-day-scrollable {
+	overflow-y: scroll;
+}
+
+.gwcraft .v-calendar-day-number {
+	height: 18px;
+	line-height: 18px;
+	font-size: 12px;
+	text-align: right;
+	padding-right: 3px;
+	white-space: nowrap;
+}
+
+.gwcraft .v-calendar-day-number:hover {
+	cursor: pointer;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+}
+
+.gwcraft .v-calendar-month .v-calendar-spacer, .gwcraft .v-calendar-month .v-calendar-bottom-spacer, .gwcraft .v-calendar-month .v-calendar-bottom-spacer-empty {
+	height: 15px;
+	font-size: 11px;
+}
+
+.gwcraft .v-calendar-month .v-calendar-bottom-spacer:hover {
+	cursor: pointer;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+}
+
+.gwcraft .v-calendar-event {
+	line-height: 14px;
+	font-size: 11px;
+	padding: 0 0 0 4px;
+	cursor: pointer;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	outline: none;
+}
+
+.gwcraft .v-calendar-event-month {
+	margin-bottom: 1px;
+	white-space: nowrap;
+}
+
+.gwcraft .v-calendar-event-month:hover {
+	text-decoration: underline;
+}
+
+.gwcraft .v-calendar-event-all-day {
+	background: #999;
+	display: block;
+	margin-left: -2px;
+}
+
+.gwcraft div.v-calendar-event-all-day {
+	color: #fff;
+	height: 14px;
+}
+
+.gwcraft .v-calendar-event-continued-from {
+	margin-left: 0;
+}
+
+.gwcraft .v-calendar-event-start {
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	margin-left: 0;
+}
+
+.gwcraft .v-calendar-event-end {
+	-webkit-border-top-right-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-radius-topright: 6px;
+	-moz-border-radius-bottomright: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.gwcraft .v-calendar-week-wrapper {
+	position: relative;
+}
+
+.gwcraft .v-calendar-times {
+	width: 51px;
+}
+
+.gwcraft .v-calendar-time {
+	padding: 0 8px 7px 0;
+	margin-top: -7px;
+	text-align: right;
+	font-size: 11px;
+	color: #666;
+	border-right: 1px solid #ccc;
+}
+
+.gwcraft .v-calendar-weekly-longevents {
+	border-left: 1px solid #ccc;
+	border-bottom: 2px solid #bbb;
+	margin-left: 50px;
+}
+
+.gwcraft .v-calendar-weekly-longevents .v-calendar-datecell {
+	border-right: 1px solid #ccc;
+	padding: 1px 0 0;
+}
+
+.gwcraft .v-calendar-weekly-longevents .v-calendar-event {
+	height: 14px;
+	margin-bottom: 1px;
+}
+
+.gwcraft .v-calendar-weekly-longevents .v-calendar-event:hover {
+	text-decoration: underline;
+}
+
+.gwcraft .v-calendar-day-times {
+	border-right: 1px solid #ccc;
+	outline: none;
+}
+
+.gwcraft .v-calendar-day-times .v-datecellslot, .gwcraft .v-calendar-day-times .v-datecellslot-even {
+	border-bottom: 1px solid #ccc;
+}
+
+.gwcraft .v-calendar-day-times .v-datecellslot-even {
+	border-bottom-color: #eee;
+}
+
+.gwcraft .v-calendar-day-times .v-daterange {
+	background-color: #a8a8a8;
+}
+
+.gwcraft .v-calendar-day-times .v-reserved {
+	background-color: #FF3333;
+}
+
+.gwcraft .v-calendar-day-times .dragemphasis {
+	background-color: #a8a8a8;
+}
+
+.gwcraft .v-calendar-week-wrapper .v-calendar-event {
+	padding: 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin-top: -1px;
+}
+
+.gwcraft .v-calendar-event-caption {
+	position: absolute;
+	z-index: 1;
+	top: 2px;
+	left: 4px;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: normal;
+}
+
+.gwcraft .v-calendar-event-content {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #777;
+	background: #eee;
+	opacity: 0.8;
+	filter: alpha(opacity = 80);
+	height: 14px;
+}
+
+.gwcraft .v-calendar-current-time {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	overflow: hidden;
+	background: #5a6c86;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+	z-index: 2;
+}
+
+.gwcraft .v-calendar-event-resizetop {
+	position: absolute;
+	cursor: n-resize;
+	height: 5%;
+	min-height: 3px;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.gwcraft .v-calendar-event-resizebottom {
+	position: absolute;
+	cursor: s-resize;
+	height: 5%;
+	min-height: 3px;
+	bottom: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.gwcraft .v-calendar-month-sizedheight .v-calendar-month-day {
+	height: 100px;
+}
+
+.gwcraft .v-calendar-month-sizedwidth .v-calendar-month-day {
+	width: 100px;
+}
+
+.gwcraft .v-calendar-header-month-Hsized .v-calendar-header-day {
+	width: 101px;
+}
+
+.gwcraft .v-calendar-header-month-Hsized td:first-child {
+	padding-left: 21px;
+}
+
+.gwcraft .v-calendar-header-day-Hsized {
+	width: 200px;
+}
+
+.gwcraft .v-calendar-week-numbers-Vsized .v-calendar-week-number {
+	height: 100px;
+	line-height: 100px;
+}
+
+.gwcraft .v-calendar-week-wrapper-Vsized {
+	height: 400px;
+	overflow-x: hidden !important;
+}
+
+.gwcraft .v-calendar-times-Vsized .v-calendar-time {
+	height: 38px;
+}
+
+.gwcraft .v-calendar-times-Hsized .v-calendar-time {
+	width: 42px;
+}
+
+.gwcraft .v-calendar-day-times-Vsized .v-datecellslot, .gwcraft .v-calendar-day-times-Vsized .v-datecellslot-even {
+	height: 18px;
+}
+
+.gwcraft .v-calendar-day-times-Hsized, .gwcraft .v-calendar-day-times-Hsized .v-datecellslot, .gwcraft .v-calendar-day-times-Hsized .v-datecellslot-even {
+	width: 200px;
+}
+
+.gwcraft.v-app {
+	height: 100%;
+}
+
+.gwcraft.v-app, .gwcraft .v-window, .gwcraft .v-popupview-popup, .gwcraft .v-label, .gwcraft .v-caption {
+	cursor: default;
+}
+
+body .gwcraft.v-app .v-app-loading {
+	background-image: url(../base/common/img/loading-indicator.gif);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	width: 100%;
+	height: 100%;
+}
+
+.gwcraft .v-ui {
+	height: 100%;
+	width: 100%;
+	outline: none;
+	position: relative;
+}
+
+.gwcraft .v-ui.v-ui-embedded {
+	margin-top: -1px;
+	border-top: 1px solid transparent;
+}
+
+.gwcraft .v-ui:active, .gwcraft .v-ui:focus {
+	outline: none;
+}
+
+.gwcraft.v-app select, .gwcraft .v-window select {
+	margin: 0;
+}
+
+.gwcraft .v-disabled {
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+	cursor: default;
+}
+
+.gwcraft .v-disabled * {
+	cursor: default;
+}
+
+* html .gwcraft .v-disabled {
+	zoom: 1;
+}
+
+* + html .gwcraft .v-disabled {
+	zoom: 1;
+}
+
+.gwcraft .v-disabled .v-disabled {
+	opacity: 1;
+}
+
+.gwcraft .v-required-field-indicator {
+	padding-left: 2px;
+	color: red;
+}
+
+.gwcraft .v-form fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+.gwcraft .v-form-content {
+	height: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.gwcraft .v-tooltip {
+	cursor: default;
+	background: #fff;
+}
+
+.gwcraft .v-tooltip-text {
+	overflow: auto;
+}
+
+.gwcraft .v-tooltip .v-errormessage {
+	overflow: auto;
+}
+
+.gwcraft .v-contextmenu {
+	background: #fff;
+}
+
+.gwcraft .v-contextmenu .gwt-MenuItem {
+	cursor: pointer;
+	vertical-align: middle;
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+.gwcraft .v-contextmenu .gwt-MenuItem div {
+	cursor: pointer;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.gwcraft .v-contextmenu .gwt-MenuItem-selected div {
+	background: #aaa;
+	color: #fff;
+}
+
+.gwcraft .v-contextmenu table {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+}
+
+.gwcraft .v-contextmenu .gwt-MenuItem img {
+	margin-right: 1em;
+	vertical-align: middle;
+}
+
+.gwcraft .v-label pre {
+	margin: 0;
+}
+
+.gwcraft .v-label-undef-w {
+	white-space: nowrap;
+}
+
+.gwcraft .v-label h1, .gwcraft .v-label h2, .gwcraft .v-label h3, .gwcraft .v-label h4, .gwcraft .v-label h5, .gwcraft .v-label h6 {
+	line-height: normal;
+}
+
+.gwcraft .v-loading-indicator, .gwcraft .v-loading-indicator-delay, .gwcraft .v-loading-indicator-wait {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 30000;
+	width: 31px;
+	height: 31px;
+	background: transparent url(../base/common/img/loading-indicator.gif);
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+.gwcraft .v-loading-indicator-delay {
+	background-image: url(../base/common/img/loading-indicator-delay.gif);
+}
+
+.gwcraft .v-loading-indicator-wait {
+	background-image: url(../base/common/img/loading-indicator-wait.gif);
+}
+
+.gwcraft.v-app input[type="text"], .gwcraft.v-app input[type="password"], .gwcraft.v-app input[type="reset"], .gwcraft.v-app select, .gwcraft.v-app textarea, .gwcraft .v-window input[type="text"], .gwcraft .v-window input[type="password"], .gwcraft .v-window input[type="reset"], .gwcraft .v-window select, .gwcraft .v-window textarea {
+	padding: 2px;
+}
+
+.gwcraft input::-ms-clear {
+	display: none;
+}
+
+.gwcraft .v-drag-element {
+	z-index: 60000;
+	position: absolute !important;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	cursor: default;
+}
+
+.gwcraft .v-clip {
+	overflow: hidden;
+}
+
+.gwcraft .v-scrollable {
+	overflow: auto;
+	font-size: 0;
+	line-height: normal;
+}
+
+.v-ios.v-webkit .gwcraft .v-scrollable {
+	-webkit-overflow-scrolling: touch;
+}
+
+.v-ios5.v-webkit .gwcraft .v-scrollable {
+	-webkit-overflow-scrolling: none;
+}
+
+.gwcraft.v-overlay-container {
+	width: 0;
+	height: 0;
+}
+
+.gwcraft .v-vertical.v-margin-top, .gwcraft .v-horizontal.v-margin-top {
+	padding-top: 12px;
+}
+
+.gwcraft .v-vertical.v-margin-right, .gwcraft .v-horizontal.v-margin-right {
+	padding-right: 12px;
+}
+
+.gwcraft .v-vertical.v-margin-bottom, .gwcraft .v-horizontal.v-margin-bottom {
+	padding-bottom: 12px;
+}
+
+.gwcraft .v-vertical.v-margin-left, .gwcraft .v-horizontal.v-margin-left {
+	padding-left: 12px;
+}
+
+.gwcraft .v-gridlayout.v-layout-margin-top {
+	padding-top: 24px;
+}
+
+.gwcraft .v-gridlayout, .gwcraft .v-verticallayout, .gwcraft .v-horizontallayout {
+	font-size: 0;
+	line-height: normal;
+}
+
+.gwcraft .v-gridlayout.v-layout-margin-bottom {
+	padding-bottom: 24px;
+}
+
+.gwcraft .v-gridlayout.v-layout-margin-left {
+	padding-left: 24px;
+}
+
+.gwcraft .v-gridlayout.v-layout-margin-right {
+	padding-right: 24px;
+}
+
+.gwcraft .v-gridlayout .v-layout-spacing-on {
+	padding-left: 12px;
+	padding-top: 12px;
+}
+
+.gwcraft .v-spacing {
+	width: 6px;
+	height: 6px;
+}
+
+.gwcraft .v-vertical, .gwcraft .v-horizontal {
+	display: inline-block;
+}
+
+.gwcraft div.v-layout.v-horizontal.v-widget {
+	white-space: nowrap;
+}
+
+.gwcraft .v-layout.v-vertical > .v-expand, .gwcraft .v-layout.v-horizontal > .v-expand {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+}
+
+.gwcraft .v-slot, .gwcraft .v-spacing {
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top;
+}
+
+.gwcraft .v-vertical > .v-slot:after {
+	display: inline-block;
+	clear: both;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.gwcraft .v-vertical > .v-slot, .gwcraft .v-vertical > .v-expand > .v-slot {
+	display: block;
+	clear: both;
+}
+
+.gwcraft .v-horizontal > .v-slot, .gwcraft .v-horizontal > .v-expand > .v-slot {
+	height: 100%;
+}
+
+.gwcraft .v-horizontal > .v-expand > .v-slot {
+	position: relative;
+}
+
+.gwcraft .v-vertical > .v-spacing, .gwcraft .v-vertical > .v-expand > .v-spacing {
+	width: 0;
+	display: block;
+	clear: both;
+}
+
+.gwcraft .v-horizontal > .v-spacing, .gwcraft .v-horizontal > .v-expand > .v-spacing {
+	height: 0;
+}
+
+.gwcraft .v-align-middle:before, .gwcraft .v-align-bottom:before, .gwcraft .v-expand > .v-align-middle:before, .gwcraft .v-expand > .v-align-bottom:before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	width: 0;
+}
+
+.gwcraft .v-align-middle, .gwcraft .v-align-bottom {
+	white-space: nowrap;
+}
+
+.gwcraft .v-align-middle > .v-widget, .gwcraft .v-align-bottom > .v-widget {
+	display: inline-block;
+}
+
+.gwcraft .v-align-middle, .gwcraft .v-align-middle > .v-widget {
+	vertical-align: middle;
+}
+
+.gwcraft .v-align-bottom, .gwcraft .v-align-bottom > .v-widget {
+	vertical-align: bottom;
+}
+
+.gwcraft .v-align-center {
+	text-align: center;
+}
+
+.gwcraft .v-align-center > .v-widget {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.gwcraft .v-align-right {
+	text-align: right;
+}
+
+.gwcraft .v-align-right > .v-widget {
+	margin-left: auto;
+}
+
+.gwcraft .v-has-caption, .gwcraft .v-has-caption > .v-caption {
+	display: inline-block;
+}
+
+.gwcraft .v-caption {
+	overflow: visible;
+	vertical-align: middle;
+}
+
+.gwcraft .v-caption-on-left, .gwcraft .v-caption-on-right {
+	white-space: nowrap;
+}
+
+.gwcraft .v-caption-on-top > .v-caption, .gwcraft .v-caption-on-bottom > .v-caption {
+	display: block;
+}
+
+.gwcraft .v-caption-on-left > .v-caption {
+	padding-right: 0.5em;
+}
+
+.gwcraft .v-caption-on-right > .v-caption {
+	vertical-align: top;
+}
+
+.gwcraft .v-caption-on-left > .v-widget, .gwcraft .v-caption-on-right > .v-widget {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.gwcraft .v-has-caption.v-has-width > .v-widget {
+	width: 100% !important;
+}
+
+.gwcraft .v-has-caption.v-has-height > .v-widget {
+	height: 100% !important;
+}
+
+.gwcraft .v-errorindicator {
+	vertical-align: middle;
+}
+
+.gwcraft .v-csslayout {
+	overflow: hidden;
+}
+
+.gwcraft div.v-csslayout {
+	display: block;
+}
+
+.gwcraft .v-csslayout-margin, .gwcraft .v-csslayout-container {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.gwcraft .v-has-width > .v-csslayout-margin, .gwcraft .v-has-width > .v-csslayout-margin > .v-csslayout-container {
+	width: 100%;
+}
+
+.gwcraft .v-has-height > .v-csslayout-margin, .gwcraft .v-has-height > .v-csslayout-margin > .v-csslayout-container {
+	height: 100%;
+}
+
+.gwcraft .v-csslayout-margin-top {
+	padding-top: 12px;
+}
+
+.gwcraft .v-csslayout-margin-bottom {
+	padding-bottom: 12px;
+}
+
+.gwcraft .v-csslayout-margin-left {
+	padding-left: 12px;
+}
+
+.gwcraft .v-csslayout-margin-right {
+	padding-right: 12px;
+}
+
+.gwcraft .v-customcomponent {
+	overflow: hidden;
+}
+
+.gwcraft .v-customlayout {
+	overflow: hidden;
+}
+
+.gwcraft .v-datefield {
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.gwcraft .v-datefield-textfield {
+	vertical-align: top;
+}
+
+.v-ie .gwcraft .v-datefield-button:after {
+	content: "\200B";
+}
+
+.gwcraft .v-datefield-button {
+	cursor: pointer;
+	vertical-align: top;
+}
+
+.gwcraft .v-has-width > input.v-datefield-textfield {
+	width: 100%;
+}
+
+.gwcraft .v-datefield-prompt .v-datefield-textfield {
+	color: #999;
+	font-style: italic;
+}
+
+.gwcraft .v-datefield .v-datefield-button-readonly {
+	display: none;
+}
+
+.gwcraft .v-datefield-calendarpanel table {
+	width: 100%;
+}
+
+.gwcraft .v-datefield-calendarpanel td {
+	padding: 0;
+	margin: 0;
+}
+
+.gwcraft .v-datefield-calendarpanel:focus {
+	outline: none;
+}
+
+.gwcraft .v-datefield-calendarpanel-header td {
+	text-align: center;
+}
+
+.gwcraft .v-datefield-calendarpanel-month {
+	text-align: center;
+	white-space: nowrap;
+}
+
+.gwcraft .v-datefield-calendarpanel-weeknumber {
+	color: #999;
+	border-right: 1px solid #ddd;
+	font-size: 11.7px;
+}
+
+.gwcraft .v-datefield-calendarpanel-day, .gwcraft .v-datefield-calendarpanel-day-today {
+	cursor: pointer;
+}
+
+.gwcraft .v-datefield-calendarpanel-day-today {
+	border: 1px solid #ddd;
+}
+
+.gwcraft .v-disabled .v-datefield-calendarpanel-day, .gwcraft .v-disabled .v-datefield-calendarpanel-day-today {
+	cursor: default;
+}
+
+.gwcraft .v-datefield-calendarpanel-day-disabled, .gwcraft .v-datefield-calendarpanel-day-outside-range {
+	cursor: default;
+	opacity: 0.5;
+}
+
+.gwcraft .v-datefield-calendarpanel-prevyear button.outside-range, .gwcraft .v-datefield-calendarpanel-nextyear button.outside-range, .gwcraft .v-datefield-calendarpanel-prevmonth button.outside-range, .gwcraft .v-datefield-calendarpanel-nextmonth button.outside-range {
+	opacity: 0.5;
+}
+
+.gwcraft .v-datefield-calendarpanel-day-selected {
+	cursor: default;
+	background: #333;
+	color: #fff;
+}
+
+.gwcraft .v-datefield-calendarpanel-day-focused {
+	outline: 1px dotted black;
+}
+
+.gwcraft .v-datefield-calendarpanel-day-offmonth {
+	color: #666;
+}
+
+.gwcraft .v-datefield-time {
+	white-space: nowrap;
+}
+
+.gwcraft .v-datefield-time .v-label {
+	display: inline;
+}
+
+.gwcraft .v-datefield-popup {
+	background: #fff;
+}
+
+.gwcraft .v-datefield-popupcalendar input.v-datefield-textfield {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.gwcraft .v-inline-datefield {
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.gwcraft .v-inline-datefield-textfield {
+	vertical-align: top;
+}
+
+.v-ie .gwcraft .v-inline-datefield-button:after {
+	content: "\200B";
+}
+
+.gwcraft .v-inline-datefield-button {
+	cursor: pointer;
+	vertical-align: top;
+}
+
+.gwcraft .v-has-width > input.v-inline-datefield-textfield {
+	width: 100%;
+}
+
+.gwcraft .v-inline-datefield-prompt .v-inline-datefield-textfield {
+	color: #999;
+	font-style: italic;
+}
+
+.gwcraft .v-inline-datefield .v-inline-datefield-button-readonly {
+	display: none;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel table {
+	width: 100%;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel td {
+	padding: 0;
+	margin: 0;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel:focus {
+	outline: none;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-header td {
+	text-align: center;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-month {
+	text-align: center;
+	white-space: nowrap;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-weeknumber {
+	color: #999;
+	border-right: 1px solid #ddd;
+	font-size: 11.7px;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-day, .gwcraft .v-inline-datefield-calendarpanel-day-today {
+	cursor: pointer;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-day-today {
+	border: 1px solid #ddd;
+}
+
+.gwcraft .v-disabled .v-inline-datefield-calendarpanel-day, .gwcraft .v-disabled .v-inline-datefield-calendarpanel-day-today {
+	cursor: default;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-day-disabled, .gwcraft .v-inline-datefield-calendarpanel-day-outside-range {
+	cursor: default;
+	opacity: 0.5;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-prevyear button.outside-range, .gwcraft .v-inline-datefield-calendarpanel-nextyear button.outside-range, .gwcraft .v-inline-datefield-calendarpanel-prevmonth button.outside-range, .gwcraft .v-inline-datefield-calendarpanel-nextmonth button.outside-range {
+	opacity: 0.5;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-day-selected {
+	cursor: default;
+	background: #333;
+	color: #fff;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-day-focused {
+	outline: 1px dotted black;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-day-offmonth {
+	color: #666;
+}
+
+.gwcraft .v-inline-datefield-time {
+	white-space: nowrap;
+}
+
+.gwcraft .v-inline-datefield-time .v-label {
+	display: inline;
+}
+
+.gwcraft .v-inline-datefield-popup {
+	background: #fff;
+}
+
+.gwcraft .v-inline-datefield-popupcalendar input.v-inline-datefield-textfield {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.gwcraft .v-ddwrapper {
+	padding: 2px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	position: relative;
+}
+
+.gwcraft [draggable=true] {
+	-khtml-user-drag: element;
+	-webkit-user-drag: element;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+
+.v-ie .gwcraft .v-ddwrapper a.drag-start {
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background-color: cyan;
+	filter: alpha(opacity=0);
+}
+
+.gwcraft .v-ddwrapper-over {
+	border: 2px solid #1d9dff;
+	background-color: #bcdcff;
+	padding: 0;
+}
+
+.gwcraft .v-ddwrapper-over {
+	background-color: rgba(169, 209, 255, 0.6);
+}
+
+.gwcraft .no-box-drag-hints .v-ddwrapper-over {
+	border: none;
+	background-color: transparent;
+	padding: 2px;
+}
+
+.gwcraft.v-app .v-ddwrapper-over-top, .gwcraft .v-window .v-ddwrapper-over-top, .gwcraft .v-popupview-popup .v-ddwrapper-over-top {
+	border: none;
+	border-top: 2px solid #1d9dff;
+	background-color: transparent;
+	padding: 2px;
+	padding-top: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.gwcraft.v-app .v-ddwrapper-over-bottom, .gwcraft .v-window .v-ddwrapper-over-bottom, .gwcraft .v-popupview-popup .v-ddwrapper-over-bottom {
+	border: none;
+	border-bottom: 2px solid #1d9dff;
+	background-color: transparent;
+	padding: 2px;
+	padding-bottom: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.gwcraft.v-app .v-ddwrapper-over-left, .gwcraft .v-window .v-ddwrapper-over-left, .gwcraft .v-popupview-popup .v-ddwrapper-over-left {
+	border: none;
+	border-left: 2px solid #1d9dff;
+	background-color: transparent;
+	padding: 2px;
+	padding-left: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.gwcraft.v-app .v-ddwrapper-over-right, .gwcraft .v-window .v-ddwrapper-over-right, .gwcraft .v-popupview-popup .v-ddwrapper-over-right {
+	border: none;
+	border-right: 2px solid #1d9dff;
+	background-color: transparent;
+	padding: 2px;
+	padding-right: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.gwcraft .v-ddwrapper, .gwcraft .v-ddwrapper-over, .gwcraft.v-app .v-ddwrapper-over-top, .gwcraft .v-window .v-ddwrapper-over-top, .gwcraft .v-popupview-popup .v-ddwrapper-over-top, .gwcraft.v-app .v-ddwrapper-over-bottom, .gwcraft .v-window .v-ddwrapper-over-bottom, .gwcraft .v-popupview-popup .v-ddwrapper-over-bottom, .gwcraft.v-app .v-ddwrapper-over-left, .gwcraft .v-window .v-ddwrapper-over-left, .gwcraft .v-popupview-popup .v-ddwrapper-over-left, .gwcraft.v-app .v-ddwrapper-over-right, .gwcraft .v-window .v-ddwrapper-over-right, .gwcraft .v-popupview-popup .v-ddwrapper-over-right {
+	border-color: rgba(0, 109, 232, 0.6);
+}
+
+.gwcraft .v-ddwrapper-over-top:before, .gwcraft .v-ddwrapper-over-bottom:after, .gwcraft .v-ddwrapper-over-left:before, .gwcraft .v-ddwrapper-over-right:before {
+	display: block;
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	margin-top: -4px;
+	margin-left: -2px;
+	background: transparent url(../base/common/img/drag-slot-dot.png) no-repeat;
+}
+
+.gwcraft .v-ddwrapper-over-bottom:after {
+	margin-top: -2px;
+}
+
+.gwcraft .v-ddwrapper-over-left:before, .gwcraft .v-ddwrapper-over-right:before {
+	background-position: 0 -6px;
+	margin-top: -2px;
+	margin-left: -4px;
+}
+
+.gwcraft .v-ddwrapper-over-right:before {
+	position: relative;
+	margin-bottom: -4px;
+	margin-right: -4px;
+	margin-left: 0;
+	width: auto;
+	background-position: 100% -6px;
+}
+
+.gwcraft .no-horizontal-drag-hints .v-ddwrapper-over-left {
+	padding-left: 2px;
+	border-left: none;
+}
+
+.gwcraft .no-horizontal-drag-hints .v-ddwrapper-over-right {
+	padding-right: 2px;
+	border-right: none;
+}
+
+.gwcraft .no-vertical-drag-hints .v-ddwrapper-over-top {
+	padding-top: 2px;
+	border-top: none;
+}
+
+.gwcraft .no-vertical-drag-hints .v-ddwrapper-over-bottom {
+	padding-bottom: 2px;
+	border-bottom: none;
+}
+
+.gwcraft .no-horizontal-drag-hints .v-ddwrapper-over-left:before, .gwcraft .no-horizontal-drag-hints .v-ddwrapper-over-right:before, .gwcraft .no-vertical-drag-hints .v-ddwrapper-over-top:before, .gwcraft .no-vertical-drag-hints .v-ddwrapper-over-bottom:after {
+	display: none;
+}
+
+.gwcraft .v-table .v-embedded-image {
+	display: inline-block;
+}
+
+.gwcraft .v-formlayout.v-has-width > table {
+	width: 100%;
+}
+
+.gwcraft .v-formlayout.v-has-height > table {
+	height: 100%;
+}
+
+.gwcraft .v-formlayout-cell .v-errorindicator {
+	display: block;
+}
+
+.gwcraft .v-formlayout-error-indicator {
+	width: 12px;
+}
+
+.gwcraft .v-formlayout-captioncell {
+	text-align: right;
+	white-space: nowrap;
+}
+
+.gwcraft .v-formlayout-errorcell, .gwcraft .v-formlayout-captioncell {
+	width: 1px;
+}
+
+.gwcraft .v-formlayout-captioncell .v-caption {
+	overflow: visible;
+}
+
+.gwcraft .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-captioncell, .gwcraft .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-contentcell, .gwcraft .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-errorcell {
+	padding-top: 6px;
+}
+
+.gwcraft .v-formlayout-spacing > tbody > .v-formlayout-firstrow > .v-formlayout-captioncell, .gwcraft .v-formlayout-spacing > tbody > .v-formlayout-firstrow > .v-formlayout-contentcell, .gwcraft .v-formlayout-spacing > tbody > .v-formlayout-firstrow > .v-formlayout-errorcell {
+	padding-top: 0;
+}
+
+.gwcraft .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-captioncell, .gwcraft .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-contentcell, .gwcraft .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-errorcell {
+	padding-top: 12px;
+}
+
+.gwcraft .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-captioncell, .gwcraft .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-contentcell, .gwcraft .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-errorcell {
+	padding-bottom: 12px;
+}
+
+.gwcraft .v-formlayout-margin-left > tbody > .v-formlayout-row > .v-formlayout-captioncell {
+	padding-left: 12px;
+}
+
+.gwcraft .v-formlayout-margin-right > tbody > .v-formlayout-row > .v-formlayout-contentcell {
+	padding-right: 12px;
+}
+
+.gwcraft .v-formlayout-captioncell .v-caption .v-required-field-indicator {
+	float: none;
+}
+
+.gwcraft .v-gridlayout {
+	position: relative;
+}
+
+.gwcraft .v-gridlayout-slot {
+	position: absolute;
+}
+
+.gwcraft .v-gridlayout-margin-top {
+	padding-top: 12px;
+}
+
+.gwcraft .v-gridlayout-margin-bottom {
+	padding-bottom: 12px;
+}
+
+.gwcraft .v-gridlayout-margin-left {
+	padding-left: 12px;
+}
+
+.gwcraft .v-gridlayout-margin-right {
+	padding-right: 12px;
+}
+
+.gwcraft .v-gridlayout-spacing-on {
+	padding-left: 6px;
+	padding-top: 6px;
+	overflow: hidden;
+}
+
+.gwcraft .v-gridlayout-spacing, .gwcraft .v-gridlayout-spacing-off {
+	padding-left: 0;
+	padding-top: 0;
+}
+
+.gwcraft .v-gridlayout-spacing-off {
+	overflow: hidden;
+}
+
+.gwcraft .v-label {
+	overflow: hidden;
+}
+
+.gwcraft .v-label.v-has-width {
+	white-space: normal;
+}
+
+.gwcraft .v-link {
+	white-space: nowrap;
+}
+
+.gwcraft .v-link a {
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+.gwcraft .v-link span {
+	text-decoration: underline;
+	vertical-align: middle;
+}
+
+.gwcraft .v-disabled a {
+	cursor: default;
+}
+
+.gwcraft .v-link img {
+	vertical-align: middle;
+	border: none;
+}
+
+.gwcraft .v-loginform {
+	height: 140px;
+	width: 200px;
+}
+
+.gwcraft .v-app-loginpage .v-button, .gwcraft .v-app-loginpage .v-button {
+	float: left;
+}
+
+.gwcraft .v-menubar {
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.gwcraft .v-menubar .v-menubar-menuitem {
+	cursor: default;
+	vertical-align: middle;
+	white-space: nowrap;
+	display: inline;
+	display: inline-block;
+	zoom: 1;
+}
+
+.gwcraft .v-menubar .v-menubar-menuitem-caption .v-icon {
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.gwcraft .v-menubar-submenu {
+	background: #fff;
+}
+
+.gwcraft .v-menubar-menuitem-selected {
+	background: #333;
+	color: #fff;
+}
+
+.gwcraft .v-menubar-submenu .v-menubar-menuitem {
+	cursor: default;
+	display: block;
+	position: relative;
+	padding-right: 1.5em;
+}
+
+.gwcraft .v-menubar-submenu .v-menubar-menuitem-caption {
+	display: block;
+}
+
+.gwcraft .v-menubar-submenu .v-menubar-menuitem *, .gwcraft .v-menubar-submenu .v-menubar-menuitem-caption * {
+	white-space: nowrap;
+}
+
+.gwcraft .v-menubar-submenu-indicator {
+	display: none;
+	font-family: arial, helvetica, sans-serif;
+}
+
+.gwcraft .v-menubar-submenu .v-menubar-submenu-indicator {
+	display: block;
+	position: absolute;
+	right: 0;
+	width: 1em;
+	height: 1em;
+	font-size: 11.7px;
+}
+
+.gwcraft .v-menubar-menuitem-disabled, .gwcraft .v-menubar span.v-menubar-menuitem-disabled:hover, .gwcraft .v-menubar span.v-menubar-menuitem-disabled:focus, .gwcraft .v-menubar span.v-menubar-menuitem-disabled:active {
+	color: #999;
+}
+
+.gwcraft .v-menubar-more-menuitem {
+	font-family: arial, helvetica, sans-serif;
+}
+
+.gwcraft .v-menubar-separator {
+	overflow: hidden;
+}
+
+.gwcraft .v-menubar-separator span {
+	display: block;
+	text-indent: -9999px;
+	font-size: 1px;
+	line-height: 1px;
+	border-top: 1px solid #ddd;
+	margin: 3px 0 2px;
+	overflow: hidden;
+}
+
+.gwcraft .v-menubar .v-icon, .gwcraft .v-menubar-submenu .v-icon {
+	margin-right: 3px;
+}
+
+.gwcraft .v-menubar:focus, .gwcraft .v-menubar-popup:focus, .gwcraft .v-menubar-popup .popupContent:focus, .gwcraft .v-menubar-popup .popupContent .v-menubar-submenu:focus {
+	outline: none;
+}
+
+.gwcraft .v-menubar-submenu-check-column .v-menubar-menuitem {
+	padding-left: 6px;
+}
+
+.gwcraft .v-menubar-submenu-check-column .v-menubar-menuitem-caption {
+	padding-left: 18px;
+}
+
+.gwcraft .v-menubar-submenu .v-menubar-menuitem-checked .v-menubar-menuitem-caption {
+	background: transparent url(../base/menubar/img/check.gif) no-repeat left;
+}
+
+.gwcraft .v-Notification {
+	background: #999;
+	color: #fff;
+	cursor: pointer;
+	overflow: hidden;
+	padding: 1em;
+	max-width: 85%;
+}
+
+.gwcraft .v-Notification h1, .gwcraft .v-Notification p, .gwcraft .v-Notification-error h1, .gwcraft .v-Notification-error p, .gwcraft .v-Notification-warning h1, .gwcraft .v-Notification-warning p {
+	display: inline;
+	margin: 0 0.5em 0 0;
+}
+
+.gwcraft .v-Notification-warning {
+	background: orange;
+}
+
+.gwcraft .v-Notification-error {
+	background: red;
+}
+
+.gwcraft .v-Notification-tray h1 {
+	display: block;
+}
+
+.gwcraft .v-Notification-tray p {
+	display: block;
+}
+
+.gwcraft .v-Notification-system {
+	background-color: red;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+.gwcraft .v-Notification-system h1 {
+	display: block;
+	margin: 0;
+}
+
+.gwcraft .v-orderedlayout, .gwcraft .v-horizontallayout, .gwcraft .v-verticallayout {
+	position: relative;
+}
+
+.gwcraft .v-orderedlayout-margin-top, .gwcraft .v-horizontallayout-margin-top, .gwcraft .v-verticallayout-margin-top {
+	padding-top: 12px;
+}
+
+.gwcraft .v-orderedlayout-margin-right, .gwcraft .v-horizontallayout-margin-right, .gwcraft .v-verticallayout-margin-right {
+	padding-right: 12px;
+}
+
+.gwcraft .v-orderedlayout-margin-bottom, .gwcraft .v-horizontallayout-margin-bottom, .gwcraft .v-verticallayout-margin-bottom {
+	padding-bottom: 12px;
+}
+
+.gwcraft .v-orderedlayout-margin-left, .gwcraft .v-horizontallayout-margin-left, .gwcraft .v-verticallayout-margin-left {
+	padding-left: 12px;
+}
+
+.gwcraft .v-orderedlayout-spacing-on, .gwcraft .v-horizontallayout-spacing-on, .gwcraft .v-verticallayout-spacing-on {
+	padding-top: 6px;
+	padding-left: 6px;
+}
+
+.gwcraft .v-orderedlayout-spacing-off, .gwcraft .v-horizontallayout-spacing-off, .gwcraft .v-verticallayout-spacing-off {
+	padding-top: 0;
+	padding-left: 0;
+}
+
+.gwcraft .v-horizontallayout-slot, .gwcraft .v-verticallayout-slot {
+	position: absolute;
+}
+
+.gwcraft .v-panel, .gwcraft .v-panel-caption, .gwcraft .v-panel-content, .gwcraft .v-panel-deco, .gwcraft .v-panel-light, .gwcraft .v-panel-caption-light, .gwcraft .v-panel-content-light, .gwcraft .v-panel-deco-light {
+	outline: none;
+	text-align: left;
+}
+
+.gwcraft .v-panel-caption .v-errorindicator {
+	float: none;
+	display: inline;
+}
+
+.gwcraft .v-panel-caption .v-icon {
+	display: inline;
+	vertical-align: middle;
+}
+
+.gwcraft .v-panel-caption span {
+	vertical-align: middle;
+}
+
+.gwcraft .v-panel-caption {
+	white-space: nowrap;
+	overflow: hidden;
+	font-weight: bold;
+}
+
+.gwcraft .v-panel-nocaption {
+	overflow: hidden;
+}
+
+.gwcraft .v-panel-content {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.gwcraft .v-panel.v-has-width > .v-panel-content {
+	width: 100%;
+}
+
+.gwcraft .v-panel.v-has-height > .v-panel-content {
+	height: 100%;
+}
+
+.gwcraft .v-popupview {
+	cursor: pointer;
+	text-decoration: underline;
+	white-space: nowrap;
+}
+
+.gwcraft .v-popupview-popup {
+	overflow: auto;
+}
+
+.gwcraft .v-popupview-loading {
+	width: 30px;
+	height: 30px;
+	background: transparent url(../base/common/img/ajax-loader-medium.gif) no-repeat 50%;
+}
+
+.gwcraft .v-progressbar {
+	width: 150px;
+}
+
+.gwcraft .v-progressbar-wrapper {
+	height: 7px;
+	border: 1px solid #ddd;
+}
+
+.gwcraft .v-progressbar-indicator {
+	height: 7px;
+	background: #ddd;
+}
+
+.gwcraft div.v-progressbar-indeterminate {
+	height: 20px;
+	width: 20px;
+	background: #fff url(../base/common/img/ajax-loader-medium.gif) no-repeat 50%;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.gwcraft .v-progressbar-indeterminate .v-progressbar-wrapper, .gwcraft .v-progressbar-indeterminate .v-progressbar-indicator, .gwcraft .v-progressbar-indeterminate-disabled .v-progressbar-wrapper, .gwcraft .v-progressbar-indeterminate-disabled .v-progressbar-indicator {
+	display: none;
+}
+
+.gwcraft div.v-progressbar-indeterminate-disabled {
+	height: 20px;
+	width: 20px;
+	background: transparent;
+}
+
+.gwcraft .v-progressindicator {
+	width: 150px;
+}
+
+.gwcraft .v-progressindicator-wrapper {
+	height: 7px;
+	border: 1px solid #ddd;
+}
+
+.gwcraft .v-progressindicator-indicator {
+	height: 7px;
+	background: #ddd;
+}
+
+.gwcraft div.v-progressindicator-indeterminate {
+	height: 20px;
+	width: 20px;
+	background: #fff url(../base/common/img/ajax-loader-medium.gif) no-repeat 50%;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.gwcraft .v-progressindicator-indeterminate .v-progressindicator-wrapper, .gwcraft .v-progressindicator-indeterminate .v-progressindicator-indicator, .gwcraft .v-progressindicator-indeterminate-disabled .v-progressindicator-wrapper, .gwcraft .v-progressindicator-indeterminate-disabled .v-progressindicator-indicator {
+	display: none;
+}
+
+.gwcraft div.v-progressindicator-indeterminate-disabled {
+	height: 20px;
+	width: 20px;
+	background: transparent;
+}
+
+.gwcraft .v-select {
+	text-align: left;
+}
+
+.gwcraft .v-select-optiongroup .v-select-option {
+	display: block;
+	white-space: nowrap;
+}
+
+.gwcraft .v-select-optiongroup .v-icon {
+	vertical-align: middle;
+	white-space: nowrap;
+	margin: 0 2px;
+}
+
+.v-ie .gwcraft .v-select-optiongroup .v-select-option {
+	zoom: 1;
+}
+
+.gwcraft .v-select-select {
+	display: block;
+}
+
+.gwcraft .v-select-twincol {
+	white-space: nowrap;
+}
+
+.gwcraft .v-select-twincol-options {
+	float: left;
+}
+
+.gwcraft .v-select-twincol-caption-left {
+	float: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.gwcraft .v-select-twincol-selections {
+	font-weight: bold;
+}
+
+.gwcraft .v-select-twincol-caption-right {
+	float: right;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.gwcraft .v-select-twincol-buttons {
+	float: left;
+	text-align: center;
+}
+
+.gwcraft .v-select-twincol-buttons .v-select-twincol-deco {
+	clear: both;
+}
+
+.gwcraft .v-select-twincol .v-textfield {
+	display: block;
+	float: left;
+	clear: left;
+}
+
+.gwcraft .v-select-twincol .v-button {
+	float: left;
+}
+
+.gwcraft .v-select-twincol-buttons .v-button {
+	float: none;
+}
+
+.gwcraft .v-filterselect {
+	white-space: nowrap;
+	text-align: left;
+	display: inline-block;
+	padding-right: 1em;
+}
+
+.gwcraft .v-filterselect .v-icon {
+	float: left;
+}
+
+.gwcraft.v-app .v-filterselect-input, .gwcraft .v-window .v-filterselect-input, .gwcraft .v-popupview-popup .v-filterselect-input {
+	margin: 0;
+	float: left;
+	-webkit-border-radius: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.gwcraft .v-filterselect-prompt .v-filterselect-input {
+	color: #999;
+	font-style: italic;
+}
+
+.gwcraft .v-filterselect-button {
+	display: inline-block;
+	cursor: pointer;
+	width: 1em;
+	margin-right: -1em;
+	height: 1em;
+	background: transparent url(../base/common/img/sprites.png) no-repeat -5px -8px;
+}
+
+.gwcraft .v-filterselect.v-readonly .v-filterselect-button {
+	display: none;
+}
+
+.gwcraft .v-filterselect.v-readonly, .gwcraft .v-filterselect.v-readonly .v-filterselect-input {
+	background: transparent;
+}
+
+.gwcraft .v-filterselect-suggestpopup {
+	background: #fff;
+	border: 1px solid #eee;
+}
+
+.gwcraft .v-filterselect-suggestmenu table {
+	border-collapse: collapse;
+	border: none;
+	vertical-align: top;
+}
+
+.gwcraft .v-filterselect-suggestmenu .gwt-MenuItem {
+	white-space: nowrap;
+}
+
+.gwcraft .v-filterselect-suggestmenu .gwt-MenuItem .v-icon {
+	margin-right: 3px;
+	vertical-align: middle;
+}
+
+.gwcraft .v-filterselect-suggestmenu .gwt-MenuItem span {
+	vertical-align: middle;
+}
+
+.gwcraft .v-filterselect-suggestmenu .gwt-MenuItem-selected {
+	background: #333;
+	color: #fff;
+}
+
+.gwcraft .v-filterselect-nextpage, .gwcraft .v-filterselect-nextpage-off, .gwcraft .v-filterselect-prevpage-off, .gwcraft .v-filterselect-prevpage {
+	width: 100%;
+	background: #aaa;
+	text-align: center;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.gwcraft .v-filterselect-nextpage-off, .gwcraft .v-filterselect-prevpage-off {
+	color: #666;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	cursor: default;
+}
+
+.gwcraft .v-filterselect-nextpage-off span, .gwcraft .v-filterselect-prevpage-off span {
+	cursor: default;
+}
+
+.gwcraft .v-filterselect-status {
+	white-space: nowrap;
+	text-align: center;
+}
+
+.gwcraft .v-filterselect-no-input .v-filterselect-input {
+	cursor: default;
+}
+
+.gwcraft .v-shadow {
+	position: absolute;
+}
+
+.gwcraft .v-shadow .top-left {
+	position: absolute;
+	overflow: hidden;
+	top: -3px;
+	left: -5px;
+	width: 10px;
+	height: 10px;
+	background: transparent url(../base/shadow/img/top-left.png);
+}
+
+.gwcraft .v-shadow .top {
+	position: absolute;
+	overflow: hidden;
+	top: -3px;
+	left: 5px;
+	height: 10px;
+	right: 5px;
+	background: transparent url(../base/shadow/img/top.png);
+}
+
+.gwcraft .v-shadow .top-right {
+	position: absolute;
+	overflow: hidden;
+	top: -3px;
+	right: -5px;
+	width: 10px;
+	height: 10px;
+	background: transparent url(../base/shadow/img/top-right.png);
+}
+
+.gwcraft .v-shadow .left {
+	position: absolute;
+	overflow: hidden;
+	top: 7px;
+	left: -5px;
+	width: 10px;
+	bottom: 3px;
+	background: transparent url(../base/shadow/img/left.png);
+}
+
+.gwcraft .v-shadow .center {
+	position: absolute;
+	overflow: hidden;
+	top: 7px;
+	left: 5px;
+	bottom: 3px;
+	right: 5px;
+	background: transparent url(../base/shadow/img/center.png);
+}
+
+.gwcraft .v-shadow .right {
+	position: absolute;
+	overflow: hidden;
+	top: 7px;
+	right: -5px;
+	width: 10px;
+	bottom: 3px;
+	background: transparent url(../base/shadow/img/right.png);
+}
+
+.gwcraft .v-shadow .bottom-left {
+	position: absolute;
+	overflow: hidden;
+	bottom: -7px;
+	left: -5px;
+	width: 10px;
+	height: 10px;
+	background: transparent url(../base/shadow/img/bottom-left.png);
+}
+
+.gwcraft .v-shadow .bottom {
+	position: absolute;
+	overflow: hidden;
+	bottom: -7px;
+	left: 5px;
+	right: 5px;
+	height: 10px;
+	background: transparent url(../base/shadow/img/bottom.png);
+}
+
+.gwcraft .v-shadow .bottom-right {
+	position: absolute;
+	overflow: hidden;
+	bottom: -7px;
+	right: -5px;
+	width: 10px;
+	height: 10px;
+	background: transparent url(../base/shadow/img/bottom-right.png);
+}
+
+.gwcraft .v-slider {
+	margin: 5px 0;
+}
+
+.gwcraft .v-slider-base {
+	height: 2px;
+	border-top: 1px solid #ddd;
+	background: #eee;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #eee;
+}
+
+.gwcraft .v-slider-handle {
+	background: #aaa;
+	width: 12px;
+	height: 12px;
+	margin-top: -5px;
+	font-size: 0;
+}
+
+.gwcraft .v-slider-vertical {
+	width: 2px;
+	height: auto;
+	margin: 0 5px;
+	border: none;
+	border-left: 1px solid #cccfd0;
+	border-right: 1px solid #cccfd0;
+}
+
+.gwcraft .v-slider-vertical .v-slider-base {
+	width: 2px;
+	border-bottom: 1px solid #eee;
+	border-right: none;
+}
+
+.gwcraft .v-slider-vertical .v-slider-handle {
+	width: 12px;
+	height: 12px;
+	font-size: 0;
+	margin-left: -5px;
+}
+
+.gwcraft .v-slider-feedback {
+	padding: 2px 5px;
+	background: #444;
+	color: #fff;
+	font-size: 11px;
+	line-height: 13px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	margin: -2px 0 0 2px;
+	text-shadow: 0 1px 0 #000;
+}
+
+.gwcraft .v-splitpanel-horizontal, .gwcraft .v-splitpanel-vertical {
+	overflow: hidden;
+}
+
+.gwcraft .v-splitpanel-hsplitter {
+	width: 6px;
+}
+
+.gwcraft .v-splitpanel-hsplitter div {
+	width: 6px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background: #ddd;
+	cursor: e-resize;
+	cursor: col-resize;
+}
+
+.gwcraft .v-disabled .v-splitpanel-hsplitter div {
+	cursor: default;
+}
+
+.gwcraft .v-splitpanel-vsplitter {
+	height: 6px;
+}
+
+.gwcraft .v-splitpanel-vsplitter div {
+	height: 6px;
+	background: #ddd;
+	cursor: s-resize;
+	cursor: row-resize;
+}
+
+.gwcraft .v-disabled .v-splitpanel-vsplitter div {
+	cursor: default;
+}
+
+.gwcraft .v-table {
+	overflow: hidden;
+	text-align: left;
+}
+
+.gwcraft .v-table-header-wrap {
+	overflow: hidden;
+	border: 1px solid #aaa;
+	border-bottom: none;
+	background: #efefef;
+}
+
+.gwcraft .v-table-header table, .gwcraft .v-table-table {
+	border-spacing: 0;
+	border-collapse: separate;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.gwcraft .v-table-table {
+	font-size: 12px;
+}
+
+.gwcraft .v-table-header td {
+	padding: 0;
+}
+
+.gwcraft .v-table-header-cell, .gwcraft .v-table-header-cell-asc, .gwcraft .v-table-header-cell-desc {
+	cursor: pointer;
+}
+
+.gwcraft .v-table.v-disabled .v-table-header-cell, .gwcraft .v-table.v-disabled .v-table-header-cell-asc, .gwcraft .v-table.v-disabled .v-table-header-cell-desc {
+	cursor: default;
+}
+
+.gwcraft .v-table-footer-wrap {
+	overflow: hidden;
+	border: 1px solid #aaa;
+	border-top: none;
+	background: #efefef;
+}
+
+.gwcraft .v-table-footer table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.gwcraft .v-table-footer td {
+	padding: 0;
+	border-right: 1px solid #aaa;
+}
+
+.gwcraft .v-table-footer-cell {
+	cursor: pointer;
+}
+
+.gwcraft .v-table-footer-container {
+	float: right;
+	padding-right: 6px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.gwcraft .v-table-resizer {
+	display: block;
+	height: 1.2em;
+	float: right;
+	background: #aaa;
+	cursor: e-resize;
+	cursor: col-resize;
+	width: 1px;
+	overflow: hidden;
+}
+
+.gwcraft .v-table.v-disabled .v-table-resizer {
+	cursor: default;
+}
+
+.gwcraft .v-table-caption-container {
+	overflow: hidden;
+	white-space: nowrap;
+	margin-left: 6px;
+}
+
+.gwcraft .v-table-caption-container-align-right {
+	float: right;
+}
+
+.gwcraft .v-table-sort-indicator {
+	width: 0px;
+	height: 1.2em;
+	float: right;
+}
+
+.gwcraft .v-table-header-cell-asc .v-table-sort-indicator, .gwcraft .v-table-header-cell-desc .v-table-sort-indicator {
+	width: 16px;
+	height: 1.2em;
+	float: right;
+}
+
+.gwcraft .v-table-header-cell-asc .v-table-sort-indicator {
+	background: transparent url(../base/common/img/sprites.png) no-repeat right 6px;
+}
+
+.gwcraft .v-table-header-cell-desc .v-table-sort-indicator {
+	background: transparent url(../base/common/img/sprites.png) no-repeat right -10px;
+}
+
+.gwcraft .v-table-caption-container-align-center {
+	text-align: center;
+}
+
+.gwcraft .v-table-caption-container-align-right {
+	text-align: right;
+}
+
+.gwcraft .v-table-caption-container .v-icon, .gwcraft .v-table-header-drag .v-icon {
+	vertical-align: middle;
+}
+
+.gwcraft .v-table-body {
+	border: 1px solid #aaa;
+}
+
+.gwcraft .v-table-row-spacer {
+	height: 10px;
+	overflow: hidden;
+}
+
+.gwcraft .v-table-row, .gwcraft .v-table-row-odd {
+	background: #fff;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+.gwcraft .v-table-generated-row {
+	background: #efefef;
+}
+
+.gwcraft .v-table-body-noselection .v-table-row, .gwcraft .v-table-body-noselection .v-table-row-odd {
+	cursor: default;
+}
+
+.gwcraft .v-table .v-selected {
+	background: #999;
+	color: #fff;
+}
+
+.gwcraft .v-table-cell-content {
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 0 6px;
+	border-right: 1px solid #aaa;
+}
+
+.gwcraft .v-table-cell-wrapper {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.gwcraft .v-table-cell-wrapper-align-center {
+	text-align: center;
+}
+
+.gwcraft .v-table-cell-wrapper-align-right {
+	text-align: right;
+}
+
+.gwcraft .v-table-column-selector {
+	float: right;
+	background: transparent url(../base/common/img/sprites.png) no-repeat 4px -37px;
+	margin: -1.2em 0 0 0;
+	height: 1.2em;
+	width: 14px;
+	position: relative;
+	cursor: pointer;
+}
+
+.gwcraft .v-table.v-disabled .v-table-column-selector {
+	cursor: default;
+}
+
+.gwcraft .v-table-focus-slot-left {
+	border-left: 2px solid #999;
+	float: none;
+	margin-bottom: -1.2em;
+	width: auto;
+	background: transparent;
+	border-right: 1px solid #aaa;
+}
+
+.gwcraft .v-table-focus-slot-right {
+	border-right: 2px solid #999;
+	margin-left: -2px;
+}
+
+.gwcraft .v-table-header-drag {
+	position: absolute;
+	background: #efefef;
+	border: 1px solid #eee;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	margin-top: 20px;
+	z-index: 30000;
+}
+
+.gwcraft .v-table-header-drag .v-icon {
+	vertical-align: middle;
+}
+
+.gwcraft .v-table-scrollposition {
+	width: 160px;
+	background: #eee;
+	border: 1px solid #aaa;
+}
+
+.gwcraft .v-table-scrollposition span {
+	display: block;
+	text-align: center;
+}
+
+.gwcraft .v-table-body:focus, .gwcraft .v-table-body-wrapper:focus {
+	outline: none;
+}
+
+.gwcraft .v-table-body.focused {
+	border-color: #388ddd;
+}
+
+.gwcraft .v-table-focus .v-table-cell-content {
+	border-top: 1px dotted #0066bd;
+	border-bottom: 1px dotted #0066bd;
+}
+
+.gwcraft .v-table-focus .v-table-cell-wrapper {
+	margin-top: -1px;
+	margin-bottom: -1px;
+}
+
+.gwcraft .v-off {
+	color: #ddd;
+}
+
+.gwcraft .v-table-drag .v-table-body {
+	border-color: #1d9dff;
+}
+
+.gwcraft .v-table-row-drag-middle .v-table-cell-content {
+	background-color: #bcdcff;
+}
+
+.gwcraft .v-table-row-drag-top .v-table-cell-content {
+	border-top: 2px solid #1d9dff;
+}
+
+.gwcraft .v-table-row-drag-top .v-table-cell-wrapper {
+	margin-top: -2px;
+}
+
+.gwcraft .v-table-row-drag-bottom .v-table-cell-content {
+	border-bottom: 2px solid #1d9dff;
+}
+
+.gwcraft .v-table-row-drag-bottom .v-table-cell-wrapper {
+	margin-bottom: -2px;
+}
+
+.gwcraft .v-table-row-drag-top .v-table-cell-content:first-child:before, .gwcraft .v-table-row-drag-bottom .v-table-cell-content:first-child:after {
+	display: block;
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	margin-top: -4px;
+	margin-left: -6px;
+	background: transparent url(../base/common/img/drag-slot-dot.png);
+}
+
+.v-ff .gwcraft .v-table-row-drag-bottom .v-table-cell-content:first-child:after, .v-ie .gwcraft .v-table-row-drag-bottom .v-table-cell-content:first-child:after {
+	margin-top: -2px;
+}
+
+.gwcraft .v-tabsheet, .gwcraft .v-tabsheet-content, .gwcraft .v-tabsheet-deco {
+	outline: none;
+	text-align: left;
+}
+
+.gwcraft .v-tabsheet-tabs {
+	empty-cells: hide;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.gwcraft .v-tabsheet-tabitemcell:focus {
+	outline: none;
+}
+
+.gwcraft .v-tabsheet-tabitemcell, .gwcraft .v-tabsheet-spacertd {
+	margin: 0;
+	padding: 0;
+	vertical-align: bottom;
+}
+
+.gwcraft .v-tabsheet-spacertd {
+	width: 100%;
+}
+
+.gwcraft .v-tabsheet-spacertd div {
+	border-left: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	height: 1em;
+	padding: 0.2em 0;
+}
+
+.gwcraft .v-tabsheet-hidetabs > .v-tabsheet-tabcontainer {
+	display: none;
+}
+
+.gwcraft .v-tabsheet-scroller {
+	white-space: nowrap;
+	text-align: right;
+	margin-top: -1em;
+}
+
+.gwcraft .v-disabled .v-tabsheet-scroller {
+	display: none;
+}
+
+.gwcraft .v-tabsheet-scrollerPrev, .gwcraft .v-tabsheet-scrollerNext, .gwcraft .v-tabsheet-scrollerPrev-disabled, .gwcraft .v-tabsheet-scrollerNext-disabled {
+	border: 1px solid #aaa;
+	background: #fff;
+	width: 12px;
+	height: 1em;
+	cursor: pointer;
+}
+
+.gwcraft .v-tabsheet-scrollerPrev-disabled, .gwcraft .v-tabsheet-scrollerNext-disabled {
+	opacity: 0.5;
+	cursor: default;
+}
+
+.gwcraft .v-tabsheet-tabs .v-caption, .gwcraft .v-tabsheet-tabs .v-caption span {
+	white-space: nowrap;
+}
+
+.gwcraft .v-tabsheet-caption-close {
+	display: inline;
+	display: inline-block;
+	zoom: 1;
+	width: 16px;
+	height: 16px;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+	vertical-align: middle;
+	user-select: none;
+	-khtml-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.gwcraft .v-tabsheet .v-disabled .v-tabsheet-caption-close {
+	cursor: default;
+	visibility: hidden;
+}
+
+.gwcraft .v-tabsheet-tabitem:hover .v-tabsheet-caption-close {
+	visibility: visible;
+}
+
+.gwcraft .v-tabsheet-tabitem {
+	border: 1px solid #aaa;
+	border-right: none;
+	cursor: pointer;
+	padding: 0.2em 0.5em;
+}
+
+.gwcraft .v-tabsheet-tabitem .v-caption {
+	cursor: inherit;
+}
+
+.gwcraft .v-tabsheet.v-disabled .v-tabsheet-tabitem, .gwcraft .v-tabsheet-tabitemcell-disabled .v-tabsheet-tabitem {
+	cursor: default;
+}
+
+.gwcraft .v-tabsheet-tabitem-selected {
+	cursor: default;
+	border-bottom-color: #fff;
+}
+
+.gwcraft .v-tabsheet-tabitem-selected .v-caption {
+	cursor: default;
+}
+
+.gwcraft .v-tabsheet-content {
+	border: 1px solid #aaa;
+	border-top: none;
+	border-bottom: none;
+	position: relative;
+}
+
+.gwcraft .v-tabsheet-deco {
+	height: 1px;
+	background: #aaa;
+	overflow: hidden;
+}
+
+.gwcraft .v-tabsheet-hidetabs .v-tabsheet-content {
+	border: none;
+}
+
+.gwcraft .v-tabsheet-hidetabs .v-tabsheet-deco {
+	height: 0;
+}
+
+.gwcraft .v-textfield {
+	text-align: left;
+}
+
+.gwcraft .v-textarea {
+	resize: none;
+	white-space: pre-wrap;
+}
+
+.gwcraft input.v-textfield-prompt, .gwcraft textarea.v-textarea-prompt {
+	color: #999;
+	font-style: italic;
+}
+
+.gwcraft input.v-textfield-readonly, .gwcraft textarea.v-textarea-readonly {
+	background: transparent;
+	border: none;
+	resize: none;
+}
+
+.gwcraft input.v-disabled, .gwcraft textarea.v-disabled {
+	resize: none;
+}
+
+.gwcraft input.v-textfield-readonly:focus, .gwcraft textarea.v-textarea-readonly:focus {
+	outline: none;
+}
+
+.v-sa .gwcraft input:focus, .v-sa .gwcraft textarea:focus {
+	outline-width: medium;
+}
+
+.gwcraft .v-richtextarea {
+	border: 1px solid #aaa;
+	overflow: hidden;
+}
+
+.gwcraft .v-richtextarea .gwt-RichTextArea {
+	background: #fff;
+	border: none;
+}
+
+.gwcraft .v-richtextarea .gwt-HTML {
+	height: 100%;
+	font-size: 12px;
+}
+
+.gwcraft .v-richtextarea .gwt-RichTextToolbar {
+	white-space: nowrap;
+	background: #959595 url(../base/textfield/img/richtext-toolbar-bg.png) repeat-x 0 -42px;
+	border-bottom: 1px solid #7d7d7d;
+	padding: 2px;
+	overflow: hidden;
+}
+
+.gwcraft .v-richtextarea .gwt-RichTextToolbar-top {
+	padding-bottom: 1px;
+	overflow: hidden;
+	white-space: normal;
+}
+
+.gwcraft .v-richtextarea .gwt-RichTextToolbar-bottom {
+	clear: left;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.gwcraft .v-richtextarea .gwt-RichTextToolbar .gwt-ToggleButton, .gwcraft .v-richtextarea .gwt-RichTextToolbar .gwt-PushButton {
+	float: left;
+	display: inline;
+	width: 22px;
+	height: 21px;
+	overflow: hidden;
+	background: transparent url(../base/textfield/img/richtext-toolbar-bg.png) repeat-x;
+	cursor: pointer;
+	margin-right: 2px;
+	text-align: center;
+}
+
+.gwcraft .v-richtextarea .gwt-RichTextToolbar .gwt-ToggleButton-down, .gwcraft .v-richtextarea .gwt-RichTextToolbar .gwt-PushButton-down, .gwcraft .v-richtextarea .gwt-RichTextToolbar .gwt-ToggleButton-down-hovering, .gwcraft .v-richtextarea .gwt-RichTextToolbar .gwt-PushButton-down-hovering {
+	background-position: 0 -21px;
+}
+
+.gwcraft .v-richtextarea .gwt-RichTextToolbar .gwt-ListBox {
+	width: 24.5%;
+	margin-right: 2px;
+}
+
+.gwcraft .v-richtextarea-readonly {
+	border: none;
+}
+
+.gwcraft .v-tree {
+	text-align: left;
+	padding: 1px 0;
+	outline: none;
+}
+
+.gwcraft .v-tree-node {
+	background: transparent url(../base/common/img/sprites.png) no-repeat 5px -37px;
+	padding: 1px 0;
+}
+
+.gwcraft .v-tree-node-caption:focus {
+	outline: none;
+}
+
+.gwcraft div.v-tree-node-leaf {
+	background: transparent;
+}
+
+.gwcraft .v-tree-node-expanded {
+	background: transparent url(../base/common/img/sprites.png) no-repeat -5px -10px;
+}
+
+.gwcraft .v-tree-node-caption {
+	margin-left: 1em;
+}
+
+.gwcraft .v-tree-node span {
+	cursor: pointer;
+}
+
+.gwcraft .v-tree-node-caption div {
+	white-space: nowrap;
+}
+
+.gwcraft .v-tree-node-caption span, .gwcraft .v-tree-node-caption .v-icon {
+	vertical-align: middle;
+}
+
+.gwcraft .v-tree-node-selected span {
+	background: #999;
+	color: #fff;
+}
+
+.gwcraft .v-tree-node-children {
+	padding-left: 1em;
+}
+
+.gwcraft .v-tree .v-tree-node-drag-top {
+	border-top: 2px solid #1d9dff;
+	margin-top: -1px;
+	padding-top: 0;
+}
+
+.gwcraft .v-tree .v-tree-node-drag-bottom {
+	border-bottom: 2px solid #1d9dff;
+	margin-bottom: -1px;
+	padding-bottom: 0;
+}
+
+.gwcraft .v-tree .v-tree-node-drag-top:before, .gwcraft .v-tree .v-tree-node-drag-bottom:after, .gwcraft .v-tree .v-tree-node-caption-drag-center:after {
+	display: block;
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	margin-top: -4px;
+	background: transparent url(../base/common/img/drag-slot-dot.png);
+}
+
+.gwcraft .v-tree .v-tree-node-drag-bottom:after {
+	margin-top: -2px;
+}
+
+.gwcraft .v-tree .v-tree-node-caption-drag-center:after {
+	margin-left: 14px;
+}
+
+.v-ff .gwcraft .v-tree .v-tree-node-caption-drag-center:after, .v-ie .gwcraft .v-tree .v-tree-node-caption-drag-center:after {
+	margin-top: -2px;
+}
+
+.gwcraft .v-tree .v-tree-node-drag-top {
+	background-position: 5px -38px;
+}
+
+.gwcraft .v-tree .v-tree-node-drag-top.v-tree-node-expanded {
+	background-position: -5px -11px;
+}
+
+.gwcraft .v-tree .v-tree-node-caption-drag-center div {
+	border: 2px solid #1d9dff;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	margin: -2px 2px -2px -2px;
+	background-color: #bcdcff;
+}
+
+.gwcraft .v-tree .v-tree-node-caption-drag-center div {
+	background-color: rgba(169, 209, 255, 0.6);
+}
+
+.gwcraft .v-tree .v-tree-node-caption-drag-center div, .gwcraft .v-tree .v-tree-node-drag-top, .gwcraft .v-tree .v-tree-node-drag-bottom {
+	border-color: rgba(0, 109, 232, 0.6);
+}
+
+.gwcraft .v-tree-connectors .v-tree-node-caption {
+	padding-top: 1px;
+}
+
+.gwcraft .v-tree-connectors .v-tree-node {
+	background: transparent url(../base/tree/img/connector-expand.png) no-repeat 2px -52px;
+}
+
+.gwcraft .v-tree-connectors .v-tree-node-expanded {
+	background: transparent url(../base/tree/img/connector-collapse.png) no-repeat 2px -52px;
+}
+
+.gwcraft .v-tree-connectors .v-tree-node-last {
+	background: transparent url(../base/tree/img/connector-expand-last.png) no-repeat 2px -52px;
+}
+
+.gwcraft .v-tree-connectors .v-tree-node-expanded.v-tree-node-last {
+	background: transparent url(../base/tree/img/connector-collapse-last.png) no-repeat 2px -52px;
+}
+
+.gwcraft .v-tree-connectors .v-tree-node-leaf {
+	background: transparent url(../base/tree/img/connector-leaf.png) repeat-y 2px 50%;
+}
+
+.gwcraft .v-tree-connectors .v-tree-node-leaf-last {
+	background: transparent url(../base/tree/img/connector-leaf-last.png) repeat-y 2px 50%;
+}
+
+.gwcraft .v-tree-connectors .v-tree-node-children {
+	background: transparent url(../base/tree/img/connector.png) repeat-y 2px 0;
+}
+
+.gwcraft .v-tree-connectors .v-tree-node-children-last {
+	background: transparent;
+}
+
+.gwcraft .v-tree-connectors .v-tree-node-drag-top, .gwcraft .v-tree-connectors .v-tree-node-expanded.v-tree-node-drag-top {
+	background-position: 2px -53px;
+}
+
+.gwcraft .v-tree-connectors .v-tree-node-drag-top.v-tree-node-leaf {
+	background-position: 2px 50%;
+}
+
+.gwcraft .v-treetable-treespacer {
+	display: inline-block;
+	background: transparent;
+	height: 10px;
+	width: 18px;
+	position: absolute;
+	left: 0;
+	top: 5px;
+}
+
+.gwcraft .v-treetable-node-closed {
+	background: url(../base/treetable/img/arrow-right.png) right top no-repeat;
+}
+
+.gwcraft .v-treetable-node-open {
+	background: url(../base/treetable/img/arrow-down.png) right top no-repeat;
+}
+
+.gwcraft .v-treetable .v-checkbox {
+	display: inline-block;
+	padding-bottom: 4px;
+}
+
+.gwcraft .v-treetable .v-table-row .v-table-cell-content, .gwcraft .v-treetable .v-table-row-odd .v-table-cell-content {
+	position: relative;
+	z-index: 10;
+}
+
+.gwcraft .v-treetable .v-table-cell-wrapper {
+	position: relative;
+}
+
+.gwcraft .v-treetable .v-table-body .v-table-table .v-table-row-animating {
+	zoom: 1;
+	z-index: 1;
+}
+
+.gwcraft .v-treetable .v-table-body .v-table-table .v-table-row-animating, .gwcraft .v-treetable .v-table-body .v-table-table .v-table-row-animating .v-table-cell-content {
+	background: transparent;
+}
+
+.gwcraft .v-treetable-animation-clone {
+	border-spacing: 0;
+	zoom: 1;
+}
+
+.gwcraft div.v-treetable-animation-clone-wrapper {
+	position: absolute;
+	z-index: 2;
+	background-color: #fff;
+}
+
+.gwcraft div.v-treetable-animation-clone-wrapper table.v-treetable-animation-clone {
+	background-color: #fff;
+}
+
+.gwcraft div table.v-treetable-animation-clone tr.v-table-row, .gwcraft div table.v-treetable-animation-clone tr.v-table-row-odd, .gwcraft div table.v-treetable-animation-clone tr.v-table-row td.v-table-cell-content, .gwcraft div table.v-treetable-animation-clone tr.v-table-row-odd td.v-table-cell-content {
+	visibility: visible;
+}
+
+.gwcraft .v-upload {
+	white-space: nowrap;
+}
+
+.gwcraft .v-upload-immediate {
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+}
+
+.v-ff .gwcraft .v-upload-immediate, .v-op .gwcraft .v-upload-immediate {
+	display: inline-block;
+}
+
+.gwcraft .v-upload-immediate input {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	z-index: 2;
+	position: absolute;
+	right: 0;
+	height: 21px;
+	text-align: right;
+	border: none;
+	background: transparent;
+}
+
+.gwcraft .v-upload-immediate button {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	text-align: left;
+}
+
+.gwcraft .v-window {
+	background: #fff;
+}
+
+.gwcraft .v-window-contents {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.gwcraft .v-window.v-has-width > div.popupContent, .gwcraft .v-window.v-has-width .v-window-wrap, .gwcraft .v-window.v-has-width .v-window-contents, .gwcraft .v-window.v-has-width .v-window-contents > div {
+	width: 100%;
+}
+
+.gwcraft .v-window.v-has-height > div.popupContent, .gwcraft .v-window.v-has-height .v-window-wrap, .gwcraft .v-window.v-has-height .v-window-contents, .gwcraft .v-window.v-has-height .v-window-contents > div {
+	height: 100%;
+}
+
+.gwcraft .v-window-outerheader {
+	padding: 0.3em 1em;
+	height: 1.6em;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.gwcraft .v-window-outerheader, .gwcraft .v-window-draggingCurtain {
+	cursor: move;
+}
+
+.gwcraft .v-window-header {
+	font-weight: bold;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ie-user-select: none;
+	user-select: none;
+}
+
+.gwcraft div.v-window-header {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	overflow: hidden;
+	padding: 0;
+}
+
+.gwcraft .v-window-header .v-icon {
+	vertical-align: middle;
+}
+
+.gwcraft .v-window-contents > div {
+	outline: none;
+}
+
+.gwcraft .v-window-footer {
+	overflow: hidden;
+	zoom: 1;
+	height: 10px;
+	position: relative;
+	cursor: move;
+}
+
+.gwcraft .v-window-resizebox {
+	width: 10px;
+	height: 10px;
+	background: #ddd;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+}
+
+.gwcraft .v-window-resizebox, .gwcraft .v-window-resizingCurtain {
+	cursor: se-resize;
+}
+
+.gwcraft .v-window div.v-window-footer-noresize {
+	height: 0;
+}
+
+.gwcraft .v-window-resizebox-disabled, .gwcraft .v-window-restorebox-disabled, .gwcraft .v-window-maximizebox-disabled {
+	cursor: default;
+	display: none;
+}
+
+.gwcraft .v-window-closebox, .gwcraft .v-window-restorebox, .gwcraft .v-window-maximizebox {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 1em;
+	height: 1em;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.gwcraft .v-window-maximizebox, .gwcraft .v-window-restorebox {
+	right: 1.1em;
+}
+
+.gwcraft .v-window-closebox {
+	background: red;
+}
+
+.gwcraft .v-window-maximizebox {
+	background: blue;
+}
+
+.gwcraft .v-window-restorebox {
+	background: yellow;
+}
+
+.gwcraft .v-window-modalitycurtain {
+	top: 0;
+	left: 0;
+	background: #999;
+	opacity: 0.5;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	filter: alpha(opacity=50);
+}
+
+.gwcraft .v-shadow-window {
+	position: absolute;
+}
+
+.gwcraft .v-shadow-window .top-left {
+	position: absolute;
+	overflow: hidden;
+	top: -10px;
+	left: -15px;
+	width: 28px;
+	height: 28px;
+	background: transparent url(../base/window/img/shadow/top-left.png);
+}
+
+.gwcraft .v-shadow-window .top {
+	position: absolute;
+	overflow: hidden;
+	top: -10px;
+	left: 13px;
+	height: 28px;
+	right: 13px;
+	background: transparent url(../base/window/img/shadow/top.png);
+}
+
+.gwcraft .v-shadow-window .top-right {
+	position: absolute;
+	overflow: hidden;
+	top: -10px;
+	right: -15px;
+	width: 28px;
+	height: 28px;
+	background: transparent url(../base/window/img/shadow/top-right.png);
+}
+
+.gwcraft .v-shadow-window .left {
+	position: absolute;
+	overflow: hidden;
+	top: 18px;
+	left: -15px;
+	width: 28px;
+	bottom: 10px;
+	background: transparent url(../base/window/img/shadow/left.png);
+}
+
+.gwcraft .v-shadow-window .center {
+	position: absolute;
+	overflow: hidden;
+	top: 18px;
+	left: 13px;
+	bottom: 10px;
+	right: 13px;
+	background: transparent url(../base/window/img/shadow/center.png);
+}
+
+.gwcraft .v-shadow-window .right {
+	position: absolute;
+	overflow: hidden;
+	top: 18px;
+	right: -15px;
+	width: 28px;
+	bottom: 10px;
+	background: transparent url(../base/window/img/shadow/right.png);
+}
+
+.gwcraft .v-shadow-window .bottom-left {
+	position: absolute;
+	overflow: hidden;
+	bottom: -18px;
+	left: -15px;
+	width: 28px;
+	height: 28px;
+	background: transparent url(../base/window/img/shadow/bottom-left.png);
+}
+
+.gwcraft .v-shadow-window .bottom {
+	position: absolute;
+	overflow: hidden;
+	bottom: -18px;
+	left: 13px;
+	right: 13px;
+	height: 28px;
+	background: transparent url(../base/window/img/shadow/bottom.png);
+}
+
+.gwcraft .v-shadow-window .bottom-right {
+	position: absolute;
+	overflow: hidden;
+	bottom: -18px;
+	right: -15px;
+	width: 28px;
+	height: 28px;
+	background: transparent url(../base/window/img/shadow/bottom-right.png);
+}
+
+.gwcraft .v-accordion {
+	border: 1px solid #bebebe;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.gwcraft .v-accordion-item {
+	background-color: #fff;
+}
+
+.gwcraft .v-accordion-item-caption {
+	height: 19px;
+	background: #e4e4e4 repeat-x;
+	background-image: url(../reindeer/tabsheet/img/tabbar-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	font-size: 11px;
+	line-height: normal;
+	border-top: 1px solid #bebebe;
+	text-shadow: #fff 0 1px 0;
+}
+
+.gwcraft .v-accordion-item-caption .v-caption {
+	font-size: 11px;
+}
+
+.gwcraft .v-accordion-item-caption .v-captiontext {
+	vertical-align: baseline;
+}
+
+.gwcraft .v-accordion-item-first .v-accordion-item-caption {
+	border-top: none;
+}
+
+.gwcraft .v-accordion-item-caption .v-caption {
+	padding: 3px 0 0 10px;
+}
+
+.gwcraft .v-accordion-item-open .v-accordion-item-caption {
+	background-image: url(../reindeer/tabsheet/img/tabbar-bg-sel.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	border-bottom: 1px solid #bbb;
+}
+
+.gwcraft .v-accordion-item-caption .v-icon {
+	margin-top: -3px;
+}
+
+.v-ie .gwcraft .v-accordion-item-caption .v-icon, .v-ff .gwcraft .v-accordion-item-caption .v-icon {
+	margin-top: -6px;
+}
+
+.gwcraft .v-accordion-borderless {
+	border: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+.gwcraft .v-button:focus {
+	background-image: url(../reindeer/button/img/left-focus.png);/** sprite-ref: buttons */
+	outline: none;
+}
+
+.gwcraft .v-button:focus .v-button-wrap {
+	background-image: url(../reindeer/button/img/right-focus.png);/** sprite-ref: buttons; sprite-alignment: right */
+	outline: none;
+}
+
+.gwcraft .v-button:active, .gwcraft .v-button.v-pressed {
+	background-image: url(../reindeer/button/img/left-pressed.png);/** sprite-ref: buttons */
+	outline: none;
+}
+
+.gwcraft .v-button:active .v-button-wrap, .gwcraft .v-button.v-pressed .v-button-wrap {
+	background-image: url(../reindeer/button/img/right-pressed.png);/** sprite-ref: buttons; sprite-alignment: right */
+	outline: none;
+}
+
+.gwcraft .v-button, .gwcraft .v-disabled.v-button {
+	height: 26px;
+	padding: 0 0 0 6px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-image: url(../reindeer/button/img/left.png);/** sprite-ref: buttons */
+	border: none;
+	cursor: default;
+}
+
+.gwcraft .v-button-wrap, .gwcraft .v-disabled.v-button .v-button-wrap {
+	display: block;
+	height: 22px;
+	padding: 4px 15px 0 9px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-image: url(../reindeer/button/img/right.png);/** sprite-ref: buttons; sprite-alignment: right */
+}
+
+.gwcraft .v-button-caption {
+	color: #222;
+	text-shadow: #fff 0 1px 0;
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 16px;
+}
+
+.gwcraft .black .v-button:focus {
+	background-image: url(../reindeer/button/img/black/left-focus.png);/** sprite-ref: black-buttons */
+}
+
+.gwcraft .black .v-button:focus .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/right-focus.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.gwcraft .black .v-button:active, .gwcraft .black .v-button.v-pressed {
+	background-image: url(../reindeer/button/img/black/left-pressed.png);/** sprite-ref: black-buttons */
+}
+
+.gwcraft .black .v-button:active .v-button-wrap, .gwcraft .black .v-button.v-pressed .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/right-pressed.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.gwcraft .black .v-button, .gwcraft .black .v-disabled.v-button {
+	background-image: url(../reindeer/button/img/black/left.png);/** sprite-ref: black-buttons */
+}
+
+.gwcraft .black .v-button-wrap, .gwcraft .black .v-disabled.v-button .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/right.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.gwcraft .black .v-button-caption {
+	color: #c9ccce;
+	text-shadow: #121314 0 -1px 0;
+}
+
+.gwcraft .v-button-primary:focus {
+	background-image: url(../reindeer/button/img/primary-left-focus.png);/** sprite-ref: buttons */
+}
+
+.gwcraft .v-button-primary:focus .v-button-wrap {
+	background-image: url(../reindeer/button/img/primary-right-focus.png);/** sprite-ref: buttons; sprite-alignment: right */
+}
+
+.gwcraft .v-button-primary:active, .gwcraft .v-button-primary.v-pressed {
+	background-image: url(../reindeer/button/img/primary-left-pressed.png);/** sprite-ref: buttons */
+}
+
+.gwcraft .v-button-primary:active .v-button-wrap, .gwcraft .v-button-primary.v-pressed .v-button-wrap {
+	background-image: url(../reindeer/button/img/primary-right-pressed.png);/** sprite-ref: buttons; sprite-alignment: right */
+}
+
+.gwcraft .v-button-primary, .gwcraft .v-disabled.v-button-primary {
+	background-image: url(../reindeer/button/img/primary-left.png);/** sprite-ref: buttons */
+}
+
+.gwcraft .v-button-primary .v-button-wrap, .gwcraft .v-disabled.v-button-primary .v-button-wrap {
+	background-image: url(../reindeer/button/img/primary-right.png);/** sprite-ref: buttons; sprite-alignment: right */
+}
+
+.gwcraft .black .v-button-primary:focus {
+	background-image: url(../reindeer/button/img/black/primary-left-focus.png);/** sprite-ref: black-buttons */
+}
+
+.gwcraft .black .v-button-primary:focus .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/primary-right-focus.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+	color: #eaf4fb;
+}
+
+.gwcraft .black .v-button-primary:active, .gwcraft .black .v-button-primary.v-pressed {
+	background-image: url(../reindeer/button/img/black/primary-left-pressed.png);/** sprite-ref: black-buttons */
+}
+
+.gwcraft .black .v-button-primary:active .v-button-wrap, .gwcraft .black .v-button-primary.v-pressed .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/primary-right-pressed.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.gwcraft .black .v-button-primary, .gwcraft .black .v-disabled.v-button-primary {
+	background-image: url(../reindeer/button/img/black/primary-left.png);/** sprite-ref: black-buttons */
+}
+
+.gwcraft .black .v-button-primary .v-button-wrap, .gwcraft .black .v-disabled.v-button-primary .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/primary-right.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.gwcraft .v-button-small:focus {
+	background-image: url(../reindeer/button/img/small-left-focus.png);/** sprite-ref: buttons */
+}
+
+.gwcraft .v-button-small:focus .v-button-wrap {
+	background-image: url(../reindeer/button/img/small-right-focus.png);/** sprite-ref: buttons; sprite-alignment: right */
+}
+
+.gwcraft .v-button-small:active, .gwcraft .v-button-small.v-pressed {
+	background-image: url(../reindeer/button/img/small-left-pressed.png);/** sprite-ref: buttons */
+}
+
+.gwcraft .v-button-small:active .v-button-wrap, .gwcraft .v-button-small.v-pressed .v-button-wrap {
+	background-image: url(../reindeer/button/img/small-right-pressed.png);/** sprite-ref: buttons; sprite-alignment: right */
+}
+
+.gwcraft .v-button-small, .gwcraft .v-disabled.v-button-small {
+	background-image: url(../reindeer/button/img/small-left.png);/** sprite-ref: buttons */
+	height: 20px;
+}
+
+.gwcraft .v-button-small .v-button-wrap, .gwcraft .v-disabled.v-button-small .v-button-wrap {
+	background-image: url(../reindeer/button/img/small-right.png);/** sprite-ref: buttons; sprite-alignment: right */
+	height: 19px;
+	padding: 1px 14px 0 8px;
+}
+
+.gwcraft .v-button-small .v-button-caption {
+	font-weight: normal;
+}
+
+.gwcraft .black .v-button-small:focus {
+	background-image: url(../reindeer/button/img/black/small-left-focus.png);/** sprite-ref: black-buttons */
+}
+
+.gwcraft .black .v-button-small:focus .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/small-right-focus.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.gwcraft .black .v-button-small:active, .gwcraft .black .v-button-small.v-pressed {
+	background-image: url(../reindeer/button/img/black/small-left-pressed.png);/** sprite-ref: black-buttons */
+}
+
+.gwcraft .black .v-button-small:active .v-button-wrap, .gwcraft .black .v-button-small.v-pressed .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/small-right-pressed.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.gwcraft .black .v-button-small, .gwcraft .black .v-disabled.v-button-small {
+	background-image: url(../reindeer/button/img/black/small-left.png);/** sprite-ref: black-buttons */
+}
+
+.gwcraft .black .v-button-small .v-button-wrap, .gwcraft .black .v-disabled.v-button-small .v-button-wrap {
+	background-image: url(../reindeer/button/img/black/small-right.png);/** sprite-ref: black-buttons; sprite-alignment: right */
+}
+
+.gwcraft .v-button.v-button-link, .gwcraft .v-button.v-button-link:focus, .gwcraft .v-button.v-button-link:active, .gwcraft .v-button-link.v-pressed, .gwcraft .v-disabled.v-button.v-button-link, .gwcraft .v-button.v-button-link .v-button-wrap, .gwcraft .v-button.v-button-link:focus .v-button-wrap, .gwcraft .v-button.v-button-link:active .v-button-wrap, .gwcraft .v-button-link.v-pressed .v-button-wrap, .gwcraft .v-disabled.v-button.v-button-link .v-button-wrap {
+	background: transparent;
+	height: auto;
+	padding: 0;
+	cursor: pointer;
+	line-height: inherit;
+}
+
+.gwcraft .v-button.v-button-link.v-disabled, .gwcraft .v-button.v-button-link.v-disabled .v-button-wrap {
+	cursor: default;
+}
+
+.gwcraft .v-button-link .v-button-caption {
+	line-height: inherit;
+	font-weight: normal;
+	color: #1b699f;
+	font-size: 12px;
+	text-shadow: none;
+}
+
+.gwcraft .v-button-link:focus .v-button-caption {
+	outline: 1px dotted #1b699f;
+}
+
+.gwcraft .v-nativebutton-link .v-nativebutton-caption {
+	line-height: inherit;
+	font-weight: normal;
+	color: #1b699f;
+	font-size: 12px;
+	text-shadow: none;
+}
+
+.gwcraft .v-nativebutton-link:focus .v-nativebutton-caption {
+	outline: 1px dotted #1b699f;
+}
+
+.v-ie8 .gwcraft .v-nativebutton-link {
+	padding: 0;
+	text-align: left;
+}
+
+.gwcraft .v-colorpicker-popup {
+	width: 246px;
+}
+
+.gwcraft .v-colorpicker-popup .v-tabsheet .v-colorpicker-grid {
+	height: 284px;
+}
+
+.gwcraft .v-colorpicker-popup .v-filterselect {
+	padding-right: 25px;
+}
+
+.gwcraft.v-app {
+	background: #f5f5f5;
+}
+
+.gwcraft.v-app, .gwcraft .v-window, .gwcraft .v-popupview-popup, .gwcraft .v-tooltip, .gwcraft.v-app input, .gwcraft.v-app select, .gwcraft.v-app button, .gwcraft.v-app textarea, .gwcraft .v-window input, .gwcraft .v-window select, .gwcraft .v-window button, .gwcraft .v-window textarea, .gwcraft .v-popupview-popup input, .gwcraft .v-popupview-popup select, .gwcraft .v-popupview-popup button, .gwcraft .v-popupview-popup textarea, .gwcraft .v-filterselect-suggestpopup, .gwcraft .v-datefield-popup, .gwcraft .v-contextmenu, .gwcraft .v-Notification, .gwcraft .v-menubar-submenu, .gwcraft .v-drag-element, .gwcraft .v-table-header-drag {
+	font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif;
+	font-size: 12px;
+	line-height: normal;
+	color: #222;
+}
+
+.gwcraft.v-app .black, .gwcraft .v-window-black, .gwcraft .v-window .black, .gwcraft .v-popupview-popup .black {
+	color: #c9ccce;
+	text-shadow: #000 0 0 1px;
+}
+
+.gwcraft .v-errorindicator {
+	width: 13px;
+	height: 15px;
+	background: transparent url(../reindeer/common/icons/error.png) no-repeat 50%;
+}
+
+.gwcraft .v-tooltip {
+	background-color: #fffcdd;
+	border: 1px solid #b8b295;
+	font-size: 11px;
+	color: #222;
+}
+
+.gwcraft .v-tooltip-text {
+	padding: 2px 4px;
+}
+
+.gwcraft .v-tooltip .v-errormessage {
+	padding: 3px 4px;
+	background: #ffecc6;
+	color: #b74100;
+	border: none;
+	border-top: 1px solid #fff3dc;
+}
+
+.gwcraft .v-tooltip .v-errormessage h2 {
+	font-size: 16px;
+	font-weight: normal;
+	color: #ab3101;
+	margin: 2px 0 8px 0;
+}
+
+.gwcraft .v-tooltip .v-errormessage h3 {
+	font-size: 13px;
+	font-weight: bold;
+	margin: 1px 0 4px 0;
+}
+
+.gwcraft .v-contextmenu {
+	background: #f8f8f9;
+	border: none;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	overflow: hidden;
+	padding: 4px 0;
+}
+
+.gwcraft .v-contextmenu .gwt-MenuItem {
+	padding: 1px 12px 1px 8px;
+	height: 16px;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	cursor: default;
+}
+
+.gwcraft .v-contextmenu .gwt-MenuItem .v-icon {
+	margin-right: 3px;
+}
+
+.gwcraft .v-contextmenu .gwt-MenuItem-selected {
+	background: transparent repeat-x;
+	background-image: url(../reindeer/common/img/sel-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	color: #fff;
+	text-shadow: #3b5a7a 0 1px 0;
+}
+
+.v-ie .gwcraft .v-contextmenu .gwt-MenuItem-selected {
+	background-image: url(../reindeer/common/img/sel-bg.png);
+	background-position: left top;
+}
+
+.gwcraft .v-contextmenu .gwt-MenuItem-selected div {
+	background: transparent;
+	cursor: default;
+}
+
+.portlet .gwcraft.v-app {
+	background: transparent;
+}
+
+.portlet .gwcraft.v-app .v-radiobutton input, .gwcraft .portlet .v-window .v-radiobutton input, .gwcraft .portlet .v-popupview-popup .v-radiobutton input, .portlet .gwcraft.v-app .v-checkbox input, .gwcraft .portlet .v-window .v-checkbox input, .gwcraft .portlet .v-popupview-popup .v-checkbox input {
+	margin-right: 3px;
+	background: transparent;
+}
+
+.gwcraft .v-datefield {
+	overflow: hidden;
+}
+
+.gwcraft input.v-textfield-readonly:focus {
+	background-color: transparent;
+}
+
+.gwcraft .v-datefield-calendarpanel {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	height: auto !important;
+}
+
+.gwcraft .v-datefield-year .v-datefield-calendarpanel-prevmonth, .gwcraft .v-datefield-year .v-datefield-calendarpanel-nextmonth {
+	display: none;
+}
+
+.gwcraft .v-datefield-calendarpanel td {
+	vertical-align: top;
+}
+
+.gwcraft td.v-datefield-calendarpanel-month {
+	height: 23px;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/datefield/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.gwcraft span.v-datefield-calendarpanel-month {
+	display: block;
+	text-align: center;
+	height: 16px;
+	padding: 3px 10px 0 10px;
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #d8d8d8;
+	text-shadow: #fff 0 1px 0;
+	overflow: hidden;
+	margin-top: 1px;
+}
+
+.gwcraft .v-datefield-year .v-datefield-calendarpanel-month {
+	width: 35px;
+}
+
+.gwcraft .v-datefield-month .v-datefield-calendarpanel-month, .gwcraft .v-datefield-day .v-datefield-calendarpanel-month, .gwcraft .v-datefield-full .v-datefield-calendarpanel-month {
+	width: 124px;
+}
+
+.gwcraft .v-datefield-month, .gwcraft .v-datefield-day, .gwcraft .v-datefield-full {
+	min-width: 240px;
+}
+
+.gwcraft .v-datefield-popupcalendar {
+	min-width: 0;
+	padding-right: 24px;
+}
+
+.gwcraft .v-datefield-year .v-datefield-calendarpanel {
+	width: 100px;
+}
+
+.gwcraft td.v-datefield-calendarpanel-prevyear {
+	text-align: right;
+}
+
+.gwcraft td.v-datefield-calendarpanel-nextyear {
+	text-align: left;
+}
+
+.gwcraft .v-datefield-calendarpanel-prevyear button, .gwcraft .v-datefield-calendarpanel-nextyear button, .gwcraft .v-datefield-calendarpanel-prevmonth button, .gwcraft .v-datefield-calendarpanel-nextmonth button {
+	width: 24px;
+	height: 23px;
+	border: none;
+	background: transparent;
+	background-repeat: no-repeat;
+	background-image: url(../reindeer/datefield/img/year-prev.png);/** sprite-ref: verticals */
+	overflow: hidden;
+	padding: 0;
+	text-indent: -9999px;
+	outline: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.v-ie .gwcraft .v-datefield-calendarpanel-prevyear button, .v-ie .gwcraft .v-datefield-calendarpanel-nextyear button, .v-ie .gwcraft .v-datefield-calendarpanel-prevmonth button, .v-ie .gwcraft .v-datefield-calendarpanel-nextmonth button {
+	text-indent: 0;
+	font-size: 1px;
+}
+
+.gwcraft .v-datefield-calendarpanel-nextyear button {
+	background-position: left top;
+	background-image: url(../reindeer/datefield/img/year-next.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-datefield-calendarpanel-prevyear button:active, .v-ie .gwcraft .v-datefield-calendarpanel-prevyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-prev-pressed.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-datefield-calendarpanel-nextyear button:active, .v-ie .gwcraft .v-datefield-calendarpanel-nextyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-next-pressed.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-datefield-calendarpanel-prevmonth, .gwcraft .v-datefield-calendarpanel-nextmonth {
+	width: 24px;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/datefield/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.gwcraft .v-datefield-calendarpanel-prevmonth button, .gwcraft .v-datefield-calendarpanel-nextmonth button {
+	width: 100%;
+	height: 21px;
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #d8d8d8;
+	background: transparent;
+	background-position: center top;
+	background-image: url(../reindeer/datefield/img/month-prev.png);/** sprite-ref: verticals; sprite-alignment: center */
+	min-width: 24px;
+	margin-top: 1px;
+}
+
+.v-ie .gwcraft .v-datefield-calendarpanel-prevmonth button, .v-ie .gwcraft .v-datefield-calendarpanel-nextmonth button {
+	border: none;
+}
+
+.gwcraft .v-datefield-calendarpanel-nextmonth button {
+	background-image: url(../reindeer/datefield/img/month-next.png);/** sprite-ref: verticals; sprite-alignment: center */
+}
+
+.gwcraft .v-datefield-calendarpanel-prevmonth button:active, .v-ie .gwcraft .v-datefield-calendarpanel-prevmonth button.v-pressed {
+	background-position: center top;
+	background-image: url(../reindeer/datefield/img/month-prev-pressed.png);/** sprite-ref: verticals; sprite-alignment: center */
+}
+
+.gwcraft .v-datefield-calendarpanel-nextmonth button:active, .v-ie .gwcraft .v-datefield-calendarpanel-nextmonth button.v-pressed {
+	background-position: center top;
+	background-image: url(../reindeer/datefield/img/month-next-pressed.png);/** sprite-ref: verticals; sprite-alignment: center */
+}
+
+.gwcraft .v-datefield-calendarpanel-body, .gwcraft .v-datefield-calendarpanel-time {
+	text-align: center;
+	vertical-align: top;
+}
+
+.gwcraft .v-datefield-calendarpanel-body table {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	width: 220px;
+	margin: 0 auto;
+}
+
+.gwcraft .v-datefield-calendarpanel-weekdays td {
+	width: 14.2%;
+	overflow: hidden;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/datefield/img/weekday-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat; sprite-margin-bottom: 3px */
+	font-size: 10px;
+	line-height: normal;
+	text-transform: uppercase;
+	color: #eaeff1;
+	text-shadow: #3b4651 0 -1px 0;
+	vertical-align: top;
+	padding: 0;
+}
+
+.gwcraft .v-datefield-calendarpanel-weeknumbers td {
+	width: 12.4%;
+}
+
+.gwcraft .v-datefield-calendarpanel-weekdays strong {
+	display: block;
+	text-align: right;
+	padding: 1px 5px 0 0;
+	height: 14px;
+	border-top: 1px solid #596775;
+}
+
+.gwcraft .v-datefield-calendarpanel-weekdays .v-first {
+	background-repeat: no-repeat;
+	background-image: url(../reindeer/datefield/img/weekday-first.png);/** sprite-ref: verticals; sprite-margin-bottom: 3px */
+}
+
+.gwcraft .v-datefield-calendarpanel-weekdays .v-last {
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-image: url(../reindeer/datefield/img/weekday-last.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-bottom: 3px */
+}
+
+.v-ie .gwcraft .v-datefield-calendarpanel-weekdays td {
+	background: url(../reindeer/datefield/img/weekday-bg.png) repeat-x;
+	background-position: left top;
+}
+
+.v-ie .gwcraft .v-datefield-calendarpanel .v-first {
+	background: url(../reindeer/datefield/img/weekday-first.png) no-repeat;
+}
+
+.v-ie .gwcraft .v-datefield-calendarpanel .v-last {
+	background: url(../reindeer/datefield/img/weekday-last.png) no-repeat right top;
+}
+
+.gwcraft .v-datefield-calendarpanel-body td {
+	text-align: right;
+	height: 19px;
+}
+
+.gwcraft .v-datefield-calendarpanel-day, .gwcraft .v-datefield-calendarpanel-weeknumber, .gwcraft .v-datefield-calendarpanel-day-today {
+	padding: 2px 5px 2px 0;
+	display: block;
+	margin: 1px 0 0 5px;
+}
+
+.gwcraft .v-datefield-calendarpanel-weeknumber {
+	margin: 0;
+	padding-top: 4px;
+	padding-bottom: 3px;
+	font-size: 10.8px;
+}
+
+.gwcraft .v-datefield-calendarpanel-day-today {
+	color: #4095d1;
+	border: none;
+}
+
+.gwcraft .v-datefield-calendarpanel-day-selected {
+	background: #507ba3;
+	color: #fff;
+	text-shadow: #3b5b79 0 1px 0;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.gwcraft .v-datefield-calendarpanel-time select {
+	padding: 0;
+	font-size: 11px;
+	margin: 2px;
+}
+
+.gwcraft .v-datefield-popup {
+	background: #f8f8f9;
+	padding: 8px 4px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+.v-sa .gwcraft .v-datefield-popup, .v-op .gwcraft .v-datefield-popup {
+	background: rgba(255, 255, 255, 0.95);
+}
+
+.gwcraft .v-datefield-year > .v-datefield-textfield {
+	width: 4.5em;
+}
+
+.gwcraft .v-datefield-month > .v-datefield-textfield {
+	width: 5.5em;
+}
+
+.gwcraft .v-datefield-day > .v-datefield-textfield {
+	width: 6em;
+}
+
+.gwcraft .v-datefield-full > .v-datefield-textfield {
+	width: 12.5em;
+}
+
+.gwcraft .v-datefield-popupcalendar input.v-datefield-textfield {
+	border-right-width: 0;
+	-moz-border-radius-topright: 0;
+	-moz-border-radius-bottomright: 0;
+	-webkit-border-top-right-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	height: 23px;
+}
+
+.gwcraft .v-datefield.v-readonly input.v-datefield-textfield {
+	border-right-width: 1px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.gwcraft .v-datefield-prompt .v-datefield-textfield {
+	color: #999;
+	font-style: normal;
+}
+
+.gwcraft .v-datefield-popupcalendar .v-datefield-button {
+	width: 24px;
+	margin-right: -24px;
+	height: 23px;
+	background: transparent;
+	border: none;
+	padding: 0;
+	background-image: url(../reindeer/datefield/img/popup-btn.png);/** sprite-ref: verticals */
+	cursor: pointer;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.gwcraft .v-datefield-popupcalendar .v-datefield-button:active {
+	background-image: url(../reindeer/datefield/img/popup-btn-pressed.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .black .v-datefield-popupcalendar .v-datefield-button {
+	background-image: url(../reindeer/datefield/img/popup-btn-black.png);/** sprite-ref: black-verticals */
+}
+
+.gwcraft .black .v-datefield-popupcalendar .v-datefield-button:active {
+	background-image: url(../reindeer/datefield/img/popup-btn-black-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.gwcraft .black td.v-datefield-calendarpanel-month {
+	background-image: url(../reindeer/datefield/img/header-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
+	height: 21px;
+}
+
+.gwcraft .black span.v-datefield-calendarpanel-month {
+	border-left: 1px solid #333638;
+	border-right: 1px solid #232527;
+	color: #c9ccce;
+	text-shadow: #000 0 -1px 0;
+	padding: 4px 10px 1px 10px;
+	margin-top: 0;
+}
+
+.gwcraft .black .v-datefield-calendarpanel-prevyear button, .gwcraft .black .v-datefield-calendarpanel-nextyear button, .gwcraft .black .v-datefield-calendarpanel-prevmonth button, .gwcraft .black .v-datefield-calendarpanel-nextmonth button {
+	background-image: url(../reindeer/datefield/img/year-prev-black.png);/** sprite-ref: black-verticals */
+	height: 21px;
+}
+
+.gwcraft .black .v-datefield-calendarpanel-nextyear button {
+	background-image: url(../reindeer/datefield/img/year-next-black.png);/** sprite-ref: black-verticals */
+}
+
+.gwcraft .black .v-datefield-calendarpanel-prevyear button:active, .v-ie .gwcraft .black .v-datefield-calendarpanel-prevyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-prev-black-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.gwcraft .black .v-datefield-calendarpanel-nextyear button:active, .v-ie .gwcraft .black .v-datefield-calendarpanel-nextyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-next-black-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.gwcraft .black .v-datefield-calendarpanel-prevmonth, .gwcraft .black .v-datefield-calendarpanel-nextmonth {
+	background-image: url(../reindeer/datefield/img/header-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
+}
+
+.gwcraft .black .v-datefield-calendarpanel-prevmonth button, .gwcraft .black .v-datefield-calendarpanel-nextmonth button {
+	border-left: 1px solid #333638;
+	border-right: 1px solid #232527;
+	background-image: url(../reindeer/datefield/img/month-prev-black.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+	margin-top: 0;
+}
+
+.gwcraft .black .v-datefield-calendarpanel-nextmonth button {
+	background-image: url(../reindeer/datefield/img/month-next-black.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+}
+
+.gwcraft .black .v-datefield-calendarpanel-prevmonth button:active, .v-ie .gwcraft .black .v-datefield-calendarpanel-prevmonth button.v-pressed {
+	background-image: url(../reindeer/datefield/img/month-prev-black-pressed.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+}
+
+.gwcraft .black .v-datefield-calendarpanel-nextmonth button:active, .v-ie .gwcraft .black .v-datefield-calendarpanel-nextmonth button.v-pressed {
+	background-image: url(../reindeer/datefield/img/month-next-black-pressed.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+}
+
+.v-ie .gwcraft .black .v-datefield-calendarpanel-prevmonth button, .v-ie .gwcraft .black .v-datefield-calendarpanel-nextmonth button {
+	border: none;
+}
+
+.gwcraft .black .v-datefield-calendarpanel-weekdays td {
+	background-image: url(../reindeer/datefield/img/weekday-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat; sprite-margin-bottom: 3px */
+	color: #0a0b0b;
+	text-shadow: #5a5c5e 0 1px 0;
+}
+
+.gwcraft .black .v-datefield-calendarpanel-weekdays strong {
+	border-top-color: #1b1c1d;
+}
+
+.gwcraft .black .v-datefield-calendarpanel .v-first {
+	background-image: url(../reindeer/datefield/img/weekday-first-black.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 3px */
+}
+
+.gwcraft .black .v-datefield-calendarpanel .v-last {
+	background-image: url(../reindeer/datefield/img/weekday-last-black.png);/** sprite-ref: black-verticals; sprite-alignment: right */
+}
+
+.gwcraft .black .v-datefield-prompt .v-datefield-textfield {
+	color: #5f6366;
+}
+
+.gwcraft .v-inline-datefield {
+	overflow: hidden;
+}
+
+.gwcraft input.v-textfield-readonly:focus {
+	background-color: transparent;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	height: auto !important;
+}
+
+.gwcraft .v-inline-datefield-year .v-inline-datefield-calendarpanel-prevmonth, .gwcraft .v-inline-datefield-year .v-inline-datefield-calendarpanel-nextmonth {
+	display: none;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel td {
+	vertical-align: top;
+}
+
+.gwcraft td.v-inline-datefield-calendarpanel-month {
+	height: 23px;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/datefield/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.gwcraft span.v-inline-datefield-calendarpanel-month {
+	display: block;
+	text-align: center;
+	height: 16px;
+	padding: 3px 10px 0 10px;
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #d8d8d8;
+	text-shadow: #fff 0 1px 0;
+	overflow: hidden;
+	margin-top: 1px;
+}
+
+.gwcraft .v-inline-datefield-year .v-inline-datefield-calendarpanel-month {
+	width: 35px;
+}
+
+.gwcraft .v-inline-datefield-month .v-inline-datefield-calendarpanel-month, .gwcraft .v-inline-datefield-day .v-inline-datefield-calendarpanel-month, .gwcraft .v-inline-datefield-full .v-inline-datefield-calendarpanel-month {
+	width: 124px;
+}
+
+.gwcraft .v-inline-datefield-month, .gwcraft .v-inline-datefield-day, .gwcraft .v-inline-datefield-full {
+	min-width: 240px;
+}
+
+.gwcraft .v-inline-datefield-popupcalendar {
+	min-width: 0;
+	padding-right: 24px;
+}
+
+.gwcraft .v-inline-datefield-year .v-inline-datefield-calendarpanel {
+	width: 100px;
+}
+
+.gwcraft td.v-inline-datefield-calendarpanel-prevyear {
+	text-align: right;
+}
+
+.gwcraft td.v-inline-datefield-calendarpanel-nextyear {
+	text-align: left;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-prevyear button, .gwcraft .v-inline-datefield-calendarpanel-nextyear button, .gwcraft .v-inline-datefield-calendarpanel-prevmonth button, .gwcraft .v-inline-datefield-calendarpanel-nextmonth button {
+	width: 24px;
+	height: 23px;
+	border: none;
+	background: transparent;
+	background-repeat: no-repeat;
+	background-image: url(../reindeer/datefield/img/year-prev.png);/** sprite-ref: verticals */
+	overflow: hidden;
+	padding: 0;
+	text-indent: -9999px;
+	outline: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.v-ie .gwcraft .v-inline-datefield-calendarpanel-prevyear button, .v-ie .gwcraft .v-inline-datefield-calendarpanel-nextyear button, .v-ie .gwcraft .v-inline-datefield-calendarpanel-prevmonth button, .v-ie .gwcraft .v-inline-datefield-calendarpanel-nextmonth button {
+	text-indent: 0;
+	font-size: 1px;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-nextyear button {
+	background-position: left top;
+	background-image: url(../reindeer/datefield/img/year-next.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-prevyear button:active, .v-ie .gwcraft .v-inline-datefield-calendarpanel-prevyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-prev-pressed.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-nextyear button:active, .v-ie .gwcraft .v-inline-datefield-calendarpanel-nextyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-next-pressed.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-prevmonth, .gwcraft .v-inline-datefield-calendarpanel-nextmonth {
+	width: 24px;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/datefield/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-prevmonth button, .gwcraft .v-inline-datefield-calendarpanel-nextmonth button {
+	width: 100%;
+	height: 21px;
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #d8d8d8;
+	background: transparent;
+	background-position: center top;
+	background-image: url(../reindeer/datefield/img/month-prev.png);/** sprite-ref: verticals; sprite-alignment: center */
+	min-width: 24px;
+	margin-top: 1px;
+}
+
+.v-ie .gwcraft .v-inline-datefield-calendarpanel-prevmonth button, .v-ie .gwcraft .v-inline-datefield-calendarpanel-nextmonth button {
+	border: none;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-nextmonth button {
+	background-image: url(../reindeer/datefield/img/month-next.png);/** sprite-ref: verticals; sprite-alignment: center */
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-prevmonth button:active, .v-ie .gwcraft .v-inline-datefield-calendarpanel-prevmonth button.v-pressed {
+	background-position: center top;
+	background-image: url(../reindeer/datefield/img/month-prev-pressed.png);/** sprite-ref: verticals; sprite-alignment: center */
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-nextmonth button:active, .v-ie .gwcraft .v-inline-datefield-calendarpanel-nextmonth button.v-pressed {
+	background-position: center top;
+	background-image: url(../reindeer/datefield/img/month-next-pressed.png);/** sprite-ref: verticals; sprite-alignment: center */
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-body, .gwcraft .v-inline-datefield-calendarpanel-time {
+	text-align: center;
+	vertical-align: top;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-body table {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	width: 220px;
+	margin: 0 auto;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-weekdays td {
+	width: 14.2%;
+	overflow: hidden;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/datefield/img/weekday-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat; sprite-margin-bottom: 3px */
+	font-size: 10px;
+	line-height: normal;
+	text-transform: uppercase;
+	color: #eaeff1;
+	text-shadow: #3b4651 0 -1px 0;
+	vertical-align: top;
+	padding: 0;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-weeknumbers td {
+	width: 12.4%;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-weekdays strong {
+	display: block;
+	text-align: right;
+	padding: 1px 5px 0 0;
+	height: 14px;
+	border-top: 1px solid #596775;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-weekdays .v-first {
+	background-repeat: no-repeat;
+	background-image: url(../reindeer/datefield/img/weekday-first.png);/** sprite-ref: verticals; sprite-margin-bottom: 3px */
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-weekdays .v-last {
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-image: url(../reindeer/datefield/img/weekday-last.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-bottom: 3px */
+}
+
+.v-ie .gwcraft .v-inline-datefield-calendarpanel-weekdays td {
+	background: url(../reindeer/datefield/img/weekday-bg.png) repeat-x;
+	background-position: left top;
+}
+
+.v-ie .gwcraft .v-inline-datefield-calendarpanel .v-first {
+	background: url(../reindeer/datefield/img/weekday-first.png) no-repeat;
+}
+
+.v-ie .gwcraft .v-inline-datefield-calendarpanel .v-last {
+	background: url(../reindeer/datefield/img/weekday-last.png) no-repeat right top;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-body td {
+	text-align: right;
+	height: 19px;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-day, .gwcraft .v-inline-datefield-calendarpanel-weeknumber, .gwcraft .v-inline-datefield-calendarpanel-day-today {
+	padding: 2px 5px 2px 0;
+	display: block;
+	margin: 1px 0 0 5px;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-weeknumber {
+	margin: 0;
+	padding-top: 4px;
+	padding-bottom: 3px;
+	font-size: 10.8px;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-day-today {
+	color: #4095d1;
+	border: none;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-day-selected {
+	background: #507ba3;
+	color: #fff;
+	text-shadow: #3b5b79 0 1px 0;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.gwcraft .v-inline-datefield-calendarpanel-time select {
+	padding: 0;
+	font-size: 11px;
+	margin: 2px;
+}
+
+.gwcraft .v-inline-datefield-popup {
+	background: #f8f8f9;
+	padding: 8px 4px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+.v-sa .gwcraft .v-inline-datefield-popup, .v-op .gwcraft .v-inline-datefield-popup {
+	background: rgba(255, 255, 255, 0.95);
+}
+
+.gwcraft .v-inline-datefield-year > .v-inline-datefield-textfield {
+	width: 4.5em;
+}
+
+.gwcraft .v-inline-datefield-month > .v-inline-datefield-textfield {
+	width: 5.5em;
+}
+
+.gwcraft .v-inline-datefield-day > .v-inline-datefield-textfield {
+	width: 6em;
+}
+
+.gwcraft .v-inline-datefield-full > .v-inline-datefield-textfield {
+	width: 12.5em;
+}
+
+.gwcraft .v-inline-datefield-popupcalendar input.v-inline-datefield-textfield {
+	border-right-width: 0;
+	-moz-border-radius-topright: 0;
+	-moz-border-radius-bottomright: 0;
+	-webkit-border-top-right-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	height: 23px;
+}
+
+.gwcraft .v-inline-datefield.v-readonly input.v-inline-datefield-textfield {
+	border-right-width: 1px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.gwcraft .v-inline-datefield-prompt .v-inline-datefield-textfield {
+	color: #999;
+	font-style: normal;
+}
+
+.gwcraft .v-inline-datefield-popupcalendar .v-inline-datefield-button {
+	width: 24px;
+	margin-right: -24px;
+	height: 23px;
+	background: transparent;
+	border: none;
+	padding: 0;
+	background-image: url(../reindeer/datefield/img/popup-btn.png);/** sprite-ref: verticals */
+	cursor: pointer;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.gwcraft .v-inline-datefield-popupcalendar .v-inline-datefield-button:active {
+	background-image: url(../reindeer/datefield/img/popup-btn-pressed.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .black .v-inline-datefield-popupcalendar .v-inline-datefield-button {
+	background-image: url(../reindeer/datefield/img/popup-btn-black.png);/** sprite-ref: black-verticals */
+}
+
+.gwcraft .black .v-inline-datefield-popupcalendar .v-inline-datefield-button:active {
+	background-image: url(../reindeer/datefield/img/popup-btn-black-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.gwcraft .black td.v-inline-datefield-calendarpanel-month {
+	background-image: url(../reindeer/datefield/img/header-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
+	height: 21px;
+}
+
+.gwcraft .black span.v-inline-datefield-calendarpanel-month {
+	border-left: 1px solid #333638;
+	border-right: 1px solid #232527;
+	color: #c9ccce;
+	text-shadow: #000 0 -1px 0;
+	padding: 4px 10px 1px 10px;
+	margin-top: 0;
+}
+
+.gwcraft .black .v-inline-datefield-calendarpanel-prevyear button, .gwcraft .black .v-inline-datefield-calendarpanel-nextyear button, .gwcraft .black .v-inline-datefield-calendarpanel-prevmonth button, .gwcraft .black .v-inline-datefield-calendarpanel-nextmonth button {
+	background-image: url(../reindeer/datefield/img/year-prev-black.png);/** sprite-ref: black-verticals */
+	height: 21px;
+}
+
+.gwcraft .black .v-inline-datefield-calendarpanel-nextyear button {
+	background-image: url(../reindeer/datefield/img/year-next-black.png);/** sprite-ref: black-verticals */
+}
+
+.gwcraft .black .v-inline-datefield-calendarpanel-prevyear button:active, .v-ie .gwcraft .black .v-inline-datefield-calendarpanel-prevyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-prev-black-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.gwcraft .black .v-inline-datefield-calendarpanel-nextyear button:active, .v-ie .gwcraft .black .v-inline-datefield-calendarpanel-nextyear button.v-pressed {
+	background-image: url(../reindeer/datefield/img/year-next-black-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.gwcraft .black .v-inline-datefield-calendarpanel-prevmonth, .gwcraft .black .v-inline-datefield-calendarpanel-nextmonth {
+	background-image: url(../reindeer/datefield/img/header-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
+}
+
+.gwcraft .black .v-inline-datefield-calendarpanel-prevmonth button, .gwcraft .black .v-inline-datefield-calendarpanel-nextmonth button {
+	border-left: 1px solid #333638;
+	border-right: 1px solid #232527;
+	background-image: url(../reindeer/datefield/img/month-prev-black.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+	margin-top: 0;
+}
+
+.gwcraft .black .v-inline-datefield-calendarpanel-nextmonth button {
+	background-image: url(../reindeer/datefield/img/month-next-black.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+}
+
+.gwcraft .black .v-inline-datefield-calendarpanel-prevmonth button:active, .v-ie .gwcraft .black .v-inline-datefield-calendarpanel-prevmonth button.v-pressed {
+	background-image: url(../reindeer/datefield/img/month-prev-black-pressed.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+}
+
+.gwcraft .black .v-inline-datefield-calendarpanel-nextmonth button:active, .v-ie .gwcraft .black .v-inline-datefield-calendarpanel-nextmonth button.v-pressed {
+	background-image: url(../reindeer/datefield/img/month-next-black-pressed.png);/** sprite-ref: black-verticals; sprite-alignment: center */
+}
+
+.v-ie .gwcraft .black .v-inline-datefield-calendarpanel-prevmonth button, .v-ie .gwcraft .black .v-inline-datefield-calendarpanel-nextmonth button {
+	border: none;
+}
+
+.gwcraft .black .v-inline-datefield-calendarpanel-weekdays td {
+	background-image: url(../reindeer/datefield/img/weekday-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat; sprite-margin-bottom: 3px */
+	color: #0a0b0b;
+	text-shadow: #5a5c5e 0 1px 0;
+}
+
+.gwcraft .black .v-inline-datefield-calendarpanel-weekdays strong {
+	border-top-color: #1b1c1d;
+}
+
+.gwcraft .black .v-inline-datefield-calendarpanel .v-first {
+	background-image: url(../reindeer/datefield/img/weekday-first-black.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 3px */
+}
+
+.gwcraft .black .v-inline-datefield-calendarpanel .v-last {
+	background-image: url(../reindeer/datefield/img/weekday-last-black.png);/** sprite-ref: black-verticals; sprite-alignment: right */
+}
+
+.gwcraft .black .v-inline-datefield-prompt .v-inline-datefield-textfield {
+	color: #5f6366;
+}
+
+.gwcraft .v-inline-datefield {
+	line-height: 14px;
+}
+
+.gwcraft .v-formlayout-errorcell {
+	width: 13px;
+}
+
+.gwcraft .v-formlayout-cell .v-errorindicator {
+	width: 13px;
+	height: 16px;
+	background: transparent url(../reindeer/common/icons/error.png) no-repeat 50%;
+}
+
+.gwcraft .v-formlayout-captioncell {
+	text-align: right;
+	white-space: nowrap;
+}
+
+.gwcraft .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-captioncell, .gwcraft .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-contentcell, .gwcraft .v-formlayout-spacing > tbody > .v-formlayout-row > .v-formlayout-errorcell {
+	padding-top: 8px;
+}
+
+.gwcraft .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-captioncell, .gwcraft .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-contentcell, .gwcraft .v-formlayout-margin-top > tbody > .v-formlayout-firstrow > .v-formlayout-errorcell {
+	padding-top: 15px;
+}
+
+.gwcraft .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-captioncell, .gwcraft .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-contentcell, .gwcraft .v-formlayout-margin-bottom > tbody > .v-formlayout-lastrow > .v-formlayout-errorcell {
+	padding-bottom: 15px;
+}
+
+.gwcraft .v-formlayout-margin-left > tbody > .v-formlayout-row > .v-formlayout-captioncell {
+	padding-left: 18px;
+}
+
+.gwcraft .v-formlayout-margin-right > tbody > .v-formlayout-row > .v-formlayout-contentcell {
+	padding-right: 18px;
+}
+
+.gwcraft .v-form-errormessage {
+	background: transparent url(../reindeer/common/icons/error.png) no-repeat 3px 2px;
+	padding-left: 20px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	min-height: 20px;
+}
+
+.gwcraft .v-form fieldset {
+	border: none;
+	border-top: 1px solid #babfc0;
+}
+
+.gwcraft .v-form-nocaption fieldset {
+	border: none;
+}
+
+.gwcraft .v-form-nocaption legend {
+	display: none;
+}
+
+.gwcraft .v-form legend {
+	margin: 0 0 0 20px;
+	padding: 0 5px;
+	font-weight: bold;
+	color: #222;
+}
+
+.gwcraft .black .v-form legend {
+	color: #e3e6e8;
+}
+
+.gwcraft .v-label {
+	line-height: 18px;
+}
+
+.gwcraft .white .black, .gwcraft .blue .black {
+	color: #C9CCCE;
+	text-shadow: 0 0 1px #000;
+}
+
+.gwcraft .black .v-label-h1, .gwcraft .black .v-label-h2, .gwcraft .black .v-caption-h1, .gwcraft .black .v-caption-h2, .gwcraft .white .black .v-label-h1, .gwcraft .white .black .v-label-h2, .gwcraft .white .black .v-caption-h1, .gwcraft .white .black .v-caption-h2, .gwcraft .blue .black .v-label-h1, .gwcraft .blue .black .v-label-h2, .gwcraft .blue .black .v-caption-h1, .gwcraft .blue .black .v-caption-h2 {
+	color: #fff;
+	text-shadow: rgba(0, 0, 0, 0.8) 0 2px 2px;
+}
+
+.gwcraft .black .v-label-light, .gwcraft .white .black .v-label-light {
+	color: #72787c;
+}
+
+.gwcraft .black .v-label hr, .gwcraft .white .black .v-label hr {
+	background: #0c0d0e;
+	color: #0c0d0e;
+	border-bottom-color: #292b2e;
+}
+
+.gwcraft.v-app .white, .gwcraft .v-window .white, .gwcraft.v-app .blue, .gwcraft .v-window .blue {
+	color: #222;
+	text-shadow: none;
+}
+
+.gwcraft .blue .v-label-h1, .gwcraft .blue .v-label-h2, .gwcraft .blue .v-caption-h1, .gwcraft .blue .v-caption-h2, .gwcraft .white .blue .v-label-h1, .gwcraft .white .blue .v-label-h2, .gwcraft .white .blue .v-caption-h1, .gwcraft .white .blue .v-caption-h2 {
+	color: #fff;
+	text-shadow: rgba(0, 0, 0, 0.3) 0 1px 1px;
+}
+
+.gwcraft .blue .v-label-light, .gwcraft .white .blue .v-label-light {
+	color: #6e7c83;
+}
+
+.gwcraft .blue .v-label hr, .gwcraft .white .blue .v-label hr {
+	background: #a3bcc9;
+	color: #a3bcc9;
+	border-bottom-color: #cfe2eb;
+}
+
+.gwcraft .v-label-h1, .gwcraft .v-label-h2, .gwcraft .v-caption-h1, .gwcraft .v-caption-h2, .gwcraft .white .v-label-h1, .gwcraft .white .v-label-h2, .gwcraft .white .v-caption-h1, .gwcraft .white .v-caption-h2 {
+	font-family: Helvetica, Arial, "Lucida Grande", Geneva, Tahoma, Verdana, sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #44698b;
+	letter-spacing: -0.02em;
+	text-shadow: #fff 0 -1px 1px;
+}
+
+.gwcraft .v-label-h2, .gwcraft .v-caption-h2, .gwcraft .white .v-label-h2, .gwcraft .white .v-caption-h2 {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.gwcraft .v-label-light, .gwcraft .white .v-label-light {
+	font-size: 11px;
+	line-height: 13px;
+	color: #707070;
+}
+
+.gwcraft .v-label hr, .gwcraft .white .v-label hr {
+	height: 2px;
+	overflow: hidden;
+	background: #dcdcdc;
+	color: #dcdcdc;
+	border: none;
+	border-bottom: 1px solid #fff;
+}
+
+.v-sa .gwcraft .v-label hr, .v-ie8 .gwcraft .v-label hr {
+	height: 1px;
+}
+
+.gwcraft .v-table .v-label {
+	line-height: normal;
+}
+
+.gwcraft .v-orderedlayout-margin-top, .gwcraft .v-horizontallayout-margin-top, .gwcraft .v-verticallayout-margin-top, .gwcraft .v-layout.v-margin-top {
+	padding-top: 18px;
+}
+
+.gwcraft .v-orderedlayout-margin-right, .gwcraft .v-horizontallayout-margin-right, .gwcraft .v-verticallayout-margin-right, .gwcraft .v-layout.v-margin-right {
+	padding-right: 18px;
+}
+
+.gwcraft .v-orderedlayout-margin-bottom, .gwcraft .v-horizontallayout-margin-bottom, .gwcraft .v-verticallayout-margin-bottom, .gwcraft .v-layout.v-margin-bottom {
+	padding-bottom: 18px;
+}
+
+.gwcraft .v-orderedlayout-margin-left, .gwcraft .v-horizontallayout-margin-left, .gwcraft .v-verticallayout-margin-left, .gwcraft .v-layout.v-margin-left {
+	padding-left: 18px;
+}
+
+.gwcraft .v-orderedlayout-spacing-on, .gwcraft .v-horizontallayout-spacing-on, .gwcraft .v-verticallayout-spacing-on {
+	padding-top: 7px;
+	padding-left: 6px;
+}
+
+.gwcraft .v-spacing {
+	height: 7px;
+	width: 6px;
+}
+
+.gwcraft .v-verticallayout-blue, .gwcraft .v-horizontallayout-blue, .gwcraft .v-orderedlayout-blue, .gwcraft .v-gridlayout-blue, .gwcraft .v-csslayout-blue, .gwcraft .v-formlayout-blue, .gwcraft .v-splitpanel-vertical-blue, .gwcraft .v-splitpanel-horizontal-blue {
+	background-color: #bcd3de;
+}
+
+.gwcraft .v-panel-content > div.blue {
+	background-color: #bcd3de;
+}
+
+.gwcraft .v-verticallayout-white, .gwcraft .v-horizontallayout-white, .gwcraft .v-orderedlayout-white, .gwcraft .v-gridlayout-white, .gwcraft .v-csslayout-white, .gwcraft .v-formlayout-white, .gwcraft .v-splitpanel-vertical-white, .gwcraft .v-splitpanel-horizontal-white {
+	background-color: #fff;
+	color: #222;
+}
+
+.gwcraft .v-panel-content > div.white {
+	background-color: #fff;
+	color: #222;
+}
+
+.gwcraft .v-verticallayout-black, .gwcraft .v-horizontallayout-black, .gwcraft .v-orderedlayout-black, .gwcraft .v-gridlayout-black, .gwcraft .v-csslayout-black, .gwcraft .v-formlayout-black, .gwcraft .v-splitpanel-vertical-black, .gwcraft .v-splitpanel-horizontal-black {
+	background: #1e2022 url(../reindeer/layouts/img/black-bg.png) repeat-x;
+}
+
+.gwcraft .v-panel-content > div.black {
+	background: #1e2022 url(../reindeer/layouts/img/black-bg.png) repeat-x;
+}
+
+.gwcraft .v-link a:link span {
+	color: #1b699f;
+}
+
+.gwcraft .v-link a:visited span {
+	color: #5c7485;
+}
+
+.gwcraft .v-link a:hover span {
+	color: #2483c4;
+}
+
+.gwcraft .v-menubar {
+	height: 23px;
+	background: #323336 repeat-x;
+	background-image: url(../reindeer/menubar/img/bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	color: #d1d3d6;
+	text-shadow: rgba(0, 0, 0, 0.9) 0 1px 0;
+	padding: 0 8px;
+}
+
+.gwcraft .v-menubar .v-menubar-menuitem {
+	padding: 3px 8px;
+	height: 17px;
+	line-height: 16px;
+}
+
+.gwcraft .v-menubar .v-menubar-menuitem:hover {
+	color: #fff;
+}
+
+.gwcraft .v-menubar-submenu {
+	background: #f8f8f9;
+	border: none;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	overflow: hidden;
+	padding: 4px 0;
+}
+
+.gwcraft .v-menubar-submenu .v-menubar-menuitem {
+	padding: 1px 26px 1px 10px;
+	line-height: 16px;
+}
+
+.gwcraft .v-menubar-submenu .v-menubar-menuitem-caption .v-icon {
+	vertical-align: middle;
+}
+
+.gwcraft .v-menubar .v-menubar-menuitem-selected, .gwcraft .v-menubar-submenu .v-menubar-menuitem-selected {
+	background: #4d749f repeat-x;
+	background-image: url(../reindeer/common/img/sel-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	color: #fff;
+	text-shadow: 0 1px 0 #3b5a7a;
+}
+
+.gwcraft .v-menubar .v-menubar-menuitem-selected {
+	background-image: url(../reindeer/menubar/img/menu-sel-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat; sprite-margin-bottom: 1px  */
+}
+
+.gwcraft .v-menubar-submenu .v-menubar-submenu-indicator {
+	background: transparent url(../reindeer/menubar/img/submenu-icon.png) no-repeat right 70%;
+	width: 26px;
+	height: 16px;
+	text-indent: -9999px;
+	font-size: 10.8px;
+}
+
+.gwcraft .v-menubar-submenu .v-menubar-menuitem-selected .v-menubar-submenu-indicator {
+	background-image: url(../reindeer/menubar/img/submenu-icon-hover.png);
+}
+
+.gwcraft .v-menubar-submenu-check-column .v-menubar-menuitem {
+	padding-left: 6px;
+}
+
+.gwcraft .v-menubar-submenu-check-column .v-menubar-menuitem-caption {
+	padding-left: 18px;
+}
+
+.gwcraft .v-menubar-submenu .v-menubar-menuitem-checked .v-menubar-menuitem-caption {
+	background: transparent url(../reindeer/menubar/img/checked.png) no-repeat left;
+}
+
+.gwcraft .v-menubar-submenu .v-menubar-menuitem-unchecked .v-menubar-menuitem-caption {
+	background: transparent url(../reindeer/menubar/img/unchecked.png) no-repeat left;
+}
+
+.gwcraft .v-menubar-submenu .v-menubar-menuitem-selected-checked .v-menubar-menuitem-caption {
+	background: transparent url(../reindeer/menubar/img/checked-selected.png) no-repeat left;
+}
+
+.gwcraft .v-menubar-submenu .v-menubar-menuitem-selected-unchecked .v-menubar-menuitem-caption {
+	background: transparent url(../reindeer/menubar/img/unchecked-selected.png) no-repeat left;
+}
+
+.gwcraft .v-Notification {
+	color: #fff;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	font-size: 16px;
+	background: #c8ccd0;
+	font-weight: bold;
+}
+
+.v-ie9 .gwcraft .v-Notification H1, .v-ie10 .gwcraft .v-Notification H1 {
+	font-weight: bold;
+}
+
+.gwcraft .v-Notification p {
+	line-height: 1.3;
+}
+
+.gwcraft .v-Notification-warning {
+	background: #fdf3b5;
+	color: #ca9a61;
+	border: 3px solid #fee3af;
+}
+
+.gwcraft .v-Notification-error {
+	background: #b40000 url(../reindeer/notification/img/error-close.png) no-repeat right top;
+	border: 3px solid #ca3030;
+}
+
+.gwcraft .v-Notification-tray {
+	margin: 0 5px 5px 0;
+	background: #3b3c3e;
+	border: 2px solid #585b5c;
+	padding: 0.8em 0.9em;
+}
+
+.gwcraft .v-Notification-tray h1 {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.gwcraft .v-Notification-tray p {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.gwcraft .v-Notification-system {
+	background-color: #b40000;
+}
+
+.gwcraft .blue .v-panel-caption, .gwcraft .blue .v-panel-nocaption, .gwcraft .blue .v-panel-content {
+	border-color: #a8bcc5;
+}
+
+.gwcraft .v-panel-caption, .gwcraft .v-panel-nocaption, .gwcraft .white .v-panel-caption, .gwcraft .white .v-panel-nocaption {
+	border-bottom: 1px solid #e5e5e5;
+	line-height: 16px;
+}
+
+.v-webkit .gwcraft .v-panel-caption, .v-webkit .gwcraft .v-panel-nocaption, .v-gecko .gwcraft .v-panel-caption, .v-gecko .gwcraft .v-panel-nocaption, .v-ie9 .gwcraft .v-panel-caption, .v-ie9 .gwcraft .v-panel-nocaption, .v-ie10 .gwcraft .v-panel-caption, .v-ie10 .gwcraft .v-panel-nocaption {
+	border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+.v-webkit .gwcraft .v-panel-content, .v-gecko .gwcraft .v-panel-content, .v-ie9 .gwcraft .v-panel-content, .v-ie10 .gwcraft .v-panel-content {
+	border-top-color: rgba(0, 0, 0, 0.07);
+}
+
+.v-webkit .gwcraft .v-panel-deco, .v-gecko .gwcraft .v-panel-deco, .v-ie9 .gwcraft .v-panel-deco, .v-ie10 .gwcraft .v-panel-deco {
+	border-top-color: rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.08);
+}
+
+.gwcraft .v-panel-caption {
+	padding-bottom: 2px;
+}
+
+.gwcraft .v-panel-content, .gwcraft .white .v-panel-content {
+	background: #fff;
+	border: 1px solid #dcdcdc;
+	border-bottom: none;
+	border-top: none;
+}
+
+.gwcraft .blue .v-panel-deco {
+	border-color: #92a3ac;
+	background: #adc2cd;
+}
+
+.gwcraft .v-panel-deco, .gwcraft .white .v-panel-deco {
+	height: 1px;
+	border-top: 1px solid #bebebe;
+	background: #e2e2e2;
+	overflow: hidden;
+}
+
+.gwcraft .v-panel-caption .v-errorindicator {
+	height: 16px;
+	width: 13px;
+	background: url(../reindeer/common/icons/error.png) no-repeat 50%;
+	display: inline;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.gwcraft .v-panel-light .v-panel-caption-light, .gwcraft .v-panel-light .v-panel-nocaption-light {
+	border: none;
+}
+
+.gwcraft .v-panel-light .v-panel-content-light {
+	border: none;
+	background: transparent;
+}
+
+.gwcraft .v-panel-light .v-panel-deco-light {
+	height: 0;
+	border: none;
+}
+
+.gwcraft .v-popupview {
+	color: #1b699f;
+}
+
+.gwcraft .v-popupview:hover {
+	color: #2483c4;
+}
+
+.gwcraft .v-popupview-popup {
+	background: #fff;
+	padding: 3px;
+}
+
+.gwcraft .v-progressbar-wrapper {
+	background: #dfe2e4 url(../reindeer/progressindicator/img/base.gif) repeat-x;
+	border: 1px solid #bfbfbf;
+}
+
+.gwcraft .v-disabled .v-progressbar-wrapper {
+	background-image: url(../reindeer/progressindicator/img/disabled.gif);
+}
+
+.gwcraft .v-progressbar-indicator {
+	background: #f7f9f9 url(../reindeer/progressindicator/img/progress.png);
+}
+
+.gwcraft .v-progressindicator-wrapper {
+	background: #dfe2e4 url(../reindeer/progressindicator/img/base.gif) repeat-x;
+	border: 1px solid #bfbfbf;
+}
+
+.gwcraft .v-disabled .v-progressindicator-wrapper {
+	background-image: url(../reindeer/progressindicator/img/disabled.gif);
+}
+
+.gwcraft .v-progressindicator-indicator {
+	background: #f7f9f9 url(../reindeer/progressindicator/img/progress.png);
+}
+
+.gwcraft .v-filterselect {
+	height: 24px;
+	background-repeat: no-repeat;
+	background-image: url(../reindeer/select/img/left.png);/** sprite-ref: verticals; sprite-margin-bottom: 1px */
+	padding-left: 2px;
+	padding-right: 25px;
+}
+
+.gwcraft.v-app .v-filterselect-input, .gwcraft .v-window .v-filterselect-input, .gwcraft .v-popupview-popup .v-filterselect-input {
+	background: transparent repeat-x;
+	background-image: url(../reindeer/select/img/center.png);/** sprite-ref: verticals; sprite-alignment: repeat; sprite-margin-bottom: 1px */
+	border: none;
+	height: 24px;
+}
+
+.gwcraft.v-app input.v-filterselect-input, .gwcraft .v-window input.v-filterselect-input, .gwcraft .v-popupview-popup input.v-filterselect-input {
+	padding: 4px 0 4px 2px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.gwcraft .v-filterselect-prompt .v-filterselect-input {
+	font-style: normal;
+}
+
+.gwcraft .v-filterselect-input:focus {
+	outline: none;
+}
+
+.gwcraft .v-filterselect-focus {
+	background-image: url(../reindeer/select/img/left-focus.png);/** sprite-ref: verticals; sprite-margin-bottom: 1px */
+}
+
+.gwcraft .v-filterselect-focus .v-filterselect-input {
+	background-image: url(../reindeer/select/img/center-focus.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.gwcraft .v-filterselect-button {
+	overflow: hidden;
+	width: 25px;
+	height: 24px;
+	background-position: 0 0;
+	background-image: url(../reindeer/select/img/right.png);/** sprite-ref: verticals ; sprite-margin-bottom: 1px */
+	cursor: default;
+	margin-right: -25px;
+}
+
+.gwcraft .v-filterselect-button:hover {
+	background-image: url(../reindeer/select/img/right-hover.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-filterselect-button:active {
+	background-image: url(../reindeer/select/img/right-pressed.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-filterselect-focus .v-filterselect-button {
+	background-image: url(../reindeer/select/img/right-focus.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-filterselect-focus .v-filterselect-button:hover {
+	background-image: url(../reindeer/select/img/right-focus-hover.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-filterselect-focus .v-filterselect-button:active {
+	background-image: url(../reindeer/select/img/right-focus-pressed.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-disabled .v-filterselect-button:hover, .gwcraft .v-readonly .v-filterselect-button:hover {
+	background-image: url(../reindeer/select/img/right.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-filterselect-suggestpopup {
+	background: #f8f8f9;
+	border: none;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	overflow: hidden;
+}
+
+.gwcraft .v-filterselect-suggestmenu {
+	margin: 4px 0;
+}
+
+.gwcraft .v-filterselect-suggestmenu .gwt-MenuItem {
+	padding: 1px 8px;
+	height: 16px;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	cursor: default;
+}
+
+.gwcraft .v-filterselect-suggestmenu .gwt-MenuItem .v-icon {
+	margin-right: 3px;
+}
+
+.gwcraft .v-filterselect-suggestmenu .gwt-MenuItem-selected {
+	background: transparent repeat-x;
+	background-image: url(../reindeer/common/img/sel-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	color: #fff;
+	text-shadow: #3b5a7a 0 1px 0;
+}
+
+.gwcraft .v-filterselect-nextpage, .gwcraft .v-filterselect-nextpage-off, .gwcraft .v-filterselect-prevpage-off, .gwcraft .v-filterselect-prevpage {
+	height: 11px;
+	width: 100%;
+	background: transparent;
+	margin-bottom: -4px;
+}
+
+.gwcraft .v-filterselect-nextpage, .gwcraft .v-filterselect-nextpage-off {
+	margin: -4px 0 0;
+}
+
+.gwcraft .v-filterselect-nextpage:hover {
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/select/img/page-down-hover.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.gwcraft .v-filterselect-prevpage:hover {
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/select/img/page-up-hover.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.gwcraft .v-filterselect-nextpage:active {
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/select/img/page-down-pressed.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.gwcraft .v-filterselect-prevpage:active {
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/select/img/page-up-pressed.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.gwcraft .v-filterselect-nextpage-off span, .gwcraft .v-filterselect-prevpage-off span {
+	display: none;
+}
+
+.gwcraft .v-filterselect-nextpage span, .gwcraft .v-filterselect-prevpage span {
+	display: block;
+	height: 11px;
+	width: 100%;
+	overflow: hidden;
+	text-indent: -99999px;
+	background: transparent no-repeat center 3px;
+	background-image: url(../reindeer/select/img/arrow-down.png);/** sprite-ref: verticals; sprite-margin-top: 3px; sprite-margin-bottom: 3px; sprite-alignment: center */
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.gwcraft .v-filterselect-prevpage span {
+	background-image: url(../reindeer/select/img/arrow-up.png);/** sprite-ref: verticals; sprite-margin-top: 3px; sprite-margin-bottom: 3px; sprite-alignment: center */
+}
+
+.gwcraft .v-filterselect-nextpage:hover span {
+	background-image: url(../reindeer/select/img/arrow-down-hover.png);/** sprite-ref: verticals; sprite-margin-top: 3px; sprite-margin-bottom: 3px; sprite-alignment: center */
+}
+
+.gwcraft .v-filterselect-prevpage:hover span {
+	background-image: url(../reindeer/select/img/arrow-up-hover.png);/** sprite-ref: verticals; sprite-margin-top: 3px; sprite-margin-bottom: 3px; sprite-alignment: center */
+}
+
+.gwcraft .v-filterselect-status {
+	text-shadow: #e9eaeb 0 1px 0;
+	font-size: 11px;
+	line-height: normal;
+	width: 100%;
+	padding: 3px 0;
+	height: 11px;
+	overflow: hidden;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/select/img/status-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	-moz-border-radius-bottomleft: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.v-ie .gwcraft .v-filterselect-suggestmenu .gwt-MenuItem-selected {
+	background: transparent url(../reindeer/common/img/sel-bg.png) repeat-x;
+}
+
+.v-ie .gwcraft .v-filterselect-nextpage:hover {
+	background: transparent url(../reindeer/select/img/page-down-hover.png) repeat-x;
+}
+
+.v-ie .gwcraft .v-filterselect-prevpage:hover {
+	background: transparent url(../reindeer/select/img/page-up-hover.png) repeat-x;
+}
+
+.v-ie .gwcraft .v-filterselect-prevpage span {
+	background: transparent url(../reindeer/select/img/arrow-up.png) no-repeat center 3px;
+}
+
+.v-ie .gwcraft .v-filterselect-nextpage span {
+	background: transparent url(../reindeer/select/img/arrow-down.png) no-repeat center 3px;
+}
+
+.v-ie .gwcraft .v-filterselect-prevpage:hover span {
+	background: transparent url(../reindeer/select/img/arrow-up-hover.png) no-repeat center 3px;
+}
+
+.v-ie .gwcraft .v-filterselect-nextpage:hover span {
+	background: transparent url(../reindeer/select/img/arrow-down-hover.png) no-repeat center 3px;
+}
+
+.v-ie .gwcraft .v-filterselect-status {
+	background: transparent url(../reindeer/select/img/status-bg.png) repeat-x;
+}
+
+.gwcraft .v-filterselect .v-icon {
+	width: 16px;
+	position: relative;
+}
+
+.gwcraft .v-filterselect .v-icon + .v-filterselect-input {
+	margin-left: -16px;
+	padding-left: 18px;
+}
+
+.gwcraft .black .v-filterselect {
+	background-image: url(../reindeer/select/img/black/left-black.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.gwcraft.v-app .black .v-filterselect-input, .gwcraft .v-window .black .v-filterselect-input, .gwcraft .v-window-black .v-filterselect-input, .gwcraft .v-popupview-popup .black .v-filterselect-input {
+	color: #c9ccce;
+	background-image: url(../reindeer/select/img/black/center-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat; sprite-margin-bottom: 1px */
+}
+
+.gwcraft .black .v-filterselect-focus {
+	background-image: url(../reindeer/select/img/black/left-black-focus.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.gwcraft .black .v-filterselect-focus .v-filterselect-input {
+	background-image: url(../reindeer/select/img/black/center-black-focus.png);/** sprite-ref: black-verticals; sprite-alignment: repeat; sprite-margin-bottom: 1px */
+}
+
+.gwcraft .black .v-filterselect-button {
+	background-image: url(../reindeer/select/img/black/right-black.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.gwcraft .black .v-filterselect-button:hover {
+	background-image: url(../reindeer/select/img/black/right-black-hover.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.gwcraft .black .v-filterselect-button:active {
+	background-image: url(../reindeer/select/img/black/right-black-pressed.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.gwcraft .black .v-filterselect-focus .v-filterselect-button {
+	background-image: url(../reindeer/select/img/black/right-black-focus.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.gwcraft .black .v-filterselect-focus .v-filterselect-button:hover {
+	background-image: url(../reindeer/select/img/black/right-black-focus-hover.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.gwcraft .black .v-filterselect-focus .v-filterselect-button:active {
+	background-image: url(../reindeer/select/img/black/right-black-focus-pressed.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.gwcraft .black .v-disabled .v-filterselect-button:hover, .gwcraft .black .v-readonly .v-filterselect-button:hover {
+	background-image: url(../reindeer/select/img/black/right-black.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 1px */
+}
+
+.gwcraft .black .v-filterselect-prompt .v-filterselect-input {
+	color: #5f6366;
+}
+
+.gwcraft .black .v-select select, .gwcraft .black .v-select-twincol select {
+	border-color: #38393a;
+	border-top-color: #2c2d2e;
+	border-bottom-color: #3e3f3f;
+	background: #151717;
+	color: #c9ccce;
+}
+
+.gwcraft .v-slider {
+	border-top: 1px solid #9a9c9e;
+	border-bottom: 1px solid #bdbfc1;
+	margin: 4px 0;
+}
+
+.gwcraft .v-slider-base {
+	height: 1px;
+	background: #e0e2e2;
+	border-top: 1px solid #adb0b1;
+	border-left: 1px solid #a0a3a6;
+	border-right: 1px solid #a0a3a6;
+}
+
+.gwcraft .v-slider-handle {
+	background: transparent;
+	background-image: url(../reindeer/slider/img/knob.png);/** sprite-ref: verticals */
+	width: 10px;
+	height: 10px;
+	margin-top: -5px;
+}
+
+.gwcraft .v-slider-handle-active {
+	background-image: url(../reindeer/slider/img/knob-pressed.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-slider-vertical {
+	width: 2px;
+	margin: 0 5px;
+	border: none;
+	border-left: 1px solid #9a9c9e;
+	border-right: 1px solid #bdbfc1;
+}
+
+.gwcraft .v-slider-vertical .v-slider-base {
+	width: 2px;
+	border-left: 1px solid #adb0b1;
+	border-right: none;
+	border-top: 1px solid #adb0b1;
+	border-bottom: 1px solid #adb0b1;
+}
+
+.gwcraft .v-slider-vertical .v-slider-handle {
+	width: 10px;
+	height: 10px;
+	margin-left: -5px;
+}
+
+.gwcraft .v-splitpanel-hsplitter, .gwcraft .v-splitpanel-hsplitter-locked {
+	width: 7px;
+	background-repeat: repeat-y;
+	background-image: url(../reindeer/splitpanel/img/hor-bg.png);/** sprite-ref: horizontals; sprite-alignment: repeat */
+}
+
+.gwcraft .v-splitpanel-hsplitter div {
+	width: 7px;
+	height: 100%;
+	background: transparent;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-image: url(../reindeer/splitpanel/img/hor-handle.png);/** sprite-ref: horizontals; sprite-alignment: center */
+}
+
+.gwcraft .v-splitpanel-vsplitter, .gwcraft .v-splitpanel-vsplitter-locked {
+	height: 7px;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/splitpanel/img/ver-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.gwcraft .v-splitpanel-vsplitter div {
+	height: 7px;
+	background: transparent;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-image: url(../reindeer/splitpanel/img/ver-handle.png);/** sprite-ref: verticals; sprite-alignment: center */
+}
+
+.gwcraft .blue .v-splitpanel-hsplitter-small, .gwcraft .blue .v-splitpanel-hsplitter-small-locked {
+	background: #7c8a91;
+}
+
+.gwcraft .black .v-splitpanel-hsplitter-small, .gwcraft .black .v-splitpanel-hsplitter-small-locked {
+	background: #4e5253;
+}
+
+.gwcraft .v-splitpanel-hsplitter-small, .gwcraft .v-splitpanel-hsplitter-small-locked, .gwcraft .white .v-splitpanel-hsplitter-small, .gwcraft .white .v-splitpanel-hsplitter-small-locked {
+	width: 1px;
+	background: #949698;
+}
+
+.gwcraft .v-splitpanel-vsplitter-small, .gwcraft .v-splitpanel-vsplitter-small-locked, .gwcraft .white .v-splitpanel-vsplitter-small, .gwcraft .white .v-splitpanel-vsplitter-small-locked {
+	height: 1px;
+	background: #949698;
+}
+
+.gwcraft .v-splitpanel-hsplitter-small div {
+	width: 5px;
+	margin-left: -2px;
+	background: transparent;
+}
+
+.gwcraft .v-splitpanel-vsplitter-small div {
+	height: 5px;
+	margin-top: -2px;
+	background: transparent;
+}
+
+.gwcraft .blue .v-table-header-wrap {
+	border-color: #92a2aa;
+}
+
+.gwcraft .blue .v-table-body {
+	border-color: #92a2aa;
+	border-top-color: #c2c3c4;
+}
+
+.gwcraft .v-table-header-wrap, .gwcraft .white .v-table-header-wrap, .gwcraft .v-table-footer-wrap, .gwcraft .white .v-table-footer-wrap, .gwcraft .v-table-header-drag {
+	border-color: #c2c3c4;
+	background: transparent repeat-x;
+	background-image: url(../reindeer/table/img/header-bg-light.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	height: 20px;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: bold;
+	color: #222;
+	text-shadow: #f3f5f8 0 1px 0;
+	line-height: normal;
+}
+
+.gwcraft .v-table-footer-wrap, .gwcraft .white .v-table-footer-wrap {
+	text-transform: none;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.gwcraft .v-table-footer td, .gwcraft .white .v-table-footer td {
+	border-color: #c2c3c4;
+}
+
+.gwcraft .v-table-footer-container {
+	padding-right: 7px;
+}
+
+.gwcraft .v-table-header, .gwcraft .v-table-footer, .gwcraft .v-table-footer table {
+	height: 20px;
+}
+
+.gwcraft .v-table-caption-container, .gwcraft .v-table-header-drag {
+	padding-top: 4px;
+	padding-right: 4px;
+}
+
+.gwcraft .v-table-caption-container .v-icon, .gwcraft .v-table-header-drag .v-icon {
+	height: 16px;
+	margin: -4px 3px 0 0;
+	vertical-align: middle;
+}
+
+.v-ie .gwcraft .v-table-caption-container .v-icon, .v-ie .gwcraft .v-table-header-drag .v-icon {
+	margin-top: -3px;
+}
+
+.gwcraft .v-table-resizer {
+	height: 20px;
+	width: 2px;
+	background: transparent;
+	border-right: 1px solid #c2c3c4;
+}
+
+.gwcraft .v-table-sort-indicator {
+	background: transparent;
+	width: 0px;
+	height: 20px;
+}
+
+.gwcraft .v-table-header-cell-asc .v-table-sort-indicator {
+	background: transparent no-repeat right 7px;
+	background-image: url(../reindeer/table/img/asc-light.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
+	width: 16px;
+}
+
+.gwcraft .v-table-header-cell-desc .v-table-sort-indicator {
+	background: transparent no-repeat right 7px;
+	background-image: url(../reindeer/table/img/desc-light.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
+	width: 16px;
+}
+
+.gwcraft .v-table-body, .gwcraft .white .v-table-body {
+	border-color: #c2c3c4;
+	background: #fff;
+}
+
+.gwcraft .v-table-cell-content {
+	padding-top: 0;
+	border-right-color: #d3d4d5;
+	vertical-align: top;
+}
+
+.gwcraft .v-table-cell-wrapper {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.gwcraft .v-table-row-odd {
+	background: #eff0f1;
+}
+
+.gwcraft .v-table-generated-row {
+	background: #dcdee0;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: bold;
+	color: #222;
+	text-shadow: #f3f5f8 0 1px 0;
+	line-height: normal;
+}
+
+.gwcraft .v-table-generated-row .v-table-cell-wrapper {
+	padding-top: 4px;
+	padding-bottom: 5px;
+}
+
+.gwcraft .v-table-cell-content:last-child {
+	border-right-color: transparent;
+}
+
+.gwcraft .v-table .v-selected, .gwcraft .black .v-table .v-selected {
+	background: #4d749f url(../reindeer/common/img/sel-bg.png) repeat-x;
+	color: #fff;
+	text-shadow: #3b5a7a 0 1px 0;
+}
+
+.gwcraft .v-table .v-selected .v-table-cell-content {
+	border-right-color: #466c90;
+}
+
+.gwcraft .v-table-column-selector {
+	width: 16px;
+	height: 20px;
+	margin-top: -20px;
+	background: transparent no-repeat;
+	background-image: url(../reindeer/table/img/col-sel-light.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-table-column-selector:active {
+	background-image: url(../reindeer/table/img/col-sel-light-pressed.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-table-focus-slot-left {
+	border-left: 1px solid #222;
+	margin-bottom: -20px;
+	width: auto;
+}
+
+.gwcraft .v-table-focus-slot-right {
+	border-right-color: #222;
+	margin-right: 0;
+}
+
+.gwcraft .v-table-header-drag {
+	padding-left: 6px;
+	height: 16px;
+}
+
+.gwcraft .v-table-header-drag img {
+	height: 16px;
+	margin: -3px 3px 0 0;
+}
+
+.gwcraft .v-table-scrollposition {
+	width: auto;
+	background: transparent;
+	border: none;
+}
+
+.gwcraft .v-table-scrollposition span {
+	background: transparent repeat-x;
+	background-image: url(../reindeer/table/img/scroll-indic-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	border: 1px solid #939494;
+	border: none;
+	border-radius-bottomleft: 4px;
+	border-radius-bottomright: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	height: 13px;
+	padding: 4px 30px;
+	white-space: nowrap;
+	color: #222;
+	text-shadow: #fff 0 1px 0;
+	position: relative;
+	top: 1px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
+}
+
+.gwcraft .v-table-borderless .v-table-scrollposition span {
+	top: 0;
+}
+
+.gwcraft .v-contextmenu .v-on, .gwcraft .v-contextmenu .v-off {
+	display: inline-block;
+	zoom: 1;
+	background: transparent no-repeat 0 4px;
+	background-image: url(../reindeer/common/icons/bullet.png);/** sprite-ref: verticals; sprite-margin-top: 4px; sprite-margin-bottom: 4px */
+	padding-left: 12px;
+	padding-right: 4px;
+}
+
+.gwcraft .v-contextmenu .v-off {
+	background-image: none;
+	color: #666;
+}
+
+.gwcraft .v-contextmenu .gwt-MenuItem-selected .v-on {
+	background-image: url(../reindeer/common/icons/bullet-white.png);/** sprite-ref: verticals; sprite-margin-top: 4px; sprite-margin-bottom: 5px */
+}
+
+.gwcraft .v-table-strong .v-table-header-wrap, .gwcraft .v-table-strong .v-table-header-drag {
+	border-color: #2b3033;
+	border-top-color: #2b3033;
+	background-image: url(../reindeer/table/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	color: #e7e9ea;
+	text-shadow: #000 0 -1px 0;
+}
+
+.gwcraft .v-table-strong .v-table-body {
+	border-top-color: #2b3033;
+}
+
+.gwcraft .v-table-strong .v-table-resizer {
+	border-right-color: #1c1f21;
+}
+
+.gwcraft .v-table-strong .v-table-header-cell-asc .v-table-sort-indicator {
+	background-image: url(../reindeer/table/img/asc.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
+}
+
+.gwcraft .v-table-strong .v-table-header-cell-desc .v-table-sort-indicator {
+	background-image: url(../reindeer/table/img/desc.png);/** sprite-ref: verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
+}
+
+.gwcraft .v-table-strong .v-table-column-selector {
+	background-image: url(../reindeer/table/img/col-sel.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-table-strong .v-table-column-selector:active {
+	background-image: url(../reindeer/table/img/col-sel-pressed.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-table-strong .v-table-focus-slot-left, .gwcraft .v-table-strong .v-table-focus-slot-right {
+	border-color: #9ca1a5;
+}
+
+.gwcraft .black .v-table-header-wrap, .gwcraft .black .v-table-header-drag {
+	border-color: #252729;
+	background-image: url(../reindeer/table/img/header-bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
+	color: #e7eaee;
+	text-shadow: #000 0 -1px 0;
+}
+
+.gwcraft .black .v-table-resizer {
+	border-right-color: #252729;
+}
+
+.gwcraft .black .v-table-header-cell-asc .v-table-sort-indicator {
+	background-image: url(../reindeer/table/img/asc.png);/** sprite-ref: black-verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
+}
+
+.gwcraft .black .v-table-header-cell-desc .v-table-sort-indicator {
+	background-image: url(../reindeer/table/img/desc.png);/** sprite-ref: black-verticals; sprite-alignment: right; sprite-margin-top: 7px; sprite-margin-bottom: 6px; sprite-margin-right: 6px; */
+}
+
+.gwcraft .black .v-table-column-selector {
+	background-image: url(../reindeer/table/img/col-sel-black.png);/** sprite-ref: black-verticals */
+}
+
+.gwcraft .black .v-table-column-selector:active {
+	background-image: url(../reindeer/table/img/col-sel-black-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.gwcraft .black .v-table-focus-slot-left, .gwcraft .black .v-table-focus-slot-right {
+	border-color: #9ca1a5;
+}
+
+.gwcraft .black .v-table-body {
+	border-color: #252729;
+	background: transparent;
+}
+
+.gwcraft .black .v-table-cell-content {
+	border-right-color: #252729;
+	border-bottom: 1px solid #252729;
+}
+
+.gwcraft .black .v-table-cell-wrapper {
+	padding-bottom: 2px;
+}
+
+.gwcraft .black .v-table-row-odd {
+	background: transparent;
+}
+
+.gwcraft .black .v-table .v-selected .v-table-cell-content {
+	border-bottom: 1px solid #4d749f;
+}
+
+.gwcraft .v-table-borderless .v-table-header-wrap, .gwcraft .v-table-borderless .v-table-body {
+	border: none;
+}
+
+.gwcraft .v-tabsheet-tabitemcell, .gwcraft .v-tabsheet-spacertd {
+	height: 32px;
+}
+
+.gwcraft .v-tabsheet-tabitemcell {
+	background: no-repeat;
+	background-image: url(../reindeer/tabsheet/img/framed/tab-left.png);/** sprite-ref: verticals */
+	padding-left: 3px;
+}
+
+.gwcraft .v-tabsheet-tabitemcell-first {
+	padding-left: 10px;
+	background-image: url(../reindeer/tabsheet/img/framed/tab-first-left.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-tabsheet-tabitem, .gwcraft .v-tabsheet-spacertd div {
+	border: none;
+	height: 32px;
+	background: transparent repeat-x;
+	background-image: url(../reindeer/tabsheet/img/framed/tab-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	padding: 0;
+	color: #222;
+	text-shadow: #fff 0 1px 0;
+}
+
+.gwcraft .v-tabsheet-tabitem .v-caption {
+	border: none;
+	height: 23px;
+	background: no-repeat right top;
+	background-image: url(../reindeer/tabsheet/img/framed/tab-right.png);/** sprite-ref: verticals; sprite-alignment: right */
+	padding: 9px 8px 0 6px;
+}
+
+.gwcraft .v-tabsheet-tabitem .v-caption-closable {
+	padding-right: 0;
+	padding-left: 17px;
+}
+
+.gwcraft .v-tabsheet-tabitem .v-captiontext {
+	height: 16px;
+	line-height: 16px;
+	vertical-align: baseline;
+}
+
+.gwcraft .v-tabsheet-caption-close {
+	float: right;
+	width: 19px;
+	height: 18px;
+	margin: -1px -1px 0;
+	padding-left: 2px;
+	background: transparent;
+	background-image: url(../reindeer/tabsheet/img/close-btn.png);/** sprite-ref: verticals */
+	cursor: default;
+	text-indent: -999px;
+	overflow: hidden;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.v-ff .gwcraft .v-tabsheet-caption-close {
+	margin-top: -17px;
+}
+
+.v-ff .gwcraft .v-tabsheet-caption-close:only-child {
+	margin-top: -1px;
+}
+
+.gwcraft .v-tabsheet-caption-close:hover {
+	background-image: url(../reindeer/tabsheet/img/close-btn-hover.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-tabsheet-caption-close:active {
+	background-image: url(../reindeer/tabsheet/img/close-btn-pressed.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-tabsheet-tabitem-selected .v-tabsheet-caption-close {
+	background-image: url(../reindeer/tabsheet/img/close-btn-sel.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-tabsheet-tabitem-selected .v-tabsheet-caption-close:hover {
+	background-image: url(../reindeer/tabsheet/img/close-btn-sel-hover.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-tabsheet-tabitem-selected .v-tabsheet-caption-close:active {
+	background-image: url(../reindeer/tabsheet/img/close-btn-sel-pressed.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-tabsheet-tabitemcell-selected {
+	background-image: url(../reindeer/tabsheet/img/framed/tab-left-sel.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-tabsheet-tabitemcell-selected-first {
+	background-image: url(../reindeer/tabsheet/img/framed/tab-first-left-sel.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-tabsheet-tabitem-selected {
+	background-image: url(../reindeer/tabsheet/img/framed/tab-bg-sel.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	color: #232930;
+}
+
+.gwcraft .v-tabsheet-tabitem-selected .v-caption {
+	background-image: url(../reindeer/tabsheet/img/framed/tab-right-sel.png);/** sprite-ref: verticals; sprite-alignment: right */
+}
+
+.gwcraft .v-tabsheet-spacertd div {
+	margin-right: 4px;
+}
+
+.gwcraft .v-tabsheet-spacertd {
+	background: transparent no-repeat right top;
+	background-image: url(../reindeer/tabsheet/img/framed/tab-spacer-right.png);/** sprite-ref: verticals; sprite-alignment: right */
+}
+
+.gwcraft .blue .v-tabsheet-content {
+	border-color: #a8bcc5;
+}
+
+.gwcraft .v-tabsheet-content, .gwcraft .white .v-tabsheet-content {
+	border: 1px solid #dcdcdc;
+	border-bottom: none;
+	border-top: none;
+	color: #222;
+	text-shadow: none;
+}
+
+.gwcraft .v-tabsheet-tabsheetpanel {
+	background: #fff;
+}
+
+.v-sa .gwcraft .v-tabsheet-content {
+	border-color: rgba(0, 0, 0, 0.1);
+}
+
+.gwcraft .blue .v-tabsheet-deco {
+	border-color: #92a3ac;
+	background: #adc2cd;
+}
+
+.gwcraft .v-tabsheet-deco, .gwcraft .white .v-tabsheet-deco {
+	height: 1px;
+	border-top: 1px solid #bebebe;
+	background: #e2e2e2;
+	overflow: hidden;
+}
+
+.v-sa .gwcraft .v-tabsheet-deco {
+	border-top-color: rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.08);
+}
+
+.gwcraft .v-tabsheet-tabs .v-icon, .gwcraft .v-tabsheet-tabs .v-captiontext, .gwcraft .v-tabsheet-tabs .v-errorindicator {
+	display: inline;
+	float: none;
+}
+
+.v-sa .gwcraft .v-tabsheet-tabs .v-captiontext {
+	display: inline-block;
+}
+
+.gwcraft .v-tabsheet-tabs .v-icon {
+	width: 16px !important;
+	height: 16px !important;
+}
+
+.gwcraft .v-tabsheet-tabs .v-errorindicator {
+	display: inline-block;
+	width: 13px;
+	height: 16px;
+	background: transparent url(../reindeer/common/icons/error.png) no-repeat 50%;
+}
+
+.v-ie .gwcraft .v-tabsheet-tabs .v-errorindicator {
+	zoom: 1;
+	display: inline-block;
+}
+
+.gwcraft .v-tabsheet-scroller {
+	height: 31px;
+	margin-top: -31px;
+	padding: 0 3px 0 4px;
+	border-right: 1px solid #c2c2c2;
+	border-left: 1px solid #cfcfcf;
+	position: relative;
+	float: right;
+	background: transparent url(../reindeer/tabsheet/img/framed/tab-bg.png) repeat-x left -1px;
+	width: 36px;
+}
+
+.gwcraft .v-tabsheet-scroller button {
+	margin-top: 7px;
+}
+
+.gwcraft .v-tabsheet-scrollerPrev, .gwcraft .v-tabsheet-scrollerNext, .gwcraft .v-tabsheet-scrollerPrev-disabled, .gwcraft .v-tabsheet-scrollerNext-disabled {
+	border: none;
+	background: transparent;
+	background-image: url(../reindeer/tabsheet/img/tab-prev.png);/** sprite-ref: verticals */
+	width: 18px;
+	height: 17px;
+	overflow: hidden;
+}
+
+.gwcraft .v-tabsheet-scroller button::-moz-focus-inner {
+	border: none;
+}
+
+.gwcraft .v-tabsheet-scrollerNext {
+	background-image: url(../reindeer/tabsheet/img/tab-next.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-tabsheet-scrollerPrev:active {
+	background-image: url(../reindeer/tabsheet/img/tab-prev-pressed.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-tabsheet-scrollerNext:active {
+	background-image: url(../reindeer/tabsheet/img/tab-next-pressed.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-tabsheet-scrollerPrev-disabled, .gwcraft .v-tabsheet-scrollerPrev-disabled:active {
+	background-image: url(../reindeer/tabsheet/img/tab-prev-disabled.png);/** sprite-ref: verticals */
+	opacity: 1;
+	filter: none;
+}
+
+.gwcraft .v-tabsheet-scrollerNext-disabled, .gwcraft .v-tabsheet-scrollerNext-disabled:active {
+	background-image: url(../reindeer/tabsheet/img/tab-next-disabled.png);/** sprite-ref: verticals; sprite-margin-bottom: 1px */
+	opacity: 1;
+	filter: none;
+}
+
+.gwcraft .v-tabsheet-borderless .v-tabsheet-tabitemcell-first {
+	padding-left: 7px;
+	background: url(../reindeer/tabsheet/img/framed/tab-first-left.png) no-repeat -3px 0;
+}
+
+.gwcraft .v-tabsheet-borderless .v-tabsheet-tabitemcell-selected-first {
+	background: url(../reindeer/tabsheet/img/framed/tab-first-left-sel.png) no-repeat -3px 0;
+}
+
+.gwcraft .v-tabsheet-borderless .v-tabsheet-spacertd div {
+	margin-right: 0;
+}
+
+.gwcraft .v-tabsheet-borderless .v-tabsheet-spacertd {
+	background: transparent;
+}
+
+.gwcraft .v-tabsheet-borderless .v-tabsheet-content {
+	border: none;
+}
+
+.gwcraft .v-tabsheet-borderless .v-tabsheet-deco {
+	height: 0;
+	border-top: none;
+}
+
+.gwcraft .blue .v-tabsheet-tabs-minimal .v-tabsheet-spacertd div, .gwcraft .blue .v-tabsheet-tabs-minimal .v-tabsheet-tabitem, .gwcraft .blue .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected {
+	border-color: #7c8a91;
+}
+
+.gwcraft .blue .v-tabsheet-tabs-minimal .v-tabsheet-caption-close {
+	color: #7c8a91;
+}
+
+.gwcraft .blue .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:hover {
+	color: #BCD3DE;
+	background: #778d98;
+}
+
+.gwcraft .blue .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:active {
+	background: #4f6874;
+}
+
+.gwcraft .v-tabsheet-tabs-minimal .v-tabsheet-spacertd div, .gwcraft .white .v-tabsheet-tabs-minimal .v-tabsheet-spacertd div {
+	border-bottom: 1px solid #bfbfbf;
+	height: auto;
+	background: transparent;
+}
+
+.gwcraft .v-tabsheet-tabs-minimal .v-tabsheet-tabitemcell, .gwcraft .v-tabsheet-tabs-minimal .v-tabsheet-spacertd {
+	height: auto;
+	background: transparent;
+	padding-left: 0;
+}
+
+.gwcraft .v-tabsheet-tabs-minimal .v-tabsheet-tabitem, .gwcraft .white .v-tabsheet-tabs-minimal .v-tabsheet-tabitem {
+	border: none;
+	border-bottom: 1px solid #bfbfbf;
+	color: #4d748f;
+	padding: 0;
+	height: auto;
+	background: transparent;
+	text-shadow: none;
+}
+
+.gwcraft .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-caption {
+	padding: 5px 16px;
+	height: auto;
+	background: transparent;
+}
+
+.gwcraft .v-tabsheet-tabs-minimal .v-tabsheet-tabitemcell-selected {
+	background: transparent;
+}
+
+.gwcraft .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected, .gwcraft .white .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected {
+	background: transparent;
+	border: 1px solid #bfbfbf;
+	border-bottom: none;
+	color: #222;
+}
+
+.gwcraft .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected .v-caption {
+	background: transparent;
+	padding: 4px 15px 6px 15px;
+}
+
+.gwcraft .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-caption-closable, .gwcraft .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected .v-caption-closable {
+	padding-right: 6px;
+}
+
+.gwcraft .v-tabsheet-content-minimal, .gwcraft .white .v-tabsheet-content-minimal {
+	border: none;
+}
+
+.gwcraft .v-tabsheet-content-minimal .v-tabsheet-tabsheetpanel {
+	background: transparent;
+}
+
+.gwcraft .v-tabsheet-deco-minimal, .gwcraft .white .v-tabsheet-deco-minimal {
+	height: 0;
+	border: none;
+}
+
+.gwcraft .v-tabsheet-tabcontainer-minimal .v-tabsheet-scroller {
+	margin-top: -20px;
+	height: 17px;
+	padding: 0;
+	border: none;
+	background: transparent;
+}
+
+.gwcraft .v-tabsheet-tabcontainer-minimal .v-tabsheet-scroller button {
+	margin-top: 0;
+}
+
+.gwcraft .v-tabsheet-tabs-minimal .v-tabsheet-caption-close, .gwcraft .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:hover, .gwcraft .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:active {
+	text-indent: 0;
+	background: transparent;
+	margin-left: 3px;
+	margin-right: -3px;
+	padding: 0;
+	color: #999;
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+}
+
+.v-ie9 .gwcraft .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close, .v-ie9 .gwcraft .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close:hover, .v-ie9 .gwcraft .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close:active, .v-ie10 .gwcraft .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close, .v-ie10 .gwcraft .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close:hover, .v-ie10 .gwcraft .v-tabsheet-tabs-minimal .v-tabsheet-tabitem .v-tabsheet-caption-close:active {
+	margin-left: 2.5px;
+	margin-top: 1px;
+}
+
+.gwcraft .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:hover, .gwcraft .white .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:hover {
+	color: #fff;
+	background: #aaa;
+}
+
+.gwcraft .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:active, .gwcraft .white .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:active {
+	background: #777;
+}
+
+.gwcraft .black .v-tabsheet-tabs-minimal .v-tabsheet-spacertd div, .gwcraft .black .v-tabsheet-tabs-minimal .v-tabsheet-tabitem, .gwcraft .black .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected {
+	border-color: #3e4044;
+	color: #6a7f89;
+}
+
+.gwcraft .black .v-tabsheet-tabs-minimal .v-tabsheet-tabitem-selected {
+	color: #c9ccce;
+}
+
+.gwcraft .black .v-tabsheet-content-minimal, .gwcraft .black .v-tabsheet-content-bar {
+	color: #c9ccce;
+	text-shadow: #000 0 0 1px;
+}
+
+.gwcraft .black .v-tabsheet-tabs-minimal .v-tabsheet-caption-close {
+	color: #72787c;
+}
+
+.gwcraft .black .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:hover {
+	color: #1d2021;
+	background: #4d5154;
+}
+
+.gwcraft .black .v-tabsheet-tabs-minimal .v-tabsheet-caption-close:active {
+	background: #626669;
+}
+
+.gwcraft .v-tabsheet-tabs-bar .v-tabsheet-tabitemcell, .gwcraft .v-tabsheet-tabs-bar .v-tabsheet-spacertd {
+	height: 20px;
+}
+
+.gwcraft .v-tabsheet-tabs-bar .v-tabsheet-spacertd {
+	background: transparent;
+}
+
+.gwcraft .v-tabsheet-tabs-bar .v-tabsheet-tabitemcell {
+	background-image: url(../reindeer/tabsheet/img/bar/tab-left.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-tabsheet-tabs-bar .v-tabsheet-tabitemcell-first {
+	padding-left: 6px;
+	background-image: url(../reindeer/tabsheet/img/bar/tab-first-left.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-tabsheet-tabs-bar .v-tabsheet-tabitem, .gwcraft .v-tabsheet-tabs-bar .v-tabsheet-spacertd div {
+	height: 20px;
+	background-image: url(../reindeer/tabsheet/img/bar/tab-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	margin: 0;
+}
+
+.gwcraft .v-tabsheet-tabs-bar .v-tabsheet-tabitem .v-caption {
+	font-size: 11px;
+	height: 18px;
+	background-image: url(../reindeer/tabsheet/img/bar/tab-right.png);/** sprite-ref: verticals; sprite-alignment: right */
+	padding: 2px 12px 0 10px;
+}
+
+.gwcraft .v-tabsheet-tabs-bar .v-tabsheet-tabitem .v-caption-closable, .gwcraft .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected .v-caption-closable {
+	padding-right: 8px;
+	padding-left: 14px;
+}
+
+.gwcraft .v-tabsheet-tabs-bar .v-tabsheet-caption-close, .gwcraft .v-tabsheet-tabs-bar .v-tabsheet-caption-close:hover, .gwcraft .v-tabsheet-tabs-bar .v-tabsheet-caption-close:active {
+	text-indent: 0;
+	background: transparent;
+	margin-left: 3px;
+	margin-right: -3px;
+	padding: 1px 0 0 1px;
+	color: #3c3c3c;
+	width: 13px;
+	height: 13px;
+	line-height: 12px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+}
+
+.gwcraft .v-tabsheet-tabs-bar .v-tabsheet-caption-close {
+	margin-top: 1px;
+}
+
+.v-ff .gwcraft .v-tabsheet-tabs-bar .v-tabsheet-caption-close {
+	margin-top: -14px;
+}
+
+.v-ie9 .gwcraft .v-tabsheet-tabs-bar .v-tabsheet-caption-close:only-child, .v-ie9 .gwcraft .v-tabsheet-tabs-bar .v-captiontext:first-child + .v-tabsheet-caption-close, .v-ie10 .gwcraft .v-tabsheet-tabs-bar .v-tabsheet-caption-close:only-child, .v-ie10 .gwcraft .v-tabsheet-tabs-bar .v-captiontext:first-child + .v-tabsheet-caption-close {
+	margin-top: -14px;
+}
+
+.gwcraft .v-tabsheet-tabs-bar .v-tabsheet-caption-close:hover {
+	background: #bfbfbf;
+	-webkit-box-shadow: 0 1px 0 #fff;
+}
+
+.gwcraft .v-tabsheet-tabs-bar .v-tabsheet-caption-close:active {
+	background: #a9a9a9;
+}
+
+.gwcraft .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected .v-tabsheet-caption-close {
+	color: #404142;
+}
+
+.gwcraft .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected .v-tabsheet-caption-close:hover {
+	background: #5e666e;
+	color: #fff;
+	text-shadow: 0 -1px 0 #222;
+}
+
+.gwcraft .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected .v-tabsheet-caption-close:active {
+	background: #404142;
+}
+
+.gwcraft .v-tabsheet-tabs-bar .v-tabsheet-tabitemcell-selected {
+	background-image: url(../reindeer/tabsheet/img/bar/tab-left-sel.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-tabsheet-tabs-bar .v-tabsheet-tabitemcell-selected-first {
+	background-image: url(../reindeer/tabsheet/img/bar/tab-first-left-sel.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected {
+	background-image: url(../reindeer/tabsheet/img/bar/tab-bg-sel.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	color: #232930;
+}
+
+.gwcraft .v-tabsheet-tabs-bar .v-tabsheet-tabitem-selected .v-caption {
+	background-image: url(../reindeer/tabsheet/img/bar/tab-right-sel.png);/** sprite-ref: verticals; sprite-alignment: right */
+}
+
+.gwcraft .v-tabsheet-tabcontainer-bar .v-tabsheet-scroller {
+	margin-top: -20px;
+	height: 19px;
+	border-right: none;
+	background-image: url(../reindeer/tabsheet/img/bar/tab-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.gwcraft .v-tabsheet-tabcontainer-bar .v-tabsheet-scroller button {
+	margin-top: 1px;
+}
+
+.gwcraft .v-tabsheet-content-bar, .gwcraft .white .v-tabsheet-content-bar {
+	border: none;
+}
+
+.gwcraft .v-tabsheet-content-bar .v-tabsheet-tabsheetpanel {
+	background: transparent;
+}
+
+.gwcraft .v-tabsheet-deco-bar, .gwcraft .white .v-tabsheet-deco-bar {
+	height: 0;
+	border: none;
+}
+
+.gwcraft .v-tabsheet-tabs-selected-closable .v-tabsheet-tabitem .v-tabsheet-caption-close, .gwcraft .v-tabsheet-tabs-selected-closable .v-tabsheet-tabitem:hover .v-tabsheet-caption-close {
+	visibility: hidden;
+}
+
+.gwcraft .v-tabsheet-tabs-selected-closable .v-tabsheet-tabitem-selected .v-tabsheet-caption-close, .gwcraft .v-tabsheet-tabs-selected-closable .v-tabsheet-tabitem-selected:hover .v-tabsheet-caption-close {
+	visibility: visible;
+}
+
+.gwcraft .v-tabsheet-tabs-hover-closable .v-tabsheet-caption-close {
+	visibility: hidden;
+}
+
+.gwcraft .v-tabsheet-tabs-hover-closable .v-tabsheet-tabitem:hover .v-tabsheet-caption-close {
+	visibility: visible;
+}
+
+.gwcraft .blue .v-textfield, .gwcraft .blue .v-textarea {
+	border-color: #92a2aa;
+	border-top-color: #7c8a90;
+	border-bottom-color: #a1b3bc;
+}
+
+.gwcraft .v-textfield, .gwcraft .v-textarea, .gwcraft .white .v-textfield, .gwcraft .white .v-textarea {
+	border: 1px solid #bcbdbe;
+	border-top-color: #a2a3a4;
+	border-bottom-color: #d2d3d4;
+	background: #fff;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/textfield/img/bg.png);/** sprite-ref: verticals; sprite-alignment: repeat; sprite-margin-bottom: 22px */
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	margin: 0;
+	height: 23px;
+	line-height: normal;
+}
+
+.gwcraft .v-textarea, .gwcraft .white .v-textarea {
+	background-image: none;
+	height: auto;
+}
+
+.gwcraft.v-app input.v-textfield, .gwcraft .v-window input.v-textfield, .gwcraft.v-app textarea.v-textarea, .gwcraft .v-window textarea.v-textarea {
+	padding: 3px 3px 4px;
+}
+
+.gwcraft.v-app input.v-textfield.v-widget, .gwcraft .v-window input.v-textfield.v-widget {
+	height: 24px;
+}
+
+.gwcraft.v-app .v-textfield-focus, .gwcraft .v-window .v-textfield-focus, .gwcraft .v-popupview-popup .v-textfield-focus, .gwcraft.v-app .v-textarea-focus, .gwcraft .v-window .v-textarea-focus, .gwcraft .v-popupview-popup .v-textarea-focus {
+	border-color: #5b97d0;
+	border-top-color: #4f83b4;
+	border-bottom-color: #5ca0df;
+	outline: none;
+	background-color: #fff;
+}
+
+.gwcraft input.v-textfield-prompt, .gwcraft textarea.v-textarea-prompt {
+	font-style: normal;
+	color: #999;
+}
+
+.gwcraft.v-app input.v-textfield-small {
+	font-size: 11px;
+	line-height: normal;
+	height: auto;
+	padding: 2px;
+}
+
+.gwcraft.v-app textarea.v-textarea-small {
+	font-size: 11px;
+}
+
+.gwcraft.v-app .v-table input.v-textfield.v-widget, .gwcraft .v-window .v-table input.v-textfield.v-widget {
+	padding: 1px 2px;
+	height: auto;
+	line-height: normal;
+}
+
+.gwcraft .v-table-cell-wrapper > input.v-textfield {
+	margin-top: -2px;
+	margin-bottom: -2px;
+}
+
+.gwcraft .black .v-textfield, .gwcraft .black .v-textarea {
+	border-color: #38393a;
+	border-top-color: #2c2d2e;
+	border-bottom-color: #3e3f3f;
+	background: #151717;
+	background-image: url(../reindeer/textfield/img/bg-black.png);/** sprite-ref: black-verticals; sprite-alignment: repeat; sprite-margin-bottom: 22px */
+	color: #c9ccce;
+	text-shadow: #000 0 0 1px;
+}
+
+.gwcraft .black .v-textarea {
+	background-image: none;
+}
+
+.gwcraft.v-app .black .v-textfield-focus, .gwcraft .v-window-black .v-textfield-focus, .gwcraft .v-window .black .v-textfield-focus, .gwcraft .v-popupview-popup .black .v-textfield-focus, .gwcraft.v-app .black .v-textarea-focus, .gwcraft .v-window-black .v-textarea-focus, .gwcraft .v-window .black .v-textarea-focus, .gwcraft .v-popupview-popup .black .v-textarea-focus {
+	border-color: #4b7192;
+	border-top-color: #3b5a75;
+	border-bottom-color: #507596;
+	background-color: #151717;
+}
+
+.gwcraft .black input.v-textfield-prompt {
+	color: #5f6366;
+}
+
+.gwcraft input.v-textfield-readonly, .gwcraft .black input.v-textfield-readonly, .gwcraft textarea.v-textarea-readonly, .gwcraft .black textarea.v-textarea-readonly {
+	border: none;
+	background: transparent;
+}
+
+.gwcraft .v-tree-node {
+	background: transparent url(../reindeer/tree/img/arrows.png) no-repeat 6px -10px;
+}
+
+.gwcraft .v-tree-node-expanded {
+	background-position: -7px 5px;
+}
+
+.gwcraft .v-tree-node-caption {
+	margin-left: 16px;
+	padding-bottom: 1px;
+}
+
+.gwcraft .v-tree-node span {
+	padding: 1px 2px;
+	display: inline-block;
+}
+
+.gwcraft .v-tree-node-selected span {
+	background: #4d749f repeat-x;
+	background-image: url(../reindeer/common/img/sel-bg.png);
+	color: #fff;
+	padding: 1px 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	text-shadow: #2b425a 0 1px 0;
+	display: inline-block;
+}
+
+.gwcraft .v-tree-node-children {
+	padding-left: 16px;
+}
+
+.gwcraft .v-tree-node-caption.v-tree-node-focused span {
+	padding-left: 1px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.gwcraft .v-tree-node-focused span {
+	border: 1px dotted black;
+}
+
+.gwcraft .v-tree .v-tree-node-drag-top {
+	background-position: 6px -11px;
+}
+
+.gwcraft .v-tree .v-tree-node-drag-top.v-tree-node-expanded {
+	background-position: -7px 4px;
+}
+
+.gwcraft .v-tree-connectors .v-tree-node-drag-top, .gwcraft .v-tree-connectors .v-tree-node-expanded.v-tree-node-drag-top {
+	background-position: 2px -53px;
+}
+
+.gwcraft .v-tree-connectors .v-tree-node-drag-top.v-tree-node-leaf {
+	background-position: 2px 50%;
+}
+
+.gwcraft .v-window {
+	background: transparent;
+}
+
+.gwcraft .v-window-wrap {
+	border: 1px solid #808386;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.v-sa .gwcraft .v-window-wrap, .v-op .gwcraft .v-window-wrap {
+	border-color: rgba(0, 0, 0, 0.2);
+}
+
+.gwcraft .v-window-outerheader {
+	padding: 12px 52px 0 14px;
+	height: 37px;
+	background: black repeat-x;
+	background-image: url(../reindeer/window/img/header-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.gwcraft .v-window-header {
+	font-weight: bold;
+	font-size: 12px;
+	line-height: normal;
+	color: #fff;
+	text-shadow: #000 0 -1px 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+}
+
+.gwcraft .v-window-error .v-window-header {
+	padding-left: 13px;
+	background: transparent url(../reindeer/common/icons/error.png) no-repeat 0 50%;
+}
+
+.gwcraft .v-window-resizebox {
+	width: 15px;
+	height: 15px;
+	cursor: se-resize;
+	background: transparent;
+	background-image: url(../reindeer/window/img/resize.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-window-footer {
+	background-color: white;
+	background-repeat: repeat-x;
+	background-image: url(../reindeer/window/img/footer-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+	height: 15px;
+}
+
+.gwcraft .v-window-closebox {
+	top: 12px;
+	right: 10px;
+	width: 15px;
+	height: 16px;
+	background: transparent;
+	background-image: url(../reindeer/window/img/close.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-window-closebox:hover {
+	background-image: url(../reindeer/window/img/close-hover.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-window-closebox:active {
+	background-image: url(../reindeer/window/img/close-pressed.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-window-maximizebox, .gwcraft .v-window-restorebox {
+	top: 12px;
+	right: 28px;
+	width: 15px;
+	height: 16px;
+	background: transparent;
+}
+
+.gwcraft .v-window-maximizebox, .gwcraft .v-window-maximizebox:hover, .gwcraft .v-window-maximizebox:active {
+	background-image: url(../reindeer/window/img/maximize.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-window-restorebox, .gwcraft .v-window-restorebox:hover, .gwcraft .v-window-restorebox:active {
+	background-image: url(../reindeer/window/img/restore.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-window-contents {
+	background: #fff;
+}
+
+.gwcraft .v-window-modalitycurtain {
+	background: #56595b;
+}
+
+.gwcraft .v-window-light .v-window-outerheader {
+	background: transparent;
+	padding: 15px 52px 0 18px;
+}
+
+.gwcraft .v-window-light .v-window-header {
+	font-size: 16px;
+	color: #292e34;
+	text-shadow: none;
+}
+
+.gwcraft .v-window-light .v-window-resizebox {
+	width: 12px;
+	height: 12px;
+	background-image: url(../reindeer/window/img/light/resize.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-window-light .v-window-footer {
+	background: transparent;
+	height: 12px;
+}
+
+.gwcraft .v-window-light .v-window-closebox {
+	right: 1px;
+	top: 17px;
+	width: 19px;
+	height: 15px;
+	background-image: url(../reindeer/window/img/light/close.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-window-light .v-window-closebox:hover {
+	background-image: url(../reindeer/window/img/light/close-hover.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-window-light .v-window-closebox:active {
+	background-image: url(../reindeer/window/img/light/close-pressed.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-window-light .v-window-maximizebox {
+	top: 17px;
+	background-image: url(../reindeer/window/img/light/maximize.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-window-light .v-window-maximizebox:hover {
+	background-image: url(../reindeer/window/img/light/maximize-hover.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-window-light .v-window-maximizebox:active {
+	background-image: url(../reindeer/window/img/light/maximize-active.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-window-light .v-window-restorebox {
+	top: 17px;
+	background-image: url(../reindeer/window/img/light/restore.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-window-light .v-window-restorebox:hover {
+	background-image: url(../reindeer/window/img/light/restore-hover.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-window-light .v-window-restorebox:active {
+	background-image: url(../reindeer/window/img/light/restore-active.png);/** sprite-ref: verticals */
+}
+
+.gwcraft .v-window-light .v-window-contents {
+	background: transparent;
+}
+
+.gwcraft .v-window-light .v-window-wrap {
+	background: #f7f7f8 repeat-x;
+	background-image: url(../reindeer/window/img/light/content-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+}
+
+.gwcraft .v-window-black .v-window-wrap {
+	border-color: #2e3030;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	overflow: hidden;
+}
+
+.v-sa .gwcraft .v-window-black .v-window-wrap, .v-op .gwcraft .v-window-black .v-window-wrap {
+	border-color: rgba(0, 0, 0, 0.8);
+}
+
+.gwcraft .v-window-black .v-window-wrap {
+	background-color: #1d2021;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+
+.v-sa .gwcraft .v-window-black .v-window-wrap, .v-op .gwcraft .v-window-black .v-window-wrap {
+	background-color: rgba(29, 32, 33, 0.9);
+}
+
+.gwcraft .v-window-black .v-window-outerheader {
+	height: 29px;
+	padding: 7px 14px;
+	background: transparent repeat-x;
+	background-image: url(../reindeer/window/img/black/header-bg.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
+	text-align: center;
+	-moz-border-radius-topright: 7px;
+	-moz-border-radius-topleft: 7px;
+	-webkit-border-top-right-radius: 7px;
+	-webkit-border-top-left-radius: 7px;
+	overflow: hidden;
+	border: none;
+}
+
+.gwcraft .v-window-black .v-window-header {
+	font-size: 12px;
+	font-weight: normal;
+	color: #dddfe1;
+}
+
+.gwcraft .v-window-black .v-window-closebox {
+	top: 8px;
+	background-image: url(../reindeer/window/img/black/close.png);/** sprite-ref: black-verticals */
+}
+
+.gwcraft .v-window-black .v-window-closebox:hover {
+	background-image: url(../reindeer/window/img/black/close-hover.png);/** sprite-ref: black-verticals */
+}
+
+.gwcraft .v-window-black .v-window-closebox:active {
+	background-image: url(../reindeer/window/img/black/close-pressed.png);/** sprite-ref: black-verticals */
+}
+
+.gwcraft .v-window-black .v-window-footer {
+	background: transparent;
+	border: none;
+	height: 14px;
+}
+
+.gwcraft .v-window-black .v-window-resizebox {
+	background: transparent no-repeat;
+	background-image: url(../reindeer/window/img/black/resize.png);/** sprite-ref: black-verticals; sprite-margin-bottom: 4px */
+	width: 14px;
+	height: 14px;
+}
+
+.gwcraft .v-window-black .v-window-maximizebox {
+	top: 8px;
+	background-image: url(../reindeer/window/img/black/maximize.png);/** sprite-ref: black-verticals */
+}
+
+.gwcraft .v-window-black .v-window-maximizebox:hover {
+	background-image: url(../reindeer/window/img/black/maximize-hover.png);/** sprite-ref: black-verticals */
+}
+
+.gwcraft .v-window-black .v-window-maximizebox:active {
+	background-image: url(../reindeer/window/img/black/maximize-active.png);/** sprite-ref: black-verticals */
+}
+
+.gwcraft .v-window-black .v-window-restorebox {
+	top: 8px;
+	background-image: url(../reindeer/window/img/black/restore.png);/** sprite-ref: black-verticals */
+}
+
+.gwcraft .v-window-black .v-window-restorebox:hover {
+	background-image: url(../reindeer/window/img/black/restore-hover.png);/** sprite-ref: black-verticals */
+}
+
+.gwcraft .v-window-black .v-window-restorebox:active {
+	background-image: url(../reindeer/window/img/black/restore-active.png);/** sprite-ref: black-verticals */
+}
+
+.gwcraft .v-window-black .v-window-contents {
+	border: none;
+	background: transparent repeat-x;
+	background-image: url(../reindeer/window/img/black/content-bg.png);/** sprite-ref: black-verticals; sprite-alignment: repeat */
+}
